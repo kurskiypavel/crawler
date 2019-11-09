@@ -1,0 +1,18 @@
+{
+  "require": {
+    "php" : "^7.0",
+    "simple-html-dom/simple-html-dom": "*",
+    "php-curl-class/php-curl-class": "^8.6",
+    "guzzlehttp/guzzle": "~6.0",
+    "stichoza/google-translate-php": "^4.0",
+    "propel/propel": "~2.0@dev"
+  },
+  "autoload": {
+    "psr-4": { "Crawler\\": "/src"},
+    "classmap": [
+      "src/orm/orm/",
+      "src/orm/orm/Base/",
+      "src/orm/orm/Map/"
+    ]
+  }
+}
