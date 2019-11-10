@@ -8,8 +8,8 @@
     "propel/propel": "~2.0@dev"
   },
   "autoload": {
-    "psr-4": { "Crawler\\": "/src"},
     "classmap": [
+      "src/article/",
       "src/orm/orm/",
       "src/orm/orm/Base/",
       "src/orm/orm/Map/"

@@ -8,7 +8,8 @@
  */
 
 
-namespace Crawler;
+namespace article;
+
 class Article
 {
     public $source;
@@ -29,7 +30,7 @@ class Article
         $html = file_get_html($this->url);
 
         $this->source = $html->find("meta[property='og:site_name']",0)->getAllAttributes()['content'];
-        $this->title = $html->find('.c-entry-hero__header-wrap > h1', 0)->innertext;
+        $this->title = $html->find('body h1', 0)->innertext;
         $this->subtitle = $html->find('.c-entry-summary.p-dek', 0)->innertext;
         $this->datetime = $html->find(".c-byline__item time",0)->getAllAttributes()['datetime'];
 
@@ -38,6 +39,7 @@ class Article
                 $this->content[] .= $element->plaintext;
             }
         }
+        $this->content = json_encode($this->content);
 
         // clean up memory
         $html->clear();

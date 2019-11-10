@@ -14,6 +14,28 @@ CREATE TABLE `vg_article`
     `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
     `title` TEXT,
     `subtitle` TEXT,
+    `source` TEXT,
+    `content` TEXT,
+    `datetime` VARCHAR(50),
+    `url` TEXT,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+-- ---------------------------------------------------------------------
+-- vg_article_ru
+-- ---------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `vg_article_ru`;
+
+CREATE TABLE `vg_article_ru`
+(
+    `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+    `title` TEXT,
+    `subtitle` TEXT,
+    `source` TEXT,
+    `content` TEXT,
+    `datetime` VARCHAR(50),
+    `url` TEXT,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 

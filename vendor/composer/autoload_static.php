@@ -47,7 +47,6 @@ class ComposerStaticInit6ca83e0b7a8c8ffe0e94df32a3ecae86
         'C' => 
         array (
             'Curl\\' => 5,
-            'Crawler\\' => 8,
         ),
     );
 
@@ -128,10 +127,6 @@ class ComposerStaticInit6ca83e0b7a8c8ffe0e94df32a3ecae86
         array (
             0 => __DIR__ . '/..' . '/php-curl-class/php-curl-class/src/Curl',
         ),
-        'Crawler\\' => 
-        array (
-            0 => '/src',
-        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -146,16 +141,22 @@ class ComposerStaticInit6ca83e0b7a8c8ffe0e94df32a3ecae86
 
     public static $classMap = array (
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'article\\Article' => __DIR__ . '/../..' . '/src/article/Article.php',
         'orm\\orm\\Author' => __DIR__ . '/../..' . '/src/orm/orm/Author.php',
         'orm\\orm\\AuthorQuery' => __DIR__ . '/../..' . '/src/orm/orm/AuthorQuery.php',
         'orm\\orm\\Base\\Author' => __DIR__ . '/../..' . '/src/orm/orm/Base/Author.php',
         'orm\\orm\\Base\\AuthorQuery' => __DIR__ . '/../..' . '/src/orm/orm/Base/AuthorQuery.php',
         'orm\\orm\\Base\\VgArticle' => __DIR__ . '/../..' . '/src/orm/orm/Base/VgArticle.php',
         'orm\\orm\\Base\\VgArticleQuery' => __DIR__ . '/../..' . '/src/orm/orm/Base/VgArticleQuery.php',
+        'orm\\orm\\Base\\VgArticleRu' => __DIR__ . '/../..' . '/src/orm/orm/Base/VgArticleRu.php',
+        'orm\\orm\\Base\\VgArticleRuQuery' => __DIR__ . '/../..' . '/src/orm/orm/Base/VgArticleRuQuery.php',
         'orm\\orm\\Map\\AuthorTableMap' => __DIR__ . '/../..' . '/src/orm/orm/Map/AuthorTableMap.php',
+        'orm\\orm\\Map\\VgArticleRuTableMap' => __DIR__ . '/../..' . '/src/orm/orm/Map/VgArticleRuTableMap.php',
         'orm\\orm\\Map\\VgArticleTableMap' => __DIR__ . '/../..' . '/src/orm/orm/Map/VgArticleTableMap.php',
         'orm\\orm\\VgArticle' => __DIR__ . '/../..' . '/src/orm/orm/VgArticle.php',
         'orm\\orm\\VgArticleQuery' => __DIR__ . '/../..' . '/src/orm/orm/VgArticleQuery.php',
+        'orm\\orm\\VgArticleRu' => __DIR__ . '/../..' . '/src/orm/orm/VgArticleRu.php',
+        'orm\\orm\\VgArticleRuQuery' => __DIR__ . '/../..' . '/src/orm/orm/VgArticleRuQuery.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

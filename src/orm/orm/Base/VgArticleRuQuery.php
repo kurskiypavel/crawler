@@ -10,102 +10,102 @@ use Propel\Runtime\ActiveQuery\ModelCriteria;
 use Propel\Runtime\Collection\ObjectCollection;
 use Propel\Runtime\Connection\ConnectionInterface;
 use Propel\Runtime\Exception\PropelException;
-use orm\orm\VgArticle as ChildVgArticle;
-use orm\orm\VgArticleQuery as ChildVgArticleQuery;
-use orm\orm\Map\VgArticleTableMap;
+use orm\orm\VgArticleRu as ChildVgArticleRu;
+use orm\orm\VgArticleRuQuery as ChildVgArticleRuQuery;
+use orm\orm\Map\VgArticleRuTableMap;
 
 /**
- * Base class that represents a query for the 'vg_article' table.
+ * Base class that represents a query for the 'vg_article_ru' table.
  *
  *
  *
- * @method     ChildVgArticleQuery orderById($order = Criteria::ASC) Order by the id column
- * @method     ChildVgArticleQuery orderByTitle($order = Criteria::ASC) Order by the title column
- * @method     ChildVgArticleQuery orderBySubtitle($order = Criteria::ASC) Order by the subtitle column
- * @method     ChildVgArticleQuery orderBySource($order = Criteria::ASC) Order by the source column
- * @method     ChildVgArticleQuery orderByContent($order = Criteria::ASC) Order by the content column
- * @method     ChildVgArticleQuery orderByDatetime($order = Criteria::ASC) Order by the datetime column
- * @method     ChildVgArticleQuery orderByUrl($order = Criteria::ASC) Order by the url column
+ * @method     ChildVgArticleRuQuery orderById($order = Criteria::ASC) Order by the id column
+ * @method     ChildVgArticleRuQuery orderByTitle($order = Criteria::ASC) Order by the title column
+ * @method     ChildVgArticleRuQuery orderBySubtitle($order = Criteria::ASC) Order by the subtitle column
+ * @method     ChildVgArticleRuQuery orderBySource($order = Criteria::ASC) Order by the source column
+ * @method     ChildVgArticleRuQuery orderByContent($order = Criteria::ASC) Order by the content column
+ * @method     ChildVgArticleRuQuery orderByDatetime($order = Criteria::ASC) Order by the datetime column
+ * @method     ChildVgArticleRuQuery orderByUrl($order = Criteria::ASC) Order by the url column
  *
- * @method     ChildVgArticleQuery groupById() Group by the id column
- * @method     ChildVgArticleQuery groupByTitle() Group by the title column
- * @method     ChildVgArticleQuery groupBySubtitle() Group by the subtitle column
- * @method     ChildVgArticleQuery groupBySource() Group by the source column
- * @method     ChildVgArticleQuery groupByContent() Group by the content column
- * @method     ChildVgArticleQuery groupByDatetime() Group by the datetime column
- * @method     ChildVgArticleQuery groupByUrl() Group by the url column
+ * @method     ChildVgArticleRuQuery groupById() Group by the id column
+ * @method     ChildVgArticleRuQuery groupByTitle() Group by the title column
+ * @method     ChildVgArticleRuQuery groupBySubtitle() Group by the subtitle column
+ * @method     ChildVgArticleRuQuery groupBySource() Group by the source column
+ * @method     ChildVgArticleRuQuery groupByContent() Group by the content column
+ * @method     ChildVgArticleRuQuery groupByDatetime() Group by the datetime column
+ * @method     ChildVgArticleRuQuery groupByUrl() Group by the url column
  *
- * @method     ChildVgArticleQuery leftJoin($relation) Adds a LEFT JOIN clause to the query
- * @method     ChildVgArticleQuery rightJoin($relation) Adds a RIGHT JOIN clause to the query
- * @method     ChildVgArticleQuery innerJoin($relation) Adds a INNER JOIN clause to the query
+ * @method     ChildVgArticleRuQuery leftJoin($relation) Adds a LEFT JOIN clause to the query
+ * @method     ChildVgArticleRuQuery rightJoin($relation) Adds a RIGHT JOIN clause to the query
+ * @method     ChildVgArticleRuQuery innerJoin($relation) Adds a INNER JOIN clause to the query
  *
- * @method     ChildVgArticleQuery leftJoinWith($relation) Adds a LEFT JOIN clause and with to the query
- * @method     ChildVgArticleQuery rightJoinWith($relation) Adds a RIGHT JOIN clause and with to the query
- * @method     ChildVgArticleQuery innerJoinWith($relation) Adds a INNER JOIN clause and with to the query
+ * @method     ChildVgArticleRuQuery leftJoinWith($relation) Adds a LEFT JOIN clause and with to the query
+ * @method     ChildVgArticleRuQuery rightJoinWith($relation) Adds a RIGHT JOIN clause and with to the query
+ * @method     ChildVgArticleRuQuery innerJoinWith($relation) Adds a INNER JOIN clause and with to the query
  *
- * @method     ChildVgArticle findOne(ConnectionInterface $con = null) Return the first ChildVgArticle matching the query
- * @method     ChildVgArticle findOneOrCreate(ConnectionInterface $con = null) Return the first ChildVgArticle matching the query, or a new ChildVgArticle object populated from the query conditions when no match is found
+ * @method     ChildVgArticleRu findOne(ConnectionInterface $con = null) Return the first ChildVgArticleRu matching the query
+ * @method     ChildVgArticleRu findOneOrCreate(ConnectionInterface $con = null) Return the first ChildVgArticleRu matching the query, or a new ChildVgArticleRu object populated from the query conditions when no match is found
  *
- * @method     ChildVgArticle findOneById(int $id) Return the first ChildVgArticle filtered by the id column
- * @method     ChildVgArticle findOneByTitle(string $title) Return the first ChildVgArticle filtered by the title column
- * @method     ChildVgArticle findOneBySubtitle(string $subtitle) Return the first ChildVgArticle filtered by the subtitle column
- * @method     ChildVgArticle findOneBySource(string $source) Return the first ChildVgArticle filtered by the source column
- * @method     ChildVgArticle findOneByContent(string $content) Return the first ChildVgArticle filtered by the content column
- * @method     ChildVgArticle findOneByDatetime(string $datetime) Return the first ChildVgArticle filtered by the datetime column
- * @method     ChildVgArticle findOneByUrl(string $url) Return the first ChildVgArticle filtered by the url column *
+ * @method     ChildVgArticleRu findOneById(int $id) Return the first ChildVgArticleRu filtered by the id column
+ * @method     ChildVgArticleRu findOneByTitle(string $title) Return the first ChildVgArticleRu filtered by the title column
+ * @method     ChildVgArticleRu findOneBySubtitle(string $subtitle) Return the first ChildVgArticleRu filtered by the subtitle column
+ * @method     ChildVgArticleRu findOneBySource(string $source) Return the first ChildVgArticleRu filtered by the source column
+ * @method     ChildVgArticleRu findOneByContent(string $content) Return the first ChildVgArticleRu filtered by the content column
+ * @method     ChildVgArticleRu findOneByDatetime(string $datetime) Return the first ChildVgArticleRu filtered by the datetime column
+ * @method     ChildVgArticleRu findOneByUrl(string $url) Return the first ChildVgArticleRu filtered by the url column *
 
- * @method     ChildVgArticle requirePk($key, ConnectionInterface $con = null) Return the ChildVgArticle by primary key and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
- * @method     ChildVgArticle requireOne(ConnectionInterface $con = null) Return the first ChildVgArticle matching the query and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticleRu requirePk($key, ConnectionInterface $con = null) Return the ChildVgArticleRu by primary key and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticleRu requireOne(ConnectionInterface $con = null) Return the first ChildVgArticleRu matching the query and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  *
- * @method     ChildVgArticle requireOneById(int $id) Return the first ChildVgArticle filtered by the id column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
- * @method     ChildVgArticle requireOneByTitle(string $title) Return the first ChildVgArticle filtered by the title column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
- * @method     ChildVgArticle requireOneBySubtitle(string $subtitle) Return the first ChildVgArticle filtered by the subtitle column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
- * @method     ChildVgArticle requireOneBySource(string $source) Return the first ChildVgArticle filtered by the source column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
- * @method     ChildVgArticle requireOneByContent(string $content) Return the first ChildVgArticle filtered by the content column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
- * @method     ChildVgArticle requireOneByDatetime(string $datetime) Return the first ChildVgArticle filtered by the datetime column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
- * @method     ChildVgArticle requireOneByUrl(string $url) Return the first ChildVgArticle filtered by the url column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticleRu requireOneById(int $id) Return the first ChildVgArticleRu filtered by the id column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticleRu requireOneByTitle(string $title) Return the first ChildVgArticleRu filtered by the title column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticleRu requireOneBySubtitle(string $subtitle) Return the first ChildVgArticleRu filtered by the subtitle column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticleRu requireOneBySource(string $source) Return the first ChildVgArticleRu filtered by the source column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticleRu requireOneByContent(string $content) Return the first ChildVgArticleRu filtered by the content column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticleRu requireOneByDatetime(string $datetime) Return the first ChildVgArticleRu filtered by the datetime column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticleRu requireOneByUrl(string $url) Return the first ChildVgArticleRu filtered by the url column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  *
- * @method     ChildVgArticle[]|ObjectCollection find(ConnectionInterface $con = null) Return ChildVgArticle objects based on current ModelCriteria
- * @method     ChildVgArticle[]|ObjectCollection findById(int $id) Return ChildVgArticle objects filtered by the id column
- * @method     ChildVgArticle[]|ObjectCollection findByTitle(string $title) Return ChildVgArticle objects filtered by the title column
- * @method     ChildVgArticle[]|ObjectCollection findBySubtitle(string $subtitle) Return ChildVgArticle objects filtered by the subtitle column
- * @method     ChildVgArticle[]|ObjectCollection findBySource(string $source) Return ChildVgArticle objects filtered by the source column
- * @method     ChildVgArticle[]|ObjectCollection findByContent(string $content) Return ChildVgArticle objects filtered by the content column
- * @method     ChildVgArticle[]|ObjectCollection findByDatetime(string $datetime) Return ChildVgArticle objects filtered by the datetime column
- * @method     ChildVgArticle[]|ObjectCollection findByUrl(string $url) Return ChildVgArticle objects filtered by the url column
- * @method     ChildVgArticle[]|\Propel\Runtime\Util\PropelModelPager paginate($page = 1, $maxPerPage = 10, ConnectionInterface $con = null) Issue a SELECT query based on the current ModelCriteria and uses a page and a maximum number of results per page to compute an offset and a limit
+ * @method     ChildVgArticleRu[]|ObjectCollection find(ConnectionInterface $con = null) Return ChildVgArticleRu objects based on current ModelCriteria
+ * @method     ChildVgArticleRu[]|ObjectCollection findById(int $id) Return ChildVgArticleRu objects filtered by the id column
+ * @method     ChildVgArticleRu[]|ObjectCollection findByTitle(string $title) Return ChildVgArticleRu objects filtered by the title column
+ * @method     ChildVgArticleRu[]|ObjectCollection findBySubtitle(string $subtitle) Return ChildVgArticleRu objects filtered by the subtitle column
+ * @method     ChildVgArticleRu[]|ObjectCollection findBySource(string $source) Return ChildVgArticleRu objects filtered by the source column
+ * @method     ChildVgArticleRu[]|ObjectCollection findByContent(string $content) Return ChildVgArticleRu objects filtered by the content column
+ * @method     ChildVgArticleRu[]|ObjectCollection findByDatetime(string $datetime) Return ChildVgArticleRu objects filtered by the datetime column
+ * @method     ChildVgArticleRu[]|ObjectCollection findByUrl(string $url) Return ChildVgArticleRu objects filtered by the url column
+ * @method     ChildVgArticleRu[]|\Propel\Runtime\Util\PropelModelPager paginate($page = 1, $maxPerPage = 10, ConnectionInterface $con = null) Issue a SELECT query based on the current ModelCriteria and uses a page and a maximum number of results per page to compute an offset and a limit
  *
  */
-abstract class VgArticleQuery extends ModelCriteria
+abstract class VgArticleRuQuery extends ModelCriteria
 {
     protected $entityNotFoundExceptionClass = '\\Propel\\Runtime\\Exception\\EntityNotFoundException';
 
     /**
-     * Initializes internal state of \orm\orm\Base\VgArticleQuery object.
+     * Initializes internal state of \orm\orm\Base\VgArticleRuQuery object.
      *
      * @param     string $dbName The database name
      * @param     string $modelName The phpName of a model, e.g. 'Book'
      * @param     string $modelAlias The alias for the model in this query, e.g. 'b'
      */
-    public function __construct($dbName = 'default', $modelName = '\\orm\\orm\\VgArticle', $modelAlias = null)
+    public function __construct($dbName = 'default', $modelName = '\\orm\\orm\\VgArticleRu', $modelAlias = null)
     {
         parent::__construct($dbName, $modelName, $modelAlias);
     }
 
     /**
-     * Returns a new ChildVgArticleQuery object.
+     * Returns a new ChildVgArticleRuQuery object.
      *
      * @param     string $modelAlias The alias of a model in the query
      * @param     Criteria $criteria Optional Criteria to build the query from
      *
-     * @return ChildVgArticleQuery
+     * @return ChildVgArticleRuQuery
      */
     public static function create($modelAlias = null, Criteria $criteria = null)
     {
-        if ($criteria instanceof ChildVgArticleQuery) {
+        if ($criteria instanceof ChildVgArticleRuQuery) {
             return $criteria;
         }
-        $query = new ChildVgArticleQuery();
+        $query = new ChildVgArticleRuQuery();
         if (null !== $modelAlias) {
             $query->setModelAlias($modelAlias);
         }
@@ -128,7 +128,7 @@ abstract class VgArticleQuery extends ModelCriteria
      * @param mixed $key Primary key to use for the query
      * @param ConnectionInterface $con an optional connection object
      *
-     * @return ChildVgArticle|array|mixed the result, formatted by the current formatter
+     * @return ChildVgArticleRu|array|mixed the result, formatted by the current formatter
      */
     public function findPk($key, ConnectionInterface $con = null)
     {
@@ -137,7 +137,7 @@ abstract class VgArticleQuery extends ModelCriteria
         }
 
         if ($con === null) {
-            $con = Propel::getServiceContainer()->getReadConnection(VgArticleTableMap::DATABASE_NAME);
+            $con = Propel::getServiceContainer()->getReadConnection(VgArticleRuTableMap::DATABASE_NAME);
         }
 
         $this->basePreSelect($con);
@@ -150,7 +150,7 @@ abstract class VgArticleQuery extends ModelCriteria
             return $this->findPkComplex($key, $con);
         }
 
-        if ((null !== ($obj = VgArticleTableMap::getInstanceFromPool(null === $key || is_scalar($key) || is_callable([$key, '__toString']) ? (string) $key : $key)))) {
+        if ((null !== ($obj = VgArticleRuTableMap::getInstanceFromPool(null === $key || is_scalar($key) || is_callable([$key, '__toString']) ? (string) $key : $key)))) {
             // the object is already in the instance pool
             return $obj;
         }
@@ -167,11 +167,11 @@ abstract class VgArticleQuery extends ModelCriteria
      *
      * @throws \Propel\Runtime\Exception\PropelException
      *
-     * @return ChildVgArticle A model object, or null if the key is not found
+     * @return ChildVgArticleRu A model object, or null if the key is not found
      */
     protected function findPkSimple($key, ConnectionInterface $con)
     {
-        $sql = 'SELECT id, title, subtitle, source, content, datetime, url FROM vg_article WHERE id = :p0';
+        $sql = 'SELECT id, title, subtitle, source, content, datetime, url FROM vg_article_ru WHERE id = :p0';
         try {
             $stmt = $con->prepare($sql);
             $stmt->bindValue(':p0', $key, PDO::PARAM_INT);
@@ -182,10 +182,10 @@ abstract class VgArticleQuery extends ModelCriteria
         }
         $obj = null;
         if ($row = $stmt->fetch(\PDO::FETCH_NUM)) {
-            /** @var ChildVgArticle $obj */
-            $obj = new ChildVgArticle();
+            /** @var ChildVgArticleRu $obj */
+            $obj = new ChildVgArticleRu();
             $obj->hydrate($row);
-            VgArticleTableMap::addInstanceToPool($obj, null === $key || is_scalar($key) || is_callable([$key, '__toString']) ? (string) $key : $key);
+            VgArticleRuTableMap::addInstanceToPool($obj, null === $key || is_scalar($key) || is_callable([$key, '__toString']) ? (string) $key : $key);
         }
         $stmt->closeCursor();
 
@@ -198,7 +198,7 @@ abstract class VgArticleQuery extends ModelCriteria
      * @param     mixed $key Primary key to use for the query
      * @param     ConnectionInterface $con A connection object
      *
-     * @return ChildVgArticle|array|mixed the result, formatted by the current formatter
+     * @return ChildVgArticleRu|array|mixed the result, formatted by the current formatter
      */
     protected function findPkComplex($key, ConnectionInterface $con)
     {
@@ -240,12 +240,12 @@ abstract class VgArticleQuery extends ModelCriteria
      *
      * @param     mixed $key Primary key to use for the query
      *
-     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     * @return $this|ChildVgArticleRuQuery The current query, for fluid interface
      */
     public function filterByPrimaryKey($key)
     {
 
-        return $this->addUsingAlias(VgArticleTableMap::COL_ID, $key, Criteria::EQUAL);
+        return $this->addUsingAlias(VgArticleRuTableMap::COL_ID, $key, Criteria::EQUAL);
     }
 
     /**
@@ -253,12 +253,12 @@ abstract class VgArticleQuery extends ModelCriteria
      *
      * @param     array $keys The list of primary key to use for the query
      *
-     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     * @return $this|ChildVgArticleRuQuery The current query, for fluid interface
      */
     public function filterByPrimaryKeys($keys)
     {
 
-        return $this->addUsingAlias(VgArticleTableMap::COL_ID, $keys, Criteria::IN);
+        return $this->addUsingAlias(VgArticleRuTableMap::COL_ID, $keys, Criteria::IN);
     }
 
     /**
@@ -277,18 +277,18 @@ abstract class VgArticleQuery extends ModelCriteria
      *              Use associative array('min' => $minValue, 'max' => $maxValue) for intervals.
      * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
      *
-     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     * @return $this|ChildVgArticleRuQuery The current query, for fluid interface
      */
     public function filterById($id = null, $comparison = null)
     {
         if (is_array($id)) {
             $useMinMax = false;
             if (isset($id['min'])) {
-                $this->addUsingAlias(VgArticleTableMap::COL_ID, $id['min'], Criteria::GREATER_EQUAL);
+                $this->addUsingAlias(VgArticleRuTableMap::COL_ID, $id['min'], Criteria::GREATER_EQUAL);
                 $useMinMax = true;
             }
             if (isset($id['max'])) {
-                $this->addUsingAlias(VgArticleTableMap::COL_ID, $id['max'], Criteria::LESS_EQUAL);
+                $this->addUsingAlias(VgArticleRuTableMap::COL_ID, $id['max'], Criteria::LESS_EQUAL);
                 $useMinMax = true;
             }
             if ($useMinMax) {
@@ -299,7 +299,7 @@ abstract class VgArticleQuery extends ModelCriteria
             }
         }
 
-        return $this->addUsingAlias(VgArticleTableMap::COL_ID, $id, $comparison);
+        return $this->addUsingAlias(VgArticleRuTableMap::COL_ID, $id, $comparison);
     }
 
     /**
@@ -314,7 +314,7 @@ abstract class VgArticleQuery extends ModelCriteria
      * @param     string $title The value to use as filter.
      * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
      *
-     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     * @return $this|ChildVgArticleRuQuery The current query, for fluid interface
      */
     public function filterByTitle($title = null, $comparison = null)
     {
@@ -324,7 +324,7 @@ abstract class VgArticleQuery extends ModelCriteria
             }
         }
 
-        return $this->addUsingAlias(VgArticleTableMap::COL_TITLE, $title, $comparison);
+        return $this->addUsingAlias(VgArticleRuTableMap::COL_TITLE, $title, $comparison);
     }
 
     /**
@@ -339,7 +339,7 @@ abstract class VgArticleQuery extends ModelCriteria
      * @param     string $subtitle The value to use as filter.
      * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
      *
-     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     * @return $this|ChildVgArticleRuQuery The current query, for fluid interface
      */
     public function filterBySubtitle($subtitle = null, $comparison = null)
     {
@@ -349,7 +349,7 @@ abstract class VgArticleQuery extends ModelCriteria
             }
         }
 
-        return $this->addUsingAlias(VgArticleTableMap::COL_SUBTITLE, $subtitle, $comparison);
+        return $this->addUsingAlias(VgArticleRuTableMap::COL_SUBTITLE, $subtitle, $comparison);
     }
 
     /**
@@ -364,7 +364,7 @@ abstract class VgArticleQuery extends ModelCriteria
      * @param     string $source The value to use as filter.
      * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
      *
-     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     * @return $this|ChildVgArticleRuQuery The current query, for fluid interface
      */
     public function filterBySource($source = null, $comparison = null)
     {
@@ -374,7 +374,7 @@ abstract class VgArticleQuery extends ModelCriteria
             }
         }
 
-        return $this->addUsingAlias(VgArticleTableMap::COL_SOURCE, $source, $comparison);
+        return $this->addUsingAlias(VgArticleRuTableMap::COL_SOURCE, $source, $comparison);
     }
 
     /**
@@ -389,7 +389,7 @@ abstract class VgArticleQuery extends ModelCriteria
      * @param     string $content The value to use as filter.
      * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
      *
-     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     * @return $this|ChildVgArticleRuQuery The current query, for fluid interface
      */
     public function filterByContent($content = null, $comparison = null)
     {
@@ -399,7 +399,7 @@ abstract class VgArticleQuery extends ModelCriteria
             }
         }
 
-        return $this->addUsingAlias(VgArticleTableMap::COL_CONTENT, $content, $comparison);
+        return $this->addUsingAlias(VgArticleRuTableMap::COL_CONTENT, $content, $comparison);
     }
 
     /**
@@ -414,7 +414,7 @@ abstract class VgArticleQuery extends ModelCriteria
      * @param     string $datetime The value to use as filter.
      * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
      *
-     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     * @return $this|ChildVgArticleRuQuery The current query, for fluid interface
      */
     public function filterByDatetime($datetime = null, $comparison = null)
     {
@@ -424,7 +424,7 @@ abstract class VgArticleQuery extends ModelCriteria
             }
         }
 
-        return $this->addUsingAlias(VgArticleTableMap::COL_DATETIME, $datetime, $comparison);
+        return $this->addUsingAlias(VgArticleRuTableMap::COL_DATETIME, $datetime, $comparison);
     }
 
     /**
@@ -439,7 +439,7 @@ abstract class VgArticleQuery extends ModelCriteria
      * @param     string $url The value to use as filter.
      * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
      *
-     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     * @return $this|ChildVgArticleRuQuery The current query, for fluid interface
      */
     public function filterByUrl($url = null, $comparison = null)
     {
@@ -449,27 +449,27 @@ abstract class VgArticleQuery extends ModelCriteria
             }
         }
 
-        return $this->addUsingAlias(VgArticleTableMap::COL_URL, $url, $comparison);
+        return $this->addUsingAlias(VgArticleRuTableMap::COL_URL, $url, $comparison);
     }
 
     /**
      * Exclude object from result
      *
-     * @param   ChildVgArticle $vgArticle Object to remove from the list of results
+     * @param   ChildVgArticleRu $vgArticleRu Object to remove from the list of results
      *
-     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     * @return $this|ChildVgArticleRuQuery The current query, for fluid interface
      */
-    public function prune($vgArticle = null)
+    public function prune($vgArticleRu = null)
     {
-        if ($vgArticle) {
-            $this->addUsingAlias(VgArticleTableMap::COL_ID, $vgArticle->getId(), Criteria::NOT_EQUAL);
+        if ($vgArticleRu) {
+            $this->addUsingAlias(VgArticleRuTableMap::COL_ID, $vgArticleRu->getId(), Criteria::NOT_EQUAL);
         }
 
         return $this;
     }
 
     /**
-     * Deletes all rows from the vg_article table.
+     * Deletes all rows from the vg_article_ru table.
      *
      * @param ConnectionInterface $con the connection to use
      * @return int The number of affected rows (if supported by underlying database driver).
@@ -477,7 +477,7 @@ abstract class VgArticleQuery extends ModelCriteria
     public function doDeleteAll(ConnectionInterface $con = null)
     {
         if (null === $con) {
-            $con = Propel::getServiceContainer()->getWriteConnection(VgArticleTableMap::DATABASE_NAME);
+            $con = Propel::getServiceContainer()->getWriteConnection(VgArticleRuTableMap::DATABASE_NAME);
         }
 
         // use transaction because $criteria could contain info
@@ -488,8 +488,8 @@ abstract class VgArticleQuery extends ModelCriteria
             // Because this db requires some delete cascade/set null emulation, we have to
             // clear the cached instance *after* the emulation has happened (since
             // instances get re-added by the select statement contained therein).
-            VgArticleTableMap::clearInstancePool();
-            VgArticleTableMap::clearRelatedInstancePool();
+            VgArticleRuTableMap::clearInstancePool();
+            VgArticleRuTableMap::clearRelatedInstancePool();
 
             return $affectedRows;
         });
@@ -507,26 +507,26 @@ abstract class VgArticleQuery extends ModelCriteria
     public function delete(ConnectionInterface $con = null)
     {
         if (null === $con) {
-            $con = Propel::getServiceContainer()->getWriteConnection(VgArticleTableMap::DATABASE_NAME);
+            $con = Propel::getServiceContainer()->getWriteConnection(VgArticleRuTableMap::DATABASE_NAME);
         }
 
         $criteria = $this;
 
         // Set the correct dbName
-        $criteria->setDbName(VgArticleTableMap::DATABASE_NAME);
+        $criteria->setDbName(VgArticleRuTableMap::DATABASE_NAME);
 
         // use transaction because $criteria could contain info
         // for more than one table or we could emulating ON DELETE CASCADE, etc.
         return $con->transaction(function () use ($con, $criteria) {
             $affectedRows = 0; // initialize var to track total num of affected rows
 
-            VgArticleTableMap::removeInstanceFromPool($criteria);
+            VgArticleRuTableMap::removeInstanceFromPool($criteria);
 
             $affectedRows += ModelCriteria::delete($con);
-            VgArticleTableMap::clearRelatedInstancePool();
+            VgArticleRuTableMap::clearRelatedInstancePool();
 
             return $affectedRows;
         });
     }
 
-} // VgArticleQuery
+} // VgArticleRuQuery
