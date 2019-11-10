@@ -12,7 +12,7 @@ error_reporting(E_ALL);
 
 header('Content-Type: application/json');
 
-require_once 'vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 use GuzzleHttp\Client;
 

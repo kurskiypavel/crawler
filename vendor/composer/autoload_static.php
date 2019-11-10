@@ -142,10 +142,6 @@ class ComposerStaticInit6ca83e0b7a8c8ffe0e94df32a3ecae86
     public static $classMap = array (
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'article\\Article' => __DIR__ . '/../..' . '/src/article/Article.php',
-        'orm\\orm\\Author' => __DIR__ . '/../..' . '/src/orm/orm/Author.php',
-        'orm\\orm\\AuthorQuery' => __DIR__ . '/../..' . '/src/orm/orm/AuthorQuery.php',
-        'orm\\orm\\Base\\Author' => __DIR__ . '/../..' . '/src/orm/orm/Base/Author.php',
-        'orm\\orm\\Base\\AuthorQuery' => __DIR__ . '/../..' . '/src/orm/orm/Base/AuthorQuery.php',
         'orm\\orm\\Base\\VgArticle' => __DIR__ . '/../..' . '/src/orm/orm/Base/VgArticle.php',
         'orm\\orm\\Base\\VgArticleQuery' => __DIR__ . '/../..' . '/src/orm/orm/Base/VgArticleQuery.php',
         'orm\\orm\\Base\\VgArticleRu' => __DIR__ . '/../..' . '/src/orm/orm/Base/VgArticleRu.php',

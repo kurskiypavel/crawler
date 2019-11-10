@@ -109,6 +109,13 @@ abstract class VgArticleRu implements ActiveRecordInterface
     protected $url;
 
     /**
+     * The value for the translated field.
+     *
+     * @var        boolean
+     */
+    protected $translated;
+
+    /**
      * Flag to prevent endless save loop, if this object is referenced
      * by another object which falls in this transaction.
      *
@@ -412,6 +419,26 @@ abstract class VgArticleRu implements ActiveRecordInterface
     }
 
     /**
+     * Get the [translated] column value.
+     *
+     * @return boolean
+     */
+    public function getTranslated()
+    {
+        return $this->translated;
+    }
+
+    /**
+     * Get the [translated] column value.
+     *
+     * @return boolean
+     */
+    public function isTranslated()
+    {
+        return $this->getTranslated();
+    }
+
+    /**
      * Set the value of [id] column.
      *
      * @param int $v new value
@@ -552,6 +579,34 @@ abstract class VgArticleRu implements ActiveRecordInterface
     } // setUrl()
 
     /**
+     * Sets the value of the [translated] column.
+     * Non-boolean arguments are converted using the following rules:
+     *   * 1, '1', 'true',  'on',  and 'yes' are converted to boolean true
+     *   * 0, '0', 'false', 'off', and 'no'  are converted to boolean false
+     * Check on string values is case insensitive (so 'FaLsE' is seen as 'false').
+     *
+     * @param  boolean|integer|string $v The new value
+     * @return $this|\orm\orm\VgArticleRu The current object (for fluent API support)
+     */
+    public function setTranslated($v)
+    {
+        if ($v !== null) {
+            if (is_string($v)) {
+                $v = in_array(strtolower($v), array('false', 'off', '-', 'no', 'n', '0', '')) ? false : true;
+            } else {
+                $v = (boolean) $v;
+            }
+        }
+
+        if ($this->translated !== $v) {
+            $this->translated = $v;
+            $this->modifiedColumns[VgArticleRuTableMap::COL_TRANSLATED] = true;
+        }
+
+        return $this;
+    } // setTranslated()
+
+    /**
      * Indicates whether the columns in this object are only set to default values.
      *
      * This method can be used in conjunction with isModified() to indicate whether an object is both
@@ -607,6 +662,9 @@ abstract class VgArticleRu implements ActiveRecordInterface
 
             $col = $row[TableMap::TYPE_NUM == $indexType ? 6 + $startcol : VgArticleRuTableMap::translateFieldName('Url', TableMap::TYPE_PHPNAME, $indexType)];
             $this->url = (null !== $col) ? (string) $col : null;
+
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 7 + $startcol : VgArticleRuTableMap::translateFieldName('Translated', TableMap::TYPE_PHPNAME, $indexType)];
+            $this->translated = (null !== $col) ? (boolean) $col : null;
             $this->resetModified();
 
             $this->setNew(false);
@@ -615,7 +673,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
                 $this->ensureConsistency();
             }
 
-            return $startcol + 7; // 7 = VgArticleRuTableMap::NUM_HYDRATE_COLUMNS.
+            return $startcol + 8; // 8 = VgArticleRuTableMap::NUM_HYDRATE_COLUMNS.
 
         } catch (Exception $e) {
             throw new PropelException(sprintf('Error populating %s object', '\\orm\\orm\\VgArticleRu'), 0, $e);
@@ -837,6 +895,9 @@ abstract class VgArticleRu implements ActiveRecordInterface
         if ($this->isColumnModified(VgArticleRuTableMap::COL_URL)) {
             $modifiedColumns[':p' . $index++]  = 'url';
         }
+        if ($this->isColumnModified(VgArticleRuTableMap::COL_TRANSLATED)) {
+            $modifiedColumns[':p' . $index++]  = 'translated';
+        }
 
         $sql = sprintf(
             'INSERT INTO vg_article_ru (%s) VALUES (%s)',
@@ -868,6 +929,9 @@ abstract class VgArticleRu implements ActiveRecordInterface
                         break;
                     case 'url':
                         $stmt->bindValue($identifier, $this->url, PDO::PARAM_STR);
+                        break;
+                    case 'translated':
+                        $stmt->bindValue($identifier, (int) $this->translated, PDO::PARAM_INT);
                         break;
                 }
             }
@@ -952,6 +1016,9 @@ abstract class VgArticleRu implements ActiveRecordInterface
             case 6:
                 return $this->getUrl();
                 break;
+            case 7:
+                return $this->getTranslated();
+                break;
             default:
                 return null;
                 break;
@@ -988,6 +1055,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
             $keys[4] => $this->getContent(),
             $keys[5] => $this->getDatetime(),
             $keys[6] => $this->getUrl(),
+            $keys[7] => $this->getTranslated(),
         );
         $virtualColumns = $this->virtualColumns;
         foreach ($virtualColumns as $key => $virtualColumn) {
@@ -1048,6 +1116,9 @@ abstract class VgArticleRu implements ActiveRecordInterface
             case 6:
                 $this->setUrl($value);
                 break;
+            case 7:
+                $this->setTranslated($value);
+                break;
         } // switch()
 
         return $this;
@@ -1094,6 +1165,9 @@ abstract class VgArticleRu implements ActiveRecordInterface
         }
         if (array_key_exists($keys[6], $arr)) {
             $this->setUrl($arr[$keys[6]]);
+        }
+        if (array_key_exists($keys[7], $arr)) {
+            $this->setTranslated($arr[$keys[7]]);
         }
     }
 
@@ -1156,6 +1230,9 @@ abstract class VgArticleRu implements ActiveRecordInterface
         }
         if ($this->isColumnModified(VgArticleRuTableMap::COL_URL)) {
             $criteria->add(VgArticleRuTableMap::COL_URL, $this->url);
+        }
+        if ($this->isColumnModified(VgArticleRuTableMap::COL_TRANSLATED)) {
+            $criteria->add(VgArticleRuTableMap::COL_TRANSLATED, $this->translated);
         }
 
         return $criteria;
@@ -1249,6 +1326,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
         $copyObj->setContent($this->getContent());
         $copyObj->setDatetime($this->getDatetime());
         $copyObj->setUrl($this->getUrl());
+        $copyObj->setTranslated($this->getTranslated());
         if ($makeNew) {
             $copyObj->setNew(true);
             $copyObj->setId(NULL); // this is a auto-increment column, so set to default value
@@ -1291,6 +1369,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
         $this->content = null;
         $this->datetime = null;
         $this->url = null;
+        $this->translated = null;
         $this->alreadyInSave = false;
         $this->clearAllReferences();
         $this->resetModified();

@@ -8,10 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
     'article\\Article' => $baseDir . '/src/article/Article.php',
-    'orm\\orm\\Author' => $baseDir . '/src/orm/orm/Author.php',
-    'orm\\orm\\AuthorQuery' => $baseDir . '/src/orm/orm/AuthorQuery.php',
-    'orm\\orm\\Base\\Author' => $baseDir . '/src/orm/orm/Base/Author.php',
-    'orm\\orm\\Base\\AuthorQuery' => $baseDir . '/src/orm/orm/Base/AuthorQuery.php',
     'orm\\orm\\Base\\VgArticle' => $baseDir . '/src/orm/orm/Base/VgArticle.php',
     'orm\\orm\\Base\\VgArticleQuery' => $baseDir . '/src/orm/orm/Base/VgArticleQuery.php',
     'orm\\orm\\Base\\VgArticleRu' => $baseDir . '/src/orm/orm/Base/VgArticleRu.php',

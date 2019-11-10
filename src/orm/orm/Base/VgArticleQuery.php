@@ -24,16 +24,20 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticleQuery orderBySubtitle($order = Criteria::ASC) Order by the subtitle column
  * @method     ChildVgArticleQuery orderBySource($order = Criteria::ASC) Order by the source column
  * @method     ChildVgArticleQuery orderByContent($order = Criteria::ASC) Order by the content column
+ * @method     ChildVgArticleQuery orderByJson_translateRU($order = Criteria::ASC) Order by the json_translateRU column
  * @method     ChildVgArticleQuery orderByDatetime($order = Criteria::ASC) Order by the datetime column
  * @method     ChildVgArticleQuery orderByUrl($order = Criteria::ASC) Order by the url column
+ * @method     ChildVgArticleQuery orderByTranslated($order = Criteria::ASC) Order by the translated column
  *
  * @method     ChildVgArticleQuery groupById() Group by the id column
  * @method     ChildVgArticleQuery groupByTitle() Group by the title column
  * @method     ChildVgArticleQuery groupBySubtitle() Group by the subtitle column
  * @method     ChildVgArticleQuery groupBySource() Group by the source column
  * @method     ChildVgArticleQuery groupByContent() Group by the content column
+ * @method     ChildVgArticleQuery groupByJson_translateRU() Group by the json_translateRU column
  * @method     ChildVgArticleQuery groupByDatetime() Group by the datetime column
  * @method     ChildVgArticleQuery groupByUrl() Group by the url column
+ * @method     ChildVgArticleQuery groupByTranslated() Group by the translated column
  *
  * @method     ChildVgArticleQuery leftJoin($relation) Adds a LEFT JOIN clause to the query
  * @method     ChildVgArticleQuery rightJoin($relation) Adds a RIGHT JOIN clause to the query
@@ -51,8 +55,10 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticle findOneBySubtitle(string $subtitle) Return the first ChildVgArticle filtered by the subtitle column
  * @method     ChildVgArticle findOneBySource(string $source) Return the first ChildVgArticle filtered by the source column
  * @method     ChildVgArticle findOneByContent(string $content) Return the first ChildVgArticle filtered by the content column
+ * @method     ChildVgArticle findOneByJson_translateRU(string $json_translateRU) Return the first ChildVgArticle filtered by the json_translateRU column
  * @method     ChildVgArticle findOneByDatetime(string $datetime) Return the first ChildVgArticle filtered by the datetime column
- * @method     ChildVgArticle findOneByUrl(string $url) Return the first ChildVgArticle filtered by the url column *
+ * @method     ChildVgArticle findOneByUrl(string $url) Return the first ChildVgArticle filtered by the url column
+ * @method     ChildVgArticle findOneByTranslated(boolean $translated) Return the first ChildVgArticle filtered by the translated column *
 
  * @method     ChildVgArticle requirePk($key, ConnectionInterface $con = null) Return the ChildVgArticle by primary key and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOne(ConnectionInterface $con = null) Return the first ChildVgArticle matching the query and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
@@ -62,8 +68,10 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticle requireOneBySubtitle(string $subtitle) Return the first ChildVgArticle filtered by the subtitle column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneBySource(string $source) Return the first ChildVgArticle filtered by the source column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneByContent(string $content) Return the first ChildVgArticle filtered by the content column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticle requireOneByJson_translateRU(string $json_translateRU) Return the first ChildVgArticle filtered by the json_translateRU column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneByDatetime(string $datetime) Return the first ChildVgArticle filtered by the datetime column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneByUrl(string $url) Return the first ChildVgArticle filtered by the url column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticle requireOneByTranslated(boolean $translated) Return the first ChildVgArticle filtered by the translated column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  *
  * @method     ChildVgArticle[]|ObjectCollection find(ConnectionInterface $con = null) Return ChildVgArticle objects based on current ModelCriteria
  * @method     ChildVgArticle[]|ObjectCollection findById(int $id) Return ChildVgArticle objects filtered by the id column
@@ -71,8 +79,10 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticle[]|ObjectCollection findBySubtitle(string $subtitle) Return ChildVgArticle objects filtered by the subtitle column
  * @method     ChildVgArticle[]|ObjectCollection findBySource(string $source) Return ChildVgArticle objects filtered by the source column
  * @method     ChildVgArticle[]|ObjectCollection findByContent(string $content) Return ChildVgArticle objects filtered by the content column
+ * @method     ChildVgArticle[]|ObjectCollection findByJson_translateRU(string $json_translateRU) Return ChildVgArticle objects filtered by the json_translateRU column
  * @method     ChildVgArticle[]|ObjectCollection findByDatetime(string $datetime) Return ChildVgArticle objects filtered by the datetime column
  * @method     ChildVgArticle[]|ObjectCollection findByUrl(string $url) Return ChildVgArticle objects filtered by the url column
+ * @method     ChildVgArticle[]|ObjectCollection findByTranslated(boolean $translated) Return ChildVgArticle objects filtered by the translated column
  * @method     ChildVgArticle[]|\Propel\Runtime\Util\PropelModelPager paginate($page = 1, $maxPerPage = 10, ConnectionInterface $con = null) Issue a SELECT query based on the current ModelCriteria and uses a page and a maximum number of results per page to compute an offset and a limit
  *
  */
@@ -171,7 +181,7 @@ abstract class VgArticleQuery extends ModelCriteria
      */
     protected function findPkSimple($key, ConnectionInterface $con)
     {
-        $sql = 'SELECT id, title, subtitle, source, content, datetime, url FROM vg_article WHERE id = :p0';
+        $sql = 'SELECT id, title, subtitle, source, content, json_translateRU, datetime, url, translated FROM vg_article WHERE id = :p0';
         try {
             $stmt = $con->prepare($sql);
             $stmt->bindValue(':p0', $key, PDO::PARAM_INT);
@@ -403,6 +413,31 @@ abstract class VgArticleQuery extends ModelCriteria
     }
 
     /**
+     * Filter the query on the json_translateRU column
+     *
+     * Example usage:
+     * <code>
+     * $query->filterByJson_translateRU('fooValue');   // WHERE json_translateRU = 'fooValue'
+     * $query->filterByJson_translateRU('%fooValue%', Criteria::LIKE); // WHERE json_translateRU LIKE '%fooValue%'
+     * </code>
+     *
+     * @param     string $json_translateRU The value to use as filter.
+     * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
+     *
+     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     */
+    public function filterByJson_translateRU($json_translateRU = null, $comparison = null)
+    {
+        if (null === $comparison) {
+            if (is_array($json_translateRU)) {
+                $comparison = Criteria::IN;
+            }
+        }
+
+        return $this->addUsingAlias(VgArticleTableMap::COL_JSON_TRANSLATERU, $json_translateRU, $comparison);
+    }
+
+    /**
      * Filter the query on the datetime column
      *
      * Example usage:
@@ -450,6 +485,33 @@ abstract class VgArticleQuery extends ModelCriteria
         }
 
         return $this->addUsingAlias(VgArticleTableMap::COL_URL, $url, $comparison);
+    }
+
+    /**
+     * Filter the query on the translated column
+     *
+     * Example usage:
+     * <code>
+     * $query->filterByTranslated(true); // WHERE translated = true
+     * $query->filterByTranslated('yes'); // WHERE translated = true
+     * </code>
+     *
+     * @param     boolean|string $translated The value to use as filter.
+     *              Non-boolean arguments are converted using the following rules:
+     *                * 1, '1', 'true',  'on',  and 'yes' are converted to boolean true
+     *                * 0, '0', 'false', 'off', and 'no'  are converted to boolean false
+     *              Check on string values is case insensitive (so 'FaLsE' is seen as 'false').
+     * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
+     *
+     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     */
+    public function filterByTranslated($translated = null, $comparison = null)
+    {
+        if (is_string($translated)) {
+            $translated = in_array(strtolower($translated), array('false', 'off', '-', 'no', 'n', '0', '')) ? false : true;
+        }
+
+        return $this->addUsingAlias(VgArticleTableMap::COL_TRANSLATED, $translated, $comparison);
     }
 
     /**

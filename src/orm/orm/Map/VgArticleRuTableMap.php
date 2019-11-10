@@ -59,7 +59,7 @@ class VgArticleRuTableMap extends TableMap
     /**
      * The total number of columns
      */
-    const NUM_COLUMNS = 7;
+    const NUM_COLUMNS = 8;
 
     /**
      * The number of lazy-loaded columns
@@ -69,7 +69,7 @@ class VgArticleRuTableMap extends TableMap
     /**
      * The number of columns to hydrate (NUM_COLUMNS - NUM_LAZY_LOAD_COLUMNS)
      */
-    const NUM_HYDRATE_COLUMNS = 7;
+    const NUM_HYDRATE_COLUMNS = 8;
 
     /**
      * the column name for the id field
@@ -107,6 +107,11 @@ class VgArticleRuTableMap extends TableMap
     const COL_URL = 'vg_article_ru.url';
 
     /**
+     * the column name for the translated field
+     */
+    const COL_TRANSLATED = 'vg_article_ru.translated';
+
+    /**
      * The default string format for model objects of the related table
      */
     const DEFAULT_STRING_FORMAT = 'YAML';
@@ -118,11 +123,11 @@ class VgArticleRuTableMap extends TableMap
      * e.g. self::$fieldNames[self::TYPE_PHPNAME][0] = 'Id'
      */
     protected static $fieldNames = array (
-        self::TYPE_PHPNAME       => array('Id', 'Title', 'Subtitle', 'Source', 'Content', 'Datetime', 'Url', ),
-        self::TYPE_CAMELNAME     => array('id', 'title', 'subtitle', 'source', 'content', 'datetime', 'url', ),
-        self::TYPE_COLNAME       => array(VgArticleRuTableMap::COL_ID, VgArticleRuTableMap::COL_TITLE, VgArticleRuTableMap::COL_SUBTITLE, VgArticleRuTableMap::COL_SOURCE, VgArticleRuTableMap::COL_CONTENT, VgArticleRuTableMap::COL_DATETIME, VgArticleRuTableMap::COL_URL, ),
-        self::TYPE_FIELDNAME     => array('id', 'title', 'subtitle', 'source', 'content', 'datetime', 'url', ),
-        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, )
+        self::TYPE_PHPNAME       => array('Id', 'Title', 'Subtitle', 'Source', 'Content', 'Datetime', 'Url', 'Translated', ),
+        self::TYPE_CAMELNAME     => array('id', 'title', 'subtitle', 'source', 'content', 'datetime', 'url', 'translated', ),
+        self::TYPE_COLNAME       => array(VgArticleRuTableMap::COL_ID, VgArticleRuTableMap::COL_TITLE, VgArticleRuTableMap::COL_SUBTITLE, VgArticleRuTableMap::COL_SOURCE, VgArticleRuTableMap::COL_CONTENT, VgArticleRuTableMap::COL_DATETIME, VgArticleRuTableMap::COL_URL, VgArticleRuTableMap::COL_TRANSLATED, ),
+        self::TYPE_FIELDNAME     => array('id', 'title', 'subtitle', 'source', 'content', 'datetime', 'url', 'translated', ),
+        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, 7, )
     );
 
     /**
@@ -132,11 +137,11 @@ class VgArticleRuTableMap extends TableMap
      * e.g. self::$fieldKeys[self::TYPE_PHPNAME]['Id'] = 0
      */
     protected static $fieldKeys = array (
-        self::TYPE_PHPNAME       => array('Id' => 0, 'Title' => 1, 'Subtitle' => 2, 'Source' => 3, 'Content' => 4, 'Datetime' => 5, 'Url' => 6, ),
-        self::TYPE_CAMELNAME     => array('id' => 0, 'title' => 1, 'subtitle' => 2, 'source' => 3, 'content' => 4, 'datetime' => 5, 'url' => 6, ),
-        self::TYPE_COLNAME       => array(VgArticleRuTableMap::COL_ID => 0, VgArticleRuTableMap::COL_TITLE => 1, VgArticleRuTableMap::COL_SUBTITLE => 2, VgArticleRuTableMap::COL_SOURCE => 3, VgArticleRuTableMap::COL_CONTENT => 4, VgArticleRuTableMap::COL_DATETIME => 5, VgArticleRuTableMap::COL_URL => 6, ),
-        self::TYPE_FIELDNAME     => array('id' => 0, 'title' => 1, 'subtitle' => 2, 'source' => 3, 'content' => 4, 'datetime' => 5, 'url' => 6, ),
-        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, )
+        self::TYPE_PHPNAME       => array('Id' => 0, 'Title' => 1, 'Subtitle' => 2, 'Source' => 3, 'Content' => 4, 'Datetime' => 5, 'Url' => 6, 'Translated' => 7, ),
+        self::TYPE_CAMELNAME     => array('id' => 0, 'title' => 1, 'subtitle' => 2, 'source' => 3, 'content' => 4, 'datetime' => 5, 'url' => 6, 'translated' => 7, ),
+        self::TYPE_COLNAME       => array(VgArticleRuTableMap::COL_ID => 0, VgArticleRuTableMap::COL_TITLE => 1, VgArticleRuTableMap::COL_SUBTITLE => 2, VgArticleRuTableMap::COL_SOURCE => 3, VgArticleRuTableMap::COL_CONTENT => 4, VgArticleRuTableMap::COL_DATETIME => 5, VgArticleRuTableMap::COL_URL => 6, VgArticleRuTableMap::COL_TRANSLATED => 7, ),
+        self::TYPE_FIELDNAME     => array('id' => 0, 'title' => 1, 'subtitle' => 2, 'source' => 3, 'content' => 4, 'datetime' => 5, 'url' => 6, 'translated' => 7, ),
+        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, 7, )
     );
 
     /**
@@ -163,6 +168,7 @@ class VgArticleRuTableMap extends TableMap
         $this->addColumn('content', 'Content', 'LONGVARCHAR', false, null, null);
         $this->addColumn('datetime', 'Datetime', 'VARCHAR', false, 50, null);
         $this->addColumn('url', 'Url', 'LONGVARCHAR', false, null, null);
+        $this->addColumn('translated', 'Translated', 'BOOLEAN', false, 1, null);
     } // initialize()
 
     /**
@@ -320,6 +326,7 @@ class VgArticleRuTableMap extends TableMap
             $criteria->addSelectColumn(VgArticleRuTableMap::COL_CONTENT);
             $criteria->addSelectColumn(VgArticleRuTableMap::COL_DATETIME);
             $criteria->addSelectColumn(VgArticleRuTableMap::COL_URL);
+            $criteria->addSelectColumn(VgArticleRuTableMap::COL_TRANSLATED);
         } else {
             $criteria->addSelectColumn($alias . '.id');
             $criteria->addSelectColumn($alias . '.title');
@@ -328,6 +335,7 @@ class VgArticleRuTableMap extends TableMap
             $criteria->addSelectColumn($alias . '.content');
             $criteria->addSelectColumn($alias . '.datetime');
             $criteria->addSelectColumn($alias . '.url');
+            $criteria->addSelectColumn($alias . '.translated');
         }
     }
 
