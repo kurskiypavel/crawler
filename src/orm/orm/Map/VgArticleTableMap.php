@@ -59,7 +59,7 @@ class VgArticleTableMap extends TableMap
     /**
      * The total number of columns
      */
-    const NUM_COLUMNS = 9;
+    const NUM_COLUMNS = 10;
 
     /**
      * The number of lazy-loaded columns
@@ -69,12 +69,17 @@ class VgArticleTableMap extends TableMap
     /**
      * The number of columns to hydrate (NUM_COLUMNS - NUM_LAZY_LOAD_COLUMNS)
      */
-    const NUM_HYDRATE_COLUMNS = 9;
+    const NUM_HYDRATE_COLUMNS = 10;
 
     /**
      * the column name for the id field
      */
     const COL_ID = 'vg_article.id';
+
+    /**
+     * the column name for the slug field
+     */
+    const COL_SLUG = 'vg_article.slug';
 
     /**
      * the column name for the title field
@@ -128,11 +133,11 @@ class VgArticleTableMap extends TableMap
      * e.g. self::$fieldNames[self::TYPE_PHPNAME][0] = 'Id'
      */
     protected static $fieldNames = array (
-        self::TYPE_PHPNAME       => array('Id', 'Title', 'Subtitle', 'Source', 'Content', 'Json_translateRU', 'Datetime', 'Url', 'Translated', ),
-        self::TYPE_CAMELNAME     => array('id', 'title', 'subtitle', 'source', 'content', 'json_translateRU', 'datetime', 'url', 'translated', ),
-        self::TYPE_COLNAME       => array(VgArticleTableMap::COL_ID, VgArticleTableMap::COL_TITLE, VgArticleTableMap::COL_SUBTITLE, VgArticleTableMap::COL_SOURCE, VgArticleTableMap::COL_CONTENT, VgArticleTableMap::COL_JSON_TRANSLATERU, VgArticleTableMap::COL_DATETIME, VgArticleTableMap::COL_URL, VgArticleTableMap::COL_TRANSLATED, ),
-        self::TYPE_FIELDNAME     => array('id', 'title', 'subtitle', 'source', 'content', 'json_translateRU', 'datetime', 'url', 'translated', ),
-        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, 7, 8, )
+        self::TYPE_PHPNAME       => array('Id', 'Slug', 'Title', 'Subtitle', 'Source', 'Content', 'Json_translateRU', 'Datetime', 'Url', 'Translated', ),
+        self::TYPE_CAMELNAME     => array('id', 'slug', 'title', 'subtitle', 'source', 'content', 'json_translateRU', 'datetime', 'url', 'translated', ),
+        self::TYPE_COLNAME       => array(VgArticleTableMap::COL_ID, VgArticleTableMap::COL_SLUG, VgArticleTableMap::COL_TITLE, VgArticleTableMap::COL_SUBTITLE, VgArticleTableMap::COL_SOURCE, VgArticleTableMap::COL_CONTENT, VgArticleTableMap::COL_JSON_TRANSLATERU, VgArticleTableMap::COL_DATETIME, VgArticleTableMap::COL_URL, VgArticleTableMap::COL_TRANSLATED, ),
+        self::TYPE_FIELDNAME     => array('id', 'slug', 'title', 'subtitle', 'source', 'content', 'json_translateRU', 'datetime', 'url', 'translated', ),
+        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, )
     );
 
     /**
@@ -142,11 +147,11 @@ class VgArticleTableMap extends TableMap
      * e.g. self::$fieldKeys[self::TYPE_PHPNAME]['Id'] = 0
      */
     protected static $fieldKeys = array (
-        self::TYPE_PHPNAME       => array('Id' => 0, 'Title' => 1, 'Subtitle' => 2, 'Source' => 3, 'Content' => 4, 'Json_translateRU' => 5, 'Datetime' => 6, 'Url' => 7, 'Translated' => 8, ),
-        self::TYPE_CAMELNAME     => array('id' => 0, 'title' => 1, 'subtitle' => 2, 'source' => 3, 'content' => 4, 'json_translateRU' => 5, 'datetime' => 6, 'url' => 7, 'translated' => 8, ),
-        self::TYPE_COLNAME       => array(VgArticleTableMap::COL_ID => 0, VgArticleTableMap::COL_TITLE => 1, VgArticleTableMap::COL_SUBTITLE => 2, VgArticleTableMap::COL_SOURCE => 3, VgArticleTableMap::COL_CONTENT => 4, VgArticleTableMap::COL_JSON_TRANSLATERU => 5, VgArticleTableMap::COL_DATETIME => 6, VgArticleTableMap::COL_URL => 7, VgArticleTableMap::COL_TRANSLATED => 8, ),
-        self::TYPE_FIELDNAME     => array('id' => 0, 'title' => 1, 'subtitle' => 2, 'source' => 3, 'content' => 4, 'json_translateRU' => 5, 'datetime' => 6, 'url' => 7, 'translated' => 8, ),
-        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, 7, 8, )
+        self::TYPE_PHPNAME       => array('Id' => 0, 'Slug' => 1, 'Title' => 2, 'Subtitle' => 3, 'Source' => 4, 'Content' => 5, 'Json_translateRU' => 6, 'Datetime' => 7, 'Url' => 8, 'Translated' => 9, ),
+        self::TYPE_CAMELNAME     => array('id' => 0, 'slug' => 1, 'title' => 2, 'subtitle' => 3, 'source' => 4, 'content' => 5, 'json_translateRU' => 6, 'datetime' => 7, 'url' => 8, 'translated' => 9, ),
+        self::TYPE_COLNAME       => array(VgArticleTableMap::COL_ID => 0, VgArticleTableMap::COL_SLUG => 1, VgArticleTableMap::COL_TITLE => 2, VgArticleTableMap::COL_SUBTITLE => 3, VgArticleTableMap::COL_SOURCE => 4, VgArticleTableMap::COL_CONTENT => 5, VgArticleTableMap::COL_JSON_TRANSLATERU => 6, VgArticleTableMap::COL_DATETIME => 7, VgArticleTableMap::COL_URL => 8, VgArticleTableMap::COL_TRANSLATED => 9, ),
+        self::TYPE_FIELDNAME     => array('id' => 0, 'slug' => 1, 'title' => 2, 'subtitle' => 3, 'source' => 4, 'content' => 5, 'json_translateRU' => 6, 'datetime' => 7, 'url' => 8, 'translated' => 9, ),
+        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, )
     );
 
     /**
@@ -167,6 +172,7 @@ class VgArticleTableMap extends TableMap
         $this->setUseIdGenerator(true);
         // columns
         $this->addPrimaryKey('id', 'Id', 'INTEGER', true, null, null);
+        $this->addColumn('slug', 'Slug', 'LONGVARCHAR', false, null, null);
         $this->addColumn('title', 'Title', 'LONGVARCHAR', false, null, null);
         $this->addColumn('subtitle', 'Subtitle', 'LONGVARCHAR', false, null, null);
         $this->addColumn('source', 'Source', 'LONGVARCHAR', false, null, null);
@@ -326,6 +332,7 @@ class VgArticleTableMap extends TableMap
     {
         if (null === $alias) {
             $criteria->addSelectColumn(VgArticleTableMap::COL_ID);
+            $criteria->addSelectColumn(VgArticleTableMap::COL_SLUG);
             $criteria->addSelectColumn(VgArticleTableMap::COL_TITLE);
             $criteria->addSelectColumn(VgArticleTableMap::COL_SUBTITLE);
             $criteria->addSelectColumn(VgArticleTableMap::COL_SOURCE);
@@ -336,6 +343,7 @@ class VgArticleTableMap extends TableMap
             $criteria->addSelectColumn(VgArticleTableMap::COL_TRANSLATED);
         } else {
             $criteria->addSelectColumn($alias . '.id');
+            $criteria->addSelectColumn($alias . '.slug');
             $criteria->addSelectColumn($alias . '.title');
             $criteria->addSelectColumn($alias . '.subtitle');
             $criteria->addSelectColumn($alias . '.source');

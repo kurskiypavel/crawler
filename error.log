@@ -88,3 +88,39 @@ Stack trace:
 #0 /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php(223): Stichoza\GoogleTranslate\GoogleTranslate->getResponse('What it's like ...')
 #1 /Users/pavelkurskiy/DocumentsMY/sites/crawler/main.php(85): Stichoza\GoogleTranslate\GoogleTranslate->translate('What it's like ...')
 #2 /Users/pavelkurskiy/DocumentsMY/sites/crawler/main.php(105): tra in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php on line 306
+[11-Nov-2019 19:31:01 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Client error: `GET https://translate.google.com/translate_a/single?client=webapp&hl=en&dt=t&dt=bd&dt=at&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&sl=auto&tl=ru&q=Writer%5Cu2019s+note%3A+Since+the+initial+launch+of+this+watch%2C+a+software+update+has+been+issued+to+fix+the+connectivity+issues%2C+the+music+streaming+feature+has+been+rolled+out%2C+and+we%5Cu2019ve+also+had+a+chance+to+review+the+non-LTE+version+of+the+watch.+Overall+this+has+significantly+improved+our+experience+with+the+Apple+Watch+Series+3%3B+however%2C+the+original+review+remains+unchanged+below.&ie=UTF-8&oe=UTF-8&multires=1&otf=0&pc=1&trs=1&ssel=0&tsel=0&kc=1&tk=270170.142372` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><meta http-equiv="content-type" content="te (truncated...)
+ in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php:306
+Stack trace:
+#0 /Users/pavelkurskiy/DocumentsM in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php on line 306
+[11-Nov-2019 19:43:54 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: cURL error 7: Unsupported proxy scheme for 'tcp://localhost:8090' (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php:306
+Stack trace:
+#0 /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php(223): Stichoza\GoogleTranslate\GoogleTranslate->getResponse('Hello')
+#1 /Users/pavelkurskiy/DocumentsMY/sites/crawler/main.php(68): Stichoza\GoogleTranslate\GoogleTranslate->translate('Hello')
+#2 /Users/pavelkurskiy/DocumentsMY/sites/crawler/main.php(109): translateContent()
+#3 {main}
+  thrown in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php on line 306
+[11-Nov-2019 19:44:06 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: cURL error 7: Unsupported proxy scheme for 'tcp://localhost:8090' (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php:306
+Stack trace:
+#0 /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php(223): Stichoza\GoogleTranslate\GoogleTranslate->getResponse('Hello')
+#1 /Users/pavelkurskiy/DocumentsMY/sites/crawler/main.php(68): Stichoza\GoogleTranslate\GoogleTranslate->translate('Hello')
+#2 /Users/pavelkurskiy/DocumentsMY/sites/crawler/main.php(109): translateContent()
+#3 {main}
+  thrown in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php on line 306
+[11-Nov-2019 19:45:43 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: cURL error 7: Unsupported proxy scheme for 'tcp://localhost:9124' (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php:306
+Stack trace:
+#0 /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php(223): Stichoza\GoogleTranslate\GoogleTranslate->getResponse('Writer\\u2019s n...')
+#1 /Users/pavelkurskiy/DocumentsMY/sites/crawler/main.php(96): Stichoza\GoogleTranslate\GoogleTranslate->translate('Writer\\u2019s n...')
+#2 /Users/pavelkurskiy/DocumentsMY/sites/crawler/main.php(119): translateContent()
+#3 {main}
+  thrown in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php on line 306
+[13-Nov-2019 21:29:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/pavelkurskiy/DocumentsMY/sites/crawler/src/article/Article.php on line 38
+[13-Nov-2019 21:29:38 Europe/Berlin] Cant find datetime for https://www.theverge.com/2017/10/13/16379046/stranger-things-season-2-netflix-storystream-news-updates-trailers
+[13-Nov-2019 21:35:18 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Return value of Stichoza\GoogleTranslate\GoogleTranslate::translate() must be of the type string, null returned in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php:235
+Stack trace:
+#0 /Users/pavelkurskiy/DocumentsMY/sites/crawler/main.php(85): Stichoza\GoogleTranslate\GoogleTranslate->translate('  ')
+#1 /Users/pavelkurskiy/DocumentsMY/sites/crawler/main.php(111): translateContent()
+#2 {main}
+  thrown in /Users/pavelkurskiy/DocumentsMY/sites/crawler/vendor/stichoza/google-translate-php/src/GoogleTranslate.php on line 235

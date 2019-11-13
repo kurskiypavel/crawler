@@ -20,6 +20,7 @@ use orm\orm\Map\VgArticleTableMap;
  *
  *
  * @method     ChildVgArticleQuery orderById($order = Criteria::ASC) Order by the id column
+ * @method     ChildVgArticleQuery orderBySlug($order = Criteria::ASC) Order by the slug column
  * @method     ChildVgArticleQuery orderByTitle($order = Criteria::ASC) Order by the title column
  * @method     ChildVgArticleQuery orderBySubtitle($order = Criteria::ASC) Order by the subtitle column
  * @method     ChildVgArticleQuery orderBySource($order = Criteria::ASC) Order by the source column
@@ -30,6 +31,7 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticleQuery orderByTranslated($order = Criteria::ASC) Order by the translated column
  *
  * @method     ChildVgArticleQuery groupById() Group by the id column
+ * @method     ChildVgArticleQuery groupBySlug() Group by the slug column
  * @method     ChildVgArticleQuery groupByTitle() Group by the title column
  * @method     ChildVgArticleQuery groupBySubtitle() Group by the subtitle column
  * @method     ChildVgArticleQuery groupBySource() Group by the source column
@@ -51,6 +53,7 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticle findOneOrCreate(ConnectionInterface $con = null) Return the first ChildVgArticle matching the query, or a new ChildVgArticle object populated from the query conditions when no match is found
  *
  * @method     ChildVgArticle findOneById(int $id) Return the first ChildVgArticle filtered by the id column
+ * @method     ChildVgArticle findOneBySlug(string $slug) Return the first ChildVgArticle filtered by the slug column
  * @method     ChildVgArticle findOneByTitle(string $title) Return the first ChildVgArticle filtered by the title column
  * @method     ChildVgArticle findOneBySubtitle(string $subtitle) Return the first ChildVgArticle filtered by the subtitle column
  * @method     ChildVgArticle findOneBySource(string $source) Return the first ChildVgArticle filtered by the source column
@@ -64,6 +67,7 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticle requireOne(ConnectionInterface $con = null) Return the first ChildVgArticle matching the query and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  *
  * @method     ChildVgArticle requireOneById(int $id) Return the first ChildVgArticle filtered by the id column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticle requireOneBySlug(string $slug) Return the first ChildVgArticle filtered by the slug column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneByTitle(string $title) Return the first ChildVgArticle filtered by the title column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneBySubtitle(string $subtitle) Return the first ChildVgArticle filtered by the subtitle column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneBySource(string $source) Return the first ChildVgArticle filtered by the source column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
@@ -75,6 +79,7 @@ use orm\orm\Map\VgArticleTableMap;
  *
  * @method     ChildVgArticle[]|ObjectCollection find(ConnectionInterface $con = null) Return ChildVgArticle objects based on current ModelCriteria
  * @method     ChildVgArticle[]|ObjectCollection findById(int $id) Return ChildVgArticle objects filtered by the id column
+ * @method     ChildVgArticle[]|ObjectCollection findBySlug(string $slug) Return ChildVgArticle objects filtered by the slug column
  * @method     ChildVgArticle[]|ObjectCollection findByTitle(string $title) Return ChildVgArticle objects filtered by the title column
  * @method     ChildVgArticle[]|ObjectCollection findBySubtitle(string $subtitle) Return ChildVgArticle objects filtered by the subtitle column
  * @method     ChildVgArticle[]|ObjectCollection findBySource(string $source) Return ChildVgArticle objects filtered by the source column
@@ -181,7 +186,7 @@ abstract class VgArticleQuery extends ModelCriteria
      */
     protected function findPkSimple($key, ConnectionInterface $con)
     {
-        $sql = 'SELECT id, title, subtitle, source, content, json_translateRU, datetime, url, translated FROM vg_article WHERE id = :p0';
+        $sql = 'SELECT id, slug, title, subtitle, source, content, json_translateRU, datetime, url, translated FROM vg_article WHERE id = :p0';
         try {
             $stmt = $con->prepare($sql);
             $stmt->bindValue(':p0', $key, PDO::PARAM_INT);
@@ -310,6 +315,31 @@ abstract class VgArticleQuery extends ModelCriteria
         }
 
         return $this->addUsingAlias(VgArticleTableMap::COL_ID, $id, $comparison);
+    }
+
+    /**
+     * Filter the query on the slug column
+     *
+     * Example usage:
+     * <code>
+     * $query->filterBySlug('fooValue');   // WHERE slug = 'fooValue'
+     * $query->filterBySlug('%fooValue%', Criteria::LIKE); // WHERE slug LIKE '%fooValue%'
+     * </code>
+     *
+     * @param     string $slug The value to use as filter.
+     * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
+     *
+     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     */
+    public function filterBySlug($slug = null, $comparison = null)
+    {
+        if (null === $comparison) {
+            if (is_array($slug)) {
+                $comparison = Criteria::IN;
+            }
+        }
+
+        return $this->addUsingAlias(VgArticleTableMap::COL_SLUG, $slug, $comparison);
     }
 
     /**

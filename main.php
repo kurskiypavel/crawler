@@ -29,7 +29,7 @@ function getContentFromWeb()
     /*  2.1. Select all new articles from DB    */
     $articlesORM = VgArticleQuery::create()
         ->where('VgArticle.title IS NULL')
-        ->limit(5)
+        ->limit(10)
         ->find();
     foreach ($articlesORM as $row) {
 
@@ -69,7 +69,7 @@ function translateContent()
     /*  3.1. Select all not translated and send to Google Translate API  */
     $articles = VgArticleQuery::create()
         ->where('VgArticle.translated IS NULL')
-//        ->limit(10)
+        ->limit(1)
         ->find();
 
     foreach ($articles as $article) {
@@ -81,15 +81,18 @@ function translateContent()
         $contentRU = array();
         foreach ($content as $pararaph) {
             $toTranslate = str_replace('"', "", $pararaph);
-            if (isset($toTranslate) && $toTranslate != "" && $toTranslate != " ") {
+            if (isset($toTranslate) && strlen($toTranslate) > 0 && strlen(trim($toTranslate)) != 0) {
                 $contentRU[] = $tr->translate(htmlspecialchars_decode($toTranslate)) . PHP_EOL;
+
                 sleep(2);
+
             }
         }
         /*translate*/
         $titleRU = $tr->translate($article->getTitle());
         sleep(2);
         $subtitleRU = $tr->translate($article->getSubtitle());
+        var_dump($subtitleRU);
 
 
 
@@ -104,7 +107,8 @@ function translateContent()
 
 }
 
-//translateContent();
+
+translateContent();
 
 
 

@@ -2,6 +2,7 @@
 <database name="default" defaultIdMethod="native" namespace="orm" defaultPhpNamingMethod="underscore">
   <table name="vg_article" idMethod="native" phpName="VgArticle" namespace="orm">
     <column name="id" phpName="Id" type="INTEGER" sqlType="int(11) unsigned" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="slug" phpName="Slug" type="LONGVARCHAR"/>
     <column name="title" phpName="Title" type="LONGVARCHAR"/>
     <column name="subtitle" phpName="Subtitle" type="LONGVARCHAR"/>
     <column name="source" phpName="Source" type="LONGVARCHAR"/>
