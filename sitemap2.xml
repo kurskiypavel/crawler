@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<urlset>
+    <url>
+        <loc>song1.mp3</loc>
+        <lastmod>Track 1 - Track Title</lastmod>
+    </url>
+    <url>
+        <loc>song2.mp3</loc>
+        <lastmod>Track 2 - Track Title</lastmod>
+    </url>
+    <url>
+        <loc>song3.mp3</loc>
+        <lastmod>Track 3 - Track Title</lastmod>
+    </url>
+    <url>
+        <loc>song4.mp3</loc>
+        <lastmod>Track 4 - Track Title</lastmod>
+    </url>
+    <url>
+        <loc>song5.mp3</loc>
+        <lastmod>Track 5 - Track Title</lastmod>
+    </url>
+    <url>
+        <loc>song6.mp3</loc>
+        <lastmod>Track 6 - Track Title</lastmod>
+    </url>
+    <url>
+        <loc>song7.mp3</loc>
+        <lastmod>Track 7 - Track Title</lastmod>
+    </url>
+    <url>
+        <loc>song8.mp3</loc>
+        <lastmod>Track 8 - Track Title</lastmod>
+    </url>
+</urlset>

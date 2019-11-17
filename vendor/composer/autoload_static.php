@@ -140,7 +140,9 @@ class ComposerStaticInit6ca83e0b7a8c8ffe0e94df32a3ecae86
     );
 
     public static $classMap = array (
+        'ExceptionCrawler' => __DIR__ . '/../..' . '/src/ExceptionCrawler.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'SimpleDOM' => __DIR__ . '/../..' . '/src/SimpleDOM.php',
         'article\\Article' => __DIR__ . '/../..' . '/src/article/Article.php',
         'orm\\orm\\Base\\VgArticle' => __DIR__ . '/../..' . '/src/orm/orm/Base/VgArticle.php',
         'orm\\orm\\Base\\VgArticleQuery' => __DIR__ . '/../..' . '/src/orm/orm/Base/VgArticleQuery.php',
@@ -153,6 +155,8 @@ class ComposerStaticInit6ca83e0b7a8c8ffe0e94df32a3ecae86
         'orm\\orm\\VgArticleQuery' => __DIR__ . '/../..' . '/src/orm/orm/VgArticleQuery.php',
         'orm\\orm\\VgArticleRu' => __DIR__ . '/../..' . '/src/orm/orm/VgArticleRu.php',
         'orm\\orm\\VgArticleRuQuery' => __DIR__ . '/../..' . '/src/orm/orm/VgArticleRuQuery.php',
+        'simple_html_dom' => __DIR__ . '/../..' . '/src/simple_html_dom.php',
+        'simple_html_dom_node' => __DIR__ . '/../..' . '/src/simple_html_dom.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -6,7 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'ExceptionCrawler' => $baseDir . '/src/ExceptionCrawler.php',
     'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+    'SimpleDOM' => $baseDir . '/src/SimpleDOM.php',
     'article\\Article' => $baseDir . '/src/article/Article.php',
     'orm\\orm\\Base\\VgArticle' => $baseDir . '/src/orm/orm/Base/VgArticle.php',
     'orm\\orm\\Base\\VgArticleQuery' => $baseDir . '/src/orm/orm/Base/VgArticleQuery.php',
@@ -19,4 +21,6 @@ return array(
     'orm\\orm\\VgArticleQuery' => $baseDir . '/src/orm/orm/VgArticleQuery.php',
     'orm\\orm\\VgArticleRu' => $baseDir . '/src/orm/orm/VgArticleRu.php',
     'orm\\orm\\VgArticleRuQuery' => $baseDir . '/src/orm/orm/VgArticleRuQuery.php',
+    'simple_html_dom' => $baseDir . '/src/simple_html_dom.php',
+    'simple_html_dom_node' => $baseDir . '/src/simple_html_dom.php',
 );

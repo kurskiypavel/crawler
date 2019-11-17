@@ -29,7 +29,7 @@ function getContentFromWeb()
     /*  2.1. Select all new articles from DB    */
     $articlesORM = VgArticleQuery::create()
         ->where('VgArticle.title IS NULL')
-        ->limit(10)
+        ->limit(100)
         ->find();
     foreach ($articlesORM as $row) {
 
@@ -57,10 +57,122 @@ function getContentFromWeb()
 
         $row->save();
         echo $row->getId() . PHP_EOL;
+        sleep(5);
     }
 }
 
-/*  3. Translate content for each row from vg_article and save to vg_article_ru    */
+//getContentFromWeb();
+
+/*  3. Generate slug based on russian title    */
+function translit($string)
+{
+    $table = array(
+        'А' => 'A',
+        'Б' => 'B',
+        'В' => 'V',
+        'Г' => 'G',
+        'Д' => 'D',
+        'Е' => 'E',
+        'Ё' => 'YO',
+        'Ж' => 'ZH',
+        'З' => 'Z',
+        'И' => 'I',
+        'Й' => 'J',
+        'К' => 'K',
+        'Л' => 'L',
+        'М' => 'M',
+        'Н' => 'N',
+        'О' => 'O',
+        'П' => 'P',
+        'Р' => 'R',
+        'С' => 'S',
+        'Т' => 'T',
+        'У' => 'U',
+        'Ф' => 'F',
+        'Х' => 'H',
+        'Ц' => 'C',
+        'Ч' => 'CH',
+        'Ш' => 'SH',
+        'Щ' => 'CSH',
+        'Ь' => '',
+        'Ы' => 'Y',
+        'Ъ' => '',
+        'Э' => 'E',
+        'Ю' => 'YU',
+        'Я' => 'YA',
+
+        'а' => 'a',
+        'б' => 'b',
+        'в' => 'v',
+        'г' => 'g',
+        'д' => 'd',
+        'е' => 'e',
+        'ё' => 'yo',
+        'ж' => 'zh',
+        'з' => 'z',
+        'и' => 'i',
+        'й' => 'j',
+        'к' => 'k',
+        'л' => 'l',
+        'м' => 'm',
+        'н' => 'n',
+        'о' => 'o',
+        'п' => 'p',
+        'р' => 'r',
+        'с' => 's',
+        'т' => 't',
+        'у' => 'u',
+        'ф' => 'f',
+        'х' => 'h',
+        'ц' => 'c',
+        'ч' => 'ch',
+        'ш' => 'sh',
+        'щ' => 'csh',
+        'ь' => '',
+        'ы' => 'y',
+        'ъ' => '',
+        'э' => 'e',
+        'ю' => 'yu',
+        'я' => 'ya',
+        ' ' => '_'
+    );
+
+    $output = str_replace(
+        array_keys($table),
+        array_values($table), $string
+    );
+
+    return $output;
+}
+
+function slugify($text)
+{
+    // replace non letter or digits by -
+    $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+
+    // transliterate
+    $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+    // remove unwanted characters
+    $text = preg_replace('~[^-\w]+~', '', $text);
+
+    // trim
+    $text = trim($text, '-');
+
+    // remove duplicate -
+    $text = preg_replace('~-+~', '-', $text);
+
+    // lowercase
+    $text = strtolower($text);
+
+    if (empty($text)) {
+        return 'n-a';
+    }
+
+    return $text;
+}
+
+/*  4. Translate content for each row from vg_article and save to vg_article_ru    */
 
 function translateContent()
 {
@@ -69,7 +181,7 @@ function translateContent()
     /*  3.1. Select all not translated and send to Google Translate API  */
     $articles = VgArticleQuery::create()
         ->where('VgArticle.translated IS NULL')
-        ->limit(1)
+        ->limit(10)
         ->find();
 
     foreach ($articles as $article) {
@@ -89,19 +201,34 @@ function translateContent()
             }
         }
         /*translate*/
-        $titleRU = $tr->translate($article->getTitle());
-        sleep(2);
-        $subtitleRU = $tr->translate($article->getSubtitle());
+        $titleRU = '';
+        $titleToTranslate = $article->getTitle();
+        if (isset($titleToTranslate)) {
+            $titleRU = $tr->translate($titleToTranslate);
+            sleep(2);
+        }
+
+        $subtitleRU = '';
+        $subtitleToTranslate = $article->getSubtitle();
+        if (isset($subtitleToTranslate)) {
+            $subtitleRU = $tr->translate($subtitleToTranslate);
+        }
+
+
         var_dump($subtitleRU);
 
+        $translated = translit($titleRU);
+
+        $slug = slugify($translated);
 
 
         $json_translateRU = array("titleRU" => $titleRU, "subtitleRU" => $subtitleRU, "contentRU" => $contentRU);
 
 
         /*write to vg_article_ru*/
-        $article->setJson_translateRU(json_encode($json_translateRU,JSON_UNESCAPED_UNICODE));
+        $article->setJson_translateRU(json_encode($json_translateRU, JSON_UNESCAPED_UNICODE));
         $article->setTranslated(1);
+        $article->setSlug($slug);
         $article->save();
     }
 
@@ -109,8 +236,6 @@ function translateContent()
 
 
 translateContent();
-
-
 
 
 

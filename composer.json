@@ -9,6 +9,7 @@
   },
   "autoload": {
     "classmap": [
+      "src/",
       "src/article/",
       "src/orm/orm/",
       "src/orm/orm/Base/",
