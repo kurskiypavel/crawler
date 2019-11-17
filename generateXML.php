@@ -21,7 +21,7 @@ use article\Article;
 use orm\orm\VgArticleQuery;
 use Propel\Runtime\ActiveQuery\Criteria;
 
-$lastmod = date('Y-m-dTH:i:s+00:00');
+$lastmod = date('c');
 $xml = new SimpleXMLElement('<urlset/>');
 
 $articles = VgArticleQuery::create()

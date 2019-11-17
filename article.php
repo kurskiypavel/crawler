@@ -28,6 +28,13 @@ foreach ($article as $row) {
 
     $Json_translateRU = $row->getJson_translateRU();
     $datetime = $row->getDatetime();
+    if (isset($datetime) && strlen($datetime) > 5) {
+        $m = new \Moment\Moment($datetime);
+        $m::setLocale('ru_RU');
+        $datetime = $m->format('j F Y');
+    } else {
+        $datetime = '';
+    }
     $id = $row->getId();
 }
 if (!isset($Json_translateRU)) {
@@ -52,14 +59,11 @@ foreach ($contentsRU as $index => $content) {
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title></title>
+    <title><?=$titleRU;?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="apple-mobile-web-app-title" content="Lipsed"/>
-
-    <meta property="article:published_time" content="2019-11-11T12:00:00-05:00"/>
-    <meta property="article:modified_time" content="2019-11-11T12:00:00-05:00"/>
     <link rel="preload"
           href="https://cdn.vox-cdn.com/shared_fonts/unison/unison_base/nittigrotesk/nittigrotesk-normal.woff2"
           as="font"
@@ -493,7 +497,7 @@ foreach ($contentsRU as $index => $content) {
                     <div class="c-byline">
               <span class="c-byline-wrapper">
                 <span class="c-byline__item">
-                  <time class="c-byline__item" data-ui="timestamp" datetime="<?= $datetime; ?>">
+                  <time class="c-byline__item"">
                     <?= $datetime; ?>
                   </time>
                 </span>
