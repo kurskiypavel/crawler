@@ -5,7 +5,8 @@
     "php-curl-class/php-curl-class": "^8.6",
     "guzzlehttp/guzzle": "~6.0",
     "stichoza/google-translate-php": "^4.0",
-    "propel/propel": "~2.0@dev"
+    "propel/propel": "~2.0@dev",
+    "fightbulc/moment": "^1.30"
   },
   "autoload": {
     "classmap": [

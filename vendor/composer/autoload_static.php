@@ -38,6 +38,10 @@ class ComposerStaticInit6ca83e0b7a8c8ffe0e94df32a3ecae86
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
         ),
+        'M' => 
+        array (
+            'Moment\\' => 7,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -110,6 +114,10 @@ class ComposerStaticInit6ca83e0b7a8c8ffe0e94df32a3ecae86
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Moment\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fightbulc/moment/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
