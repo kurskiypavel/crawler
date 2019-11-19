@@ -226,18 +226,37 @@ foreach ($contentsRU as $index => $content) {
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
     <meta name="style-tools"
           content="https://www.lipsed.ru/style/community/372/57327a9d91cb60a9f47223632d1f3ee8/tools.css">
-    <meta name="description" content=""/>
-    <link rel="canonical" href="index.html"/>
-    <meta property="og:description" content=""/>
-    <meta property="fb:app_id" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:image:height" content="630"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:site_name" content="Lipsed"/>
-    <meta property="og:title" content=""/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content=""/>
+    <meta name="description"
+          content="Lipsed был основан в 2019 году и охватывает пересечение технологий, науки, искусства и культуры. Его миссия состоит в том, чтобы предлагать подробные репортажи и подробные сюжеты, объединять новости, информацию о продуктах и контент сообщества в единой и связной форме."/>
+    <link rel="canonical" href="https://www.lipsed.ru"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="9b61e3776af429d530917f220689da59/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="9b61e3776af429d530917f220689da59/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="9b61e3776af429d530917f220689da59/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="9b61e3776af429d530917f220689da59/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="9b61e3776af429d530917f220689da59/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="9b61e3776af429d530917f220689da59/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="9b61e3776af429d530917f220689da59/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="9b61e3776af429d530917f220689da59/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="9b61e3776af429d530917f220689da59/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="9b61e3776af429d530917f220689da59/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="9b61e3776af429d530917f220689da59/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="9b61e3776af429d530917f220689da59/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="9b61e3776af429d530917f220689da59/favicon-16x16.png">
+    <link rel="manifest" href="9b61e3776af429d530917f220689da59/manifest.json">
+    <meta name="msapplication-TileColor" content="#393092">
+    <meta name="msapplication-TileImage" content="9b61e3776af429d530917f220689da59/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <meta data-chorus-version="435335963e17bdb0d02cfcce619ea8bdfa7b1eb6"/>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!--Google adsense-->
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6133537105312052",
+            enable_page_level_ads: true
+        });
+    </script>
+    <!--Google adsense-->
 </head>
 <!--[if lte IE 9]>
 <body class="ie9"><![endif]-->
@@ -538,12 +557,9 @@ foreach ($contentsRU as $index => $content) {
         <span class="c-tab-bar__sponsorship"></span>
     </div>
 </div>
-<script src="https://cdn.vox-cdn.com/packs/chorus-2157eff963a67d5708d2.js" async
-        integrity="sha256-YpJplw6UCsllW3NlbRp4Pzdo7giwMZ64/YxxovE6q+A= sha384-dQMX2oQ+/57eSwfmbCK0UBvHwUFkWoiJieK/MX3R6gfDYclMYqg4L26PxRxevqCS"
-        crossorigin="anonymous"></script>
-<!-- Phonograph -->
-<script data-src="https://phonograph2.voxmedia.com/pickup.js?v=1529075019264" id="phonograph-pickup"></script>
-<!-- End Phonograph -->
+<script src="html/js/chorus-870756aa6e866cf4fa07.js" async integrity="sha256-0tpRFdH8xRvKqfjHbFFGNejYQzTSCBJv0GhBzOleMJc= sha384-rpuYLBRRvAeak8r684KfOwLBu39GFH571yHurdwV/0INgtiD7Q0NsiFKwuWwdHiQ" crossorigin="anonymous"></script>
+
+
 <script>
     (function (a, c, d, e) {
         if (!a[c]) {

@@ -159,19 +159,30 @@ $articles = VgArticleQuery::create()
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
     <meta name="style-tools"
           content="https://www.lipsed.ru/style/community/372/4e855776539859840970bc9b4ab11181/tools.css">
-    <meta name="msvalidate.01" content="D385D0326A3AE144205C298DB34B4E94"/>
-    <meta name="ahrefs-site-verification" content="1e57a609922037a3fbdc1c22efd7334113f174f15608f37e1b8538a7b4ce64c3">
     <meta name="description"
-          content=""/>
+          content="Lipsed был основан в 2019 году и охватывает пересечение технологий, науки, искусства и культуры. Его миссия состоит в том, чтобы предлагать подробные репортажи и подробные сюжеты, объединять новости, информацию о продуктах и контент сообщества в единой и связной форме."/>
     <link rel="canonical" href="https://www.lipsed.ru"/>
-    <link rel="shortcut icon" href="">
 
-    <meta name="msapplication-TileImage"
-          content="https://cdn.vox-cdn.com/uploads/chorus_asset/file/7396113/221a67c8-a10f-11e6-8fae-983107008690.0.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="9b61e3776af429d530917f220689da59/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="9b61e3776af429d530917f220689da59/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="9b61e3776af429d530917f220689da59/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="9b61e3776af429d530917f220689da59/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="9b61e3776af429d530917f220689da59/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="9b61e3776af429d530917f220689da59/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="9b61e3776af429d530917f220689da59/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="9b61e3776af429d530917f220689da59/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="9b61e3776af429d530917f220689da59/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="9b61e3776af429d530917f220689da59/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="9b61e3776af429d530917f220689da59/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="9b61e3776af429d530917f220689da59/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="9b61e3776af429d530917f220689da59/favicon-16x16.png">
+    <link rel="manifest" href="9b61e3776af429d530917f220689da59/manifest.json">
     <meta name="msapplication-TileColor" content="#393092">
-    <meta name="theme-color" content="">
+    <meta name="msapplication-TileImage" content="9b61e3776af429d530917f220689da59/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
     <meta data-chorus-version="bd223f5384690876ab24c4dcba556dfc73dd1429"/>
-    <link rel="alternate" type="application/rss+xml" title="Lipsed" href="/rss/index.xml"/>
     <style>  .c-global-header__logo-large {
             font-family: 'Open Sans', sans-serif;
             font-size: 2rem;
@@ -188,6 +199,14 @@ $articles = VgArticleQuery::create()
             font-size: 2.5rem;
         }
     </style>
+    <!--Google adsense-->
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6133537105312052",
+            enable_page_level_ads: true
+        });
+    </script>
+    <!--Google adsense-->
 </head>
 <!--[if lte IE 9]>
 <body class="ie9"><![endif]-->
@@ -234,7 +253,7 @@ $articles = VgArticleQuery::create()
             </section>
         </div>
     </div>
-    <h1 class="p-page-title p-page-title--top">Новости и обзоры</h1>
+    <h2 class="p-page-title p-page-title--top">Новости и обзоры</h2>
     <section class="l-wrapper">
         <div class="l-segment l-sidebar-fixed">
             <div class="l-col__main">
@@ -303,33 +322,9 @@ $articles = VgArticleQuery::create()
         </div>
     </footer>
 </div>
-<script src="https://cdn.vox-cdn.com/packs/chorus-4c569dfc626fa1fb9ab2.js" async
-        integrity="sha256-wqOyKkg7pw5pELpL6I7SWRXUPaz+A93f0+HYVe5ERiE= sha384-O/A4BikMGeUK2oNX+UL71eO36aXm36ixUIOZV5ExQe1mzg8ARU+7zV2Iym9jwd0n"
-        crossorigin="anonymous"></script>
-<!-- Phonograph -->
-<script src="https://phonograph2.voxmedia.com/pickup.js?v=1529075019264" id="phonograph-pickup" async="async"
-        defer="defer"></script>
-<script>
-    var phonographEvents = phonographEvents || [];
-    (function () {
-        var continent = document.cookie.match(/_chorus_geoip_continent=([^;]+)/i) || [];
-        var data = {'Page Title': document.title, 'GA Track Prefix': 't1.', 'geoip_continent': continent[1]};
-        var dataLayer = window.dataLayer || [];
-        dataLayer
-            .filter(function (m) {
-                return !!m['Network']
-            })
-            .forEach(function (m) {
-                Object.keys(m).forEach(function (k) {
-                    data[k] = m[k]
-                });
-            });
-        var userid = data['Logged in Status'];
-        data['User ID'] = (typeof userid === 'number') ? userid : null;
-        phonographEvents.push(['pageload', data]);
-    })();
-</script>
-<!-- End Phonograph -->
+<script src="html/js/chorus-870756aa6e866cf4fa07.js" async integrity="sha256-0tpRFdH8xRvKqfjHbFFGNejYQzTSCBJv0GhBzOleMJc= sha384-rpuYLBRRvAeak8r684KfOwLBu39GFH571yHurdwV/0INgtiD7Q0NsiFKwuWwdHiQ" crossorigin="anonymous"></script>
+
+
 <script>
     (function (a, c, d, e) {
         if (!a[c]) {

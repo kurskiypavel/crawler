@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.lipsed.ru/sitemap.xml
