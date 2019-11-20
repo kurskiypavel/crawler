@@ -58,28 +58,7 @@
     </div>
 </footer>
 
-<!-- Phonograph -->
 
-<script src="https://phonograph2.voxmedia.com/pickup.js?v=1529075019264" id="phonograph-pickup" async="async" defer="defer"></script>
-
-<script>
-    var phonographEvents = phonographEvents || [];
-    (function() {
-        var continent = document.cookie.match(/_chorus_geoip_continent=([^;]+)/i) || [];
-        var data = { 'Page Title':document.title, 'GA Track Prefix':'t1.', 'geoip_continent': continent[1] };
-        var dataLayer = window.dataLayer || [];
-        dataLayer
-            .filter(function(m) { return !!m['Network'] })
-            .forEach(function(m) {
-                Object.keys(m).forEach(function(k) { data[k] = m[k] });
-            });
-
-        var userid = data['Logged in Status'];
-        data['User ID'] = (typeof userid === 'number') ? userid : null;
-        phonographEvents.push(['pageload', data]);
-    })();
-</script>
-<!-- End Phonograph -->
 
 
 </body>

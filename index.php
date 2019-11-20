@@ -19,7 +19,7 @@ $articles = VgArticleQuery::create()
     ->find();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <title>Lipsed</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -161,7 +161,7 @@ $articles = VgArticleQuery::create()
           content="https://www.lipsed.ru/style/community/372/4e855776539859840970bc9b4ab11181/tools.css">
     <meta name="description"
           content="Lipsed был основан в 2019 году и охватывает пересечение технологий, науки, искусства и культуры. Его миссия состоит в том, чтобы предлагать подробные репортажи и подробные сюжеты, объединять новости, информацию о продуктах и контент сообщества в единой и связной форме."/>
-    <link rel="canonical" href="https://www.lipsed.ru"/>
+    <link rel="canonical" href="https://www.lipsed.ru/"/>
 
     <link rel="apple-touch-icon" sizes="57x57" href="9b61e3776af429d530917f220689da59/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="9b61e3776af429d530917f220689da59/apple-icon-60x60.png">

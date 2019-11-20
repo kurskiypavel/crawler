@@ -30,7 +30,7 @@ $articles = VgArticleQuery::create()
 foreach ($articles as $row) {
     $slug = $row->getSlug();
     $track = $xml->addChild('url');
-    $track->addChild('loc', "https://lipsed.ru/$slug");
+    $track->addChild('loc', "https://www.lipsed.ru/$slug");
     $track->addChild('lastmod', "$lastmod");
 }
 

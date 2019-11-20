@@ -228,7 +228,7 @@ foreach ($contentsRU as $index => $content) {
           content="https://www.lipsed.ru/style/community/372/57327a9d91cb60a9f47223632d1f3ee8/tools.css">
     <meta name="description"
           content="Lipsed был основан в 2019 году и охватывает пересечение технологий, науки, искусства и культуры. Его миссия состоит в том, чтобы предлагать подробные репортажи и подробные сюжеты, объединять новости, информацию о продуктах и контент сообщества в единой и связной форме."/>
-    <link rel="canonical" href="https://www.lipsed.ru"/>
+    <link rel="canonical" href="https://www.lipsed.ru/<?=$slug;?>"/>
 
     <link rel="apple-touch-icon" sizes="57x57" href="9b61e3776af429d530917f220689da59/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="9b61e3776af429d530917f220689da59/apple-icon-60x60.png">
