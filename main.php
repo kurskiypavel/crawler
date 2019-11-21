@@ -29,7 +29,7 @@ function getContentFromWeb()
     /*  2.1. Select all new articles from DB    */
     $articlesORM = VgArticleQuery::create()
         ->where('VgArticle.title IS NULL')
-        ->limit(100)
+        ->limit(10)
         ->find();
     foreach ($articlesORM as $row) {
 
@@ -57,7 +57,6 @@ function getContentFromWeb()
 
         $row->save();
         echo $row->getId() . PHP_EOL;
-        sleep(5);
     }
 }
 

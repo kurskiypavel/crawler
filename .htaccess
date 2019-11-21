@@ -1,8 +1,10 @@
 #redirect all traffic to index.php page
 RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/robots.txt$ [NC]
+RewriteCond %{REQUEST_URI} !^/sitemap.xml$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^.*$ /article.php [L,QSA]
+RewriteRule ^(.*)$ https://www.lipsed.ru/article.php [L,QSA]
 #canonical
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{HTTP_HOST} ^(www\.)?lipsed\.ru
