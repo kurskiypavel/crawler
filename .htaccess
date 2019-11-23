@@ -1,5 +1,5 @@
-#redirect all traffic to index.php page
-RewriteEngine on
+#redirect all traffic to article.php page
+RewriteEngine On
 RewriteCond %{REQUEST_URI} !^/robots.txt$ [NC]
 RewriteCond %{REQUEST_URI} !^/sitemap.xml$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -11,3 +11,13 @@ RewriteCond %{HTTP_HOST} ^(www\.)?lipsed\.ru
 RewriteRule ^(.*)$ https://www.lipsed.ru/$1 [R,L]
 RewriteCond %{HTTP_HOST} ^lipsed.ru [NC]
 RewriteRule ^(.*)$ https://www.lipsed.ru/$1 [L,R=301]
+<FilesMatch "(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$">
+    ## Apache 2.2
+    Order allow,deny
+    Deny from all
+    Satisfy All
+
+    ## Apache 2.4
+    # Require all denied
+</FilesMatch>
+ErrorDocument 404 /404.php
