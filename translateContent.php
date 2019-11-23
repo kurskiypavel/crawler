@@ -17,50 +17,7 @@ use orm\orm\VgArticleQuery;
 use Stichoza\GoogleTranslate\GoogleTranslate;
 
 
-//$url = 'https://www.theverge.com/2017/10/17/15737580/star-wars-han-solo-standalone-film-title-ron-howard';
 
-/*  1. Save links from sitemap into DB */
-/*  use getLinks.php    */
-
-/*  2. Get content for each link in DB from WEB    */
-
-function getContentFromWeb()
-{
-    /*  2.1. Select all new articles from DB    */
-    $articlesORM = VgArticleQuery::create()
-        ->where('VgArticle.title IS NULL')
-        ->limit(10)
-        ->find();
-    foreach ($articlesORM as $row) {
-
-        /*  2.2. Get content for each new article from WEB  */
-
-        $url = $row->getUrl();
-        $article = new Article($url);
-
-        $domName = "meta[property='og:site_name']";
-        $domTitle = "body h1";
-        $domSubtitle = ".c-entry-summary.p-dek";
-        $domDatetime = ".c-byline__item time";
-        $domContent = "#content .c-entry-content p";
-
-        $article->scrape($domName, $domTitle, $domSubtitle, $domDatetime, $domContent);
-
-        /*  2.3. Update row with new content*/
-
-        $row->setTitle($article->title);
-        $row->setSubtitle($article->subtitle);
-        $row->setSource($article->source);
-        $row->setContent($article->content);
-        $row->setDatetime($article->datetime);
-        $row->setUrl($article->url);
-
-        $row->save();
-        echo $row->getId() . PHP_EOL;
-    }
-}
-
-//getContentFromWeb();
 
 /*  3. Generate slug based on russian title    */
 function translit($string)
