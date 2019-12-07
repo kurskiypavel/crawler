@@ -120,10 +120,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="MAMP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="459" />
-    <option name="y" value="125" />
-    <option name="width" value="981" />
-    <option name="height" value="678" />
+    <option name="x" value="-1899" />
+    <option name="width" value="1905" />
+    <option name="height" value="894" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -159,10 +158,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="propel.ext&#9;null&#9;null&#10;article&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/crawler/src/Article.php&#10;com&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/crawler/composer.json&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -189,59 +188,11 @@
     </option>
   </component>
   <component name="RunManager" selected="PHP Script.getContentFromWeb.php">
-    <configuration default="false" name="propel_ex.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/propel_ex.php">
-      <method />
-    </configuration>
-    <configuration default="false" name="getContentFromWeb.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/getContentFromWeb.php">
-      <method />
-    </configuration>
-    <configuration default="false" name="parseXML.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/parseXML.php">
-      <method />
-    </configuration>
-    <configuration default="false" name="ex 3.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/ex 3.php">
-      <method />
-    </configuration>
-    <configuration default="false" name="getContent.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/getContent.php">
-      <method />
-    </configuration>
-    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
+    <configuration name="ex 3.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/ex 3.php" />
+    <configuration name="getContentFromWeb.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/getContentFromWeb.php" />
+    <configuration name="getContent.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/getContent.php" />
+    <configuration name="parseXML.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/parseXML.php" />
+    <configuration name="propel_ex.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/propel_ex.php" />
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -249,47 +200,23 @@
       <tasks />
       <arguments />
       <envs />
-      <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="PHP Script.propel_ex.php" />
-      <item index="1" class="java.lang.String" itemvalue="PHP Script.getContentFromWeb.php" />
-      <item index="2" class="java.lang.String" itemvalue="PHP Script.parseXML.php" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Script.ex 3.php" />
-      <item index="4" class="java.lang.String" itemvalue="PHP Script.getContent.php" />
+    <list>
+      <item itemvalue="PHP Script.propel_ex.php" />
+      <item itemvalue="PHP Script.getContentFromWeb.php" />
+      <item itemvalue="PHP Script.parseXML.php" />
+      <item itemvalue="PHP Script.ex 3.php" />
+      <item itemvalue="PHP Script.getContent.php" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.getContentFromWeb.php" />
-        <item index="1" class="java.lang.String" itemvalue="PHP Script.ex 3.php" />
-        <item index="2" class="java.lang.String" itemvalue="PHP Script.getContent.php" />
-        <item index="3" class="java.lang.String" itemvalue="PHP Script.parseXML.php" />
-        <item index="4" class="java.lang.String" itemvalue="PHP Script.propel_ex.php" />
+      <list>
+        <item itemvalue="PHP Script.getContentFromWeb.php" />
+        <item itemvalue="PHP Script.ex 3.php" />
+        <item itemvalue="PHP Script.getContent.php" />
+        <item itemvalue="PHP Script.parseXML.php" />
+        <item itemvalue="PHP Script.propel_ex.php" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
