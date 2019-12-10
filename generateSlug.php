@@ -11,6 +11,7 @@ require_once 'src/simple_html_dom.php';
 require_once 'vendor/autoload.php';
 require_once 'src/generated-conf/config.php';
 
+use article\Article;
 use orm\orm\VgArticleQuery;
 use Propel\Runtime\ActiveQuery\Criteria;
 
@@ -137,9 +138,7 @@ foreach ($articles as $row) {
     $translated = translit($titleRU);
 
     $slug = slugify($translated);
-    if ($slug != 'n-a') {
-        $row->setSlug($slug);
-        $row->save();
-    } else continue;
-
+    echo $slug;
+    $row->setSlug($slug);
+    $row->save();
 }

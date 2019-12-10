@@ -15,15 +15,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="translateContent.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/translateContent.php">
+      <file leaf-file-name="article.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="150" column="42" lean-forward="false" selection-start-line="150" selection-start-column="42" selection-end-line="150" selection-end-column="42" />
-              <folding>
-                <element signature="n#translit#0;n#!!top" expanded="false" />
-                <element signature="n#slugify#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="39">
+              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VgArticleQuery.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/orm/orm/VgArticleQuery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,12 +110,12 @@
         <option value="$PROJECT_DIR$/sandbox_files/getContent.php" />
         <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/src/schema.xml" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/propel_ex.php" />
         <option value="$PROJECT_DIR$/getContentFromWeb.php" />
         <option value="$PROJECT_DIR$/transateContent.php" />
         <option value="$PROJECT_DIR$/translateContent.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -120,9 +127,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="MAMP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1899" />
-    <option name="width" value="1905" />
-    <option name="height" value="894" />
+    <option name="x" value="21" />
+    <option name="y" value="32" />
+    <option name="width" value="1419" />
+    <option name="height" value="771" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -139,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,14 +161,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="propel.ext&#9;null&#9;null&#10;article&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/crawler/src/Article.php&#10;com&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/crawler/composer.json&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="simple_html_dom&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/simple_html_dom.php&#10;propel.ext&#9;null&#9;null&#10;article&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/crawler/src/Article.php&#10;com&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/crawler/composer.json&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -188,11 +196,24 @@
     </option>
   </component>
   <component name="RunManager" selected="PHP Script.getContentFromWeb.php">
-    <configuration name="ex 3.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/ex 3.php" />
-    <configuration name="getContentFromWeb.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/getContentFromWeb.php" />
-    <configuration name="getContent.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/getContent.php" />
-    <configuration name="parseXML.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/parseXML.php" />
-    <configuration name="propel_ex.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/propel_ex.php" />
+    <configuration default="false" name="ex 3.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/ex 3.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="getContentFromWeb.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/getContentFromWeb.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="getContent.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/getContent.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="parseXML.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/parseXML.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="propel_ex.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/propel_ex.php">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -200,23 +221,27 @@
       <tasks />
       <arguments />
       <envs />
+      <method />
     </configuration>
-    <list>
-      <item itemvalue="PHP Script.propel_ex.php" />
-      <item itemvalue="PHP Script.getContentFromWeb.php" />
-      <item itemvalue="PHP Script.parseXML.php" />
-      <item itemvalue="PHP Script.ex 3.php" />
-      <item itemvalue="PHP Script.getContent.php" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.ex 3.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.getContentFromWeb.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.getContent.php" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Script.parseXML.php" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.propel_ex.php" />
     </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="PHP Script.getContentFromWeb.php" />
-        <item itemvalue="PHP Script.ex 3.php" />
-        <item itemvalue="PHP Script.getContent.php" />
-        <item itemvalue="PHP Script.parseXML.php" />
-        <item itemvalue="PHP Script.propel_ex.php" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.propel_ex.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.parseXML.php" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.getContent.php" />
+        <item index="3" class="java.lang.String" itemvalue="PHP Script.getContentFromWeb.php" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.ex 3.php" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -239,22 +264,25 @@
       <workItem from="1573585944948" duration="827000" />
       <workItem from="1573671939422" duration="4380000" />
       <workItem from="1574582101227" duration="670000" />
+      <workItem from="1576005689603" duration="661000" />
+      <workItem from="1576006856615" duration="13000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44672000" />
+    <option name="totallyTimeSpent" value="45346000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="459" y="125" width="981" height="678" extended-state="0" />
+    <frame x="21" y="32" width="1419" height="771" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22120285" sideWeight="0.49239543" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1529246" sideWeight="0.49239543" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24985129" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22731906" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2924595" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19631171" sideWeight="0.50760454" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -287,20 +315,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/example/example_modify_contents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/example_extract_html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/scraping/example_scraping_imdb.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -378,13 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/simple_html_dom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="1579" column="13" lean-forward="false" selection-start-line="1579" selection-start-column="13" selection-end-line="1579" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/error.log" />
     <entry file="file://$PROJECT_DIR$/generated-migrations/PropelMigration_1573398411.php" />
     <entry file="file://$PROJECT_DIR$/generated-migrations/PropelMigration_1573398682.php" />
@@ -436,7 +443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3354">
           <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -446,16 +452,6 @@
           <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox_files/getContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -472,14 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="1093" column="36" lean-forward="false" selection-start-line="1093" selection-start-column="33" selection-end-line="1093" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orm/orm/VgArticleQuery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -490,37 +478,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="213" column="19" lean-forward="true" selection-start-line="213" selection-start-column="19" selection-end-line="213" selection-end-column="19" />
-          <folding>
-            <element signature="e#182#209#0#PHP" expanded="true" />
-            <marker date="1574360641758" expanded="true" signature="17681:17826" ph="..." />
-            <marker date="1574360641758" expanded="true" signature="18051:19058" ph="..." />
-            <marker date="1574360641758" expanded="true" signature="18140:19031" ph="..." />
-            <marker date="1574360641758" expanded="true" signature="18313:19000" ph="..." />
-            <marker date="1574360641758" expanded="false" signature="18394:18411" ph="..." />
-            <marker date="1574360641758" expanded="true" signature="18412:18575" ph="..." />
-            <marker date="1574360641758" expanded="true" signature="18674:18965" ph="..." />
-            <marker date="1574360641758" expanded="true" signature="18825:18926" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sandbox_files/ex 3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2990">
-          <caret line="230" column="63" lean-forward="false" selection-start-line="230" selection-start-column="63" selection-end-line="230" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -596,9 +557,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-131">
           <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="n#translit#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -607,7 +566,7 @@
         <state relative-caret-position="455">
           <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
-            <element signature="e#302#322#0#PHP" expanded="true" />
+            <element signature="e#302#322#0#PHP" expanded="false" />
             <element signature="n#getContentFromWeb#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -615,12 +574,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/translateContent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="150" column="42" lean-forward="false" selection-start-line="150" selection-start-column="42" selection-end-line="150" selection-end-column="42" />
+        <state relative-caret-position="72">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="n#translit#0;n#!!top" expanded="false" />
             <element signature="n#slugify#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox_files/getContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox_files/simple_get_from_propel.php" />
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding>
+            <element signature="e#182#209#0#PHP" expanded="true" />
+            <marker date="1574336044000" expanded="true" signature="17681:17826" ph="..." />
+            <marker date="1574336044000" expanded="true" signature="18051:19058" ph="..." />
+            <marker date="1574336044000" expanded="true" signature="18140:19031" ph="..." />
+            <marker date="1574336044000" expanded="true" signature="18313:19000" ph="..." />
+            <marker date="1574336044000" expanded="false" signature="18394:18411" ph="..." />
+            <marker date="1574336044000" expanded="true" signature="18412:18575" ph="..." />
+            <marker date="1574336044000" expanded="true" signature="18674:18965" ph="..." />
+            <marker date="1574336044000" expanded="true" signature="18825:18926" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orm/orm/VgArticleQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simple_html_dom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="1579" column="13" lean-forward="false" selection-start-line="1579" selection-start-column="13" selection-end-line="1579" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/example_basic_selector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
