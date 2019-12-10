@@ -25,6 +25,7 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticleQuery orderBySubtitle($order = Criteria::ASC) Order by the subtitle column
  * @method     ChildVgArticleQuery orderBySource($order = Criteria::ASC) Order by the source column
  * @method     ChildVgArticleQuery orderByContent($order = Criteria::ASC) Order by the content column
+ * @method     ChildVgArticleQuery orderByRawhtml($order = Criteria::ASC) Order by the rawhtml column
  * @method     ChildVgArticleQuery orderByJson_translateRU($order = Criteria::ASC) Order by the json_translateRU column
  * @method     ChildVgArticleQuery orderByDatetime($order = Criteria::ASC) Order by the datetime column
  * @method     ChildVgArticleQuery orderByUrl($order = Criteria::ASC) Order by the url column
@@ -36,6 +37,7 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticleQuery groupBySubtitle() Group by the subtitle column
  * @method     ChildVgArticleQuery groupBySource() Group by the source column
  * @method     ChildVgArticleQuery groupByContent() Group by the content column
+ * @method     ChildVgArticleQuery groupByRawhtml() Group by the rawhtml column
  * @method     ChildVgArticleQuery groupByJson_translateRU() Group by the json_translateRU column
  * @method     ChildVgArticleQuery groupByDatetime() Group by the datetime column
  * @method     ChildVgArticleQuery groupByUrl() Group by the url column
@@ -58,6 +60,7 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticle findOneBySubtitle(string $subtitle) Return the first ChildVgArticle filtered by the subtitle column
  * @method     ChildVgArticle findOneBySource(string $source) Return the first ChildVgArticle filtered by the source column
  * @method     ChildVgArticle findOneByContent(string $content) Return the first ChildVgArticle filtered by the content column
+ * @method     ChildVgArticle findOneByRawhtml(string $rawhtml) Return the first ChildVgArticle filtered by the rawhtml column
  * @method     ChildVgArticle findOneByJson_translateRU(string $json_translateRU) Return the first ChildVgArticle filtered by the json_translateRU column
  * @method     ChildVgArticle findOneByDatetime(string $datetime) Return the first ChildVgArticle filtered by the datetime column
  * @method     ChildVgArticle findOneByUrl(string $url) Return the first ChildVgArticle filtered by the url column
@@ -72,6 +75,7 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticle requireOneBySubtitle(string $subtitle) Return the first ChildVgArticle filtered by the subtitle column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneBySource(string $source) Return the first ChildVgArticle filtered by the source column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneByContent(string $content) Return the first ChildVgArticle filtered by the content column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildVgArticle requireOneByRawhtml(string $rawhtml) Return the first ChildVgArticle filtered by the rawhtml column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneByJson_translateRU(string $json_translateRU) Return the first ChildVgArticle filtered by the json_translateRU column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneByDatetime(string $datetime) Return the first ChildVgArticle filtered by the datetime column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildVgArticle requireOneByUrl(string $url) Return the first ChildVgArticle filtered by the url column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
@@ -84,6 +88,7 @@ use orm\orm\Map\VgArticleTableMap;
  * @method     ChildVgArticle[]|ObjectCollection findBySubtitle(string $subtitle) Return ChildVgArticle objects filtered by the subtitle column
  * @method     ChildVgArticle[]|ObjectCollection findBySource(string $source) Return ChildVgArticle objects filtered by the source column
  * @method     ChildVgArticle[]|ObjectCollection findByContent(string $content) Return ChildVgArticle objects filtered by the content column
+ * @method     ChildVgArticle[]|ObjectCollection findByRawhtml(string $rawhtml) Return ChildVgArticle objects filtered by the rawhtml column
  * @method     ChildVgArticle[]|ObjectCollection findByJson_translateRU(string $json_translateRU) Return ChildVgArticle objects filtered by the json_translateRU column
  * @method     ChildVgArticle[]|ObjectCollection findByDatetime(string $datetime) Return ChildVgArticle objects filtered by the datetime column
  * @method     ChildVgArticle[]|ObjectCollection findByUrl(string $url) Return ChildVgArticle objects filtered by the url column
@@ -186,7 +191,7 @@ abstract class VgArticleQuery extends ModelCriteria
      */
     protected function findPkSimple($key, ConnectionInterface $con)
     {
-        $sql = 'SELECT id, slug, title, subtitle, source, content, json_translateRU, datetime, url, translated FROM vg_article WHERE id = :p0';
+        $sql = 'SELECT id, slug, title, subtitle, source, content, rawhtml, json_translateRU, datetime, url, translated FROM vg_article WHERE id = :p0';
         try {
             $stmt = $con->prepare($sql);
             $stmt->bindValue(':p0', $key, PDO::PARAM_INT);
@@ -440,6 +445,31 @@ abstract class VgArticleQuery extends ModelCriteria
         }
 
         return $this->addUsingAlias(VgArticleTableMap::COL_CONTENT, $content, $comparison);
+    }
+
+    /**
+     * Filter the query on the rawhtml column
+     *
+     * Example usage:
+     * <code>
+     * $query->filterByRawhtml('fooValue');   // WHERE rawhtml = 'fooValue'
+     * $query->filterByRawhtml('%fooValue%', Criteria::LIKE); // WHERE rawhtml LIKE '%fooValue%'
+     * </code>
+     *
+     * @param     string $rawhtml The value to use as filter.
+     * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
+     *
+     * @return $this|ChildVgArticleQuery The current query, for fluid interface
+     */
+    public function filterByRawhtml($rawhtml = null, $comparison = null)
+    {
+        if (null === $comparison) {
+            if (is_array($rawhtml)) {
+                $comparison = Criteria::IN;
+            }
+        }
+
+        return $this->addUsingAlias(VgArticleTableMap::COL_RAWHTML, $rawhtml, $comparison);
     }
 
     /**

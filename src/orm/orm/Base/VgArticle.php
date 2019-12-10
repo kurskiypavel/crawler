@@ -102,6 +102,13 @@ abstract class VgArticle implements ActiveRecordInterface
     protected $content;
 
     /**
+     * The value for the rawhtml field.
+     *
+     * @var        string
+     */
+    protected $rawhtml;
+
+    /**
      * The value for the json_translateru field.
      *
      * @var        string
@@ -423,6 +430,16 @@ abstract class VgArticle implements ActiveRecordInterface
     }
 
     /**
+     * Get the [rawhtml] column value.
+     *
+     * @return string
+     */
+    public function getRawhtml()
+    {
+        return $this->rawhtml;
+    }
+
+    /**
      * Get the [json_translateru] column value.
      *
      * @return string
@@ -593,6 +610,26 @@ abstract class VgArticle implements ActiveRecordInterface
     } // setContent()
 
     /**
+     * Set the value of [rawhtml] column.
+     *
+     * @param string $v new value
+     * @return $this|\orm\orm\VgArticle The current object (for fluent API support)
+     */
+    public function setRawhtml($v)
+    {
+        if ($v !== null) {
+            $v = (string) $v;
+        }
+
+        if ($this->rawhtml !== $v) {
+            $this->rawhtml = $v;
+            $this->modifiedColumns[VgArticleTableMap::COL_RAWHTML] = true;
+        }
+
+        return $this;
+    } // setRawhtml()
+
+    /**
      * Set the value of [json_translateru] column.
      *
      * @param string $v new value
@@ -734,16 +771,19 @@ abstract class VgArticle implements ActiveRecordInterface
             $col = $row[TableMap::TYPE_NUM == $indexType ? 5 + $startcol : VgArticleTableMap::translateFieldName('Content', TableMap::TYPE_PHPNAME, $indexType)];
             $this->content = (null !== $col) ? (string) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 6 + $startcol : VgArticleTableMap::translateFieldName('Json_translateRU', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 6 + $startcol : VgArticleTableMap::translateFieldName('Rawhtml', TableMap::TYPE_PHPNAME, $indexType)];
+            $this->rawhtml = (null !== $col) ? (string) $col : null;
+
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 7 + $startcol : VgArticleTableMap::translateFieldName('Json_translateRU', TableMap::TYPE_PHPNAME, $indexType)];
             $this->json_translateru = (null !== $col) ? (string) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 7 + $startcol : VgArticleTableMap::translateFieldName('Datetime', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 8 + $startcol : VgArticleTableMap::translateFieldName('Datetime', TableMap::TYPE_PHPNAME, $indexType)];
             $this->datetime = (null !== $col) ? (string) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 8 + $startcol : VgArticleTableMap::translateFieldName('Url', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 9 + $startcol : VgArticleTableMap::translateFieldName('Url', TableMap::TYPE_PHPNAME, $indexType)];
             $this->url = (null !== $col) ? (string) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 9 + $startcol : VgArticleTableMap::translateFieldName('Translated', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 10 + $startcol : VgArticleTableMap::translateFieldName('Translated', TableMap::TYPE_PHPNAME, $indexType)];
             $this->translated = (null !== $col) ? (boolean) $col : null;
             $this->resetModified();
 
@@ -753,7 +793,7 @@ abstract class VgArticle implements ActiveRecordInterface
                 $this->ensureConsistency();
             }
 
-            return $startcol + 10; // 10 = VgArticleTableMap::NUM_HYDRATE_COLUMNS.
+            return $startcol + 11; // 11 = VgArticleTableMap::NUM_HYDRATE_COLUMNS.
 
         } catch (Exception $e) {
             throw new PropelException(sprintf('Error populating %s object', '\\orm\\orm\\VgArticle'), 0, $e);
@@ -972,6 +1012,9 @@ abstract class VgArticle implements ActiveRecordInterface
         if ($this->isColumnModified(VgArticleTableMap::COL_CONTENT)) {
             $modifiedColumns[':p' . $index++]  = 'content';
         }
+        if ($this->isColumnModified(VgArticleTableMap::COL_RAWHTML)) {
+            $modifiedColumns[':p' . $index++]  = 'rawhtml';
+        }
         if ($this->isColumnModified(VgArticleTableMap::COL_JSON_TRANSLATERU)) {
             $modifiedColumns[':p' . $index++]  = 'json_translateRU';
         }
@@ -1012,6 +1055,9 @@ abstract class VgArticle implements ActiveRecordInterface
                         break;
                     case 'content':
                         $stmt->bindValue($identifier, $this->content, PDO::PARAM_STR);
+                        break;
+                    case 'rawhtml':
+                        $stmt->bindValue($identifier, $this->rawhtml, PDO::PARAM_STR);
                         break;
                     case 'json_translateRU':
                         $stmt->bindValue($identifier, $this->json_translateru, PDO::PARAM_STR);
@@ -1106,15 +1152,18 @@ abstract class VgArticle implements ActiveRecordInterface
                 return $this->getContent();
                 break;
             case 6:
-                return $this->getJson_translateRU();
+                return $this->getRawhtml();
                 break;
             case 7:
-                return $this->getDatetime();
+                return $this->getJson_translateRU();
                 break;
             case 8:
-                return $this->getUrl();
+                return $this->getDatetime();
                 break;
             case 9:
+                return $this->getUrl();
+                break;
+            case 10:
                 return $this->getTranslated();
                 break;
             default:
@@ -1152,10 +1201,11 @@ abstract class VgArticle implements ActiveRecordInterface
             $keys[3] => $this->getSubtitle(),
             $keys[4] => $this->getSource(),
             $keys[5] => $this->getContent(),
-            $keys[6] => $this->getJson_translateRU(),
-            $keys[7] => $this->getDatetime(),
-            $keys[8] => $this->getUrl(),
-            $keys[9] => $this->getTranslated(),
+            $keys[6] => $this->getRawhtml(),
+            $keys[7] => $this->getJson_translateRU(),
+            $keys[8] => $this->getDatetime(),
+            $keys[9] => $this->getUrl(),
+            $keys[10] => $this->getTranslated(),
         );
         $virtualColumns = $this->virtualColumns;
         foreach ($virtualColumns as $key => $virtualColumn) {
@@ -1214,15 +1264,18 @@ abstract class VgArticle implements ActiveRecordInterface
                 $this->setContent($value);
                 break;
             case 6:
-                $this->setJson_translateRU($value);
+                $this->setRawhtml($value);
                 break;
             case 7:
-                $this->setDatetime($value);
+                $this->setJson_translateRU($value);
                 break;
             case 8:
-                $this->setUrl($value);
+                $this->setDatetime($value);
                 break;
             case 9:
+                $this->setUrl($value);
+                break;
+            case 10:
                 $this->setTranslated($value);
                 break;
         } // switch()
@@ -1270,16 +1323,19 @@ abstract class VgArticle implements ActiveRecordInterface
             $this->setContent($arr[$keys[5]]);
         }
         if (array_key_exists($keys[6], $arr)) {
-            $this->setJson_translateRU($arr[$keys[6]]);
+            $this->setRawhtml($arr[$keys[6]]);
         }
         if (array_key_exists($keys[7], $arr)) {
-            $this->setDatetime($arr[$keys[7]]);
+            $this->setJson_translateRU($arr[$keys[7]]);
         }
         if (array_key_exists($keys[8], $arr)) {
-            $this->setUrl($arr[$keys[8]]);
+            $this->setDatetime($arr[$keys[8]]);
         }
         if (array_key_exists($keys[9], $arr)) {
-            $this->setTranslated($arr[$keys[9]]);
+            $this->setUrl($arr[$keys[9]]);
+        }
+        if (array_key_exists($keys[10], $arr)) {
+            $this->setTranslated($arr[$keys[10]]);
         }
     }
 
@@ -1339,6 +1395,9 @@ abstract class VgArticle implements ActiveRecordInterface
         }
         if ($this->isColumnModified(VgArticleTableMap::COL_CONTENT)) {
             $criteria->add(VgArticleTableMap::COL_CONTENT, $this->content);
+        }
+        if ($this->isColumnModified(VgArticleTableMap::COL_RAWHTML)) {
+            $criteria->add(VgArticleTableMap::COL_RAWHTML, $this->rawhtml);
         }
         if ($this->isColumnModified(VgArticleTableMap::COL_JSON_TRANSLATERU)) {
             $criteria->add(VgArticleTableMap::COL_JSON_TRANSLATERU, $this->json_translateru);
@@ -1443,6 +1502,7 @@ abstract class VgArticle implements ActiveRecordInterface
         $copyObj->setSubtitle($this->getSubtitle());
         $copyObj->setSource($this->getSource());
         $copyObj->setContent($this->getContent());
+        $copyObj->setRawhtml($this->getRawhtml());
         $copyObj->setJson_translateRU($this->getJson_translateRU());
         $copyObj->setDatetime($this->getDatetime());
         $copyObj->setUrl($this->getUrl());
@@ -1488,6 +1548,7 @@ abstract class VgArticle implements ActiveRecordInterface
         $this->subtitle = null;
         $this->source = null;
         $this->content = null;
+        $this->rawhtml = null;
         $this->json_translateru = null;
         $this->datetime = null;
         $this->url = null;

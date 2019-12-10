@@ -7,6 +7,7 @@
     <column name="subtitle" phpName="Subtitle" type="LONGVARCHAR"/>
     <column name="source" phpName="Source" type="LONGVARCHAR"/>
     <column name="content" phpName="Content" type="LONGVARCHAR"/>
+    <column name="rawhtml" phpName="Rawhtml" type="LONGVARCHAR"/>
     <column name="json_translateRU" phpName="Json_translateRU" type="LONGVARCHAR"/>
     <column name="datetime" phpName="Datetime" type="VARCHAR" size="50"/>
     <column name="url" phpName="Url" type="LONGVARCHAR"/>
