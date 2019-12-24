@@ -142,18 +142,18 @@ function translateContent()
 
     foreach ($articles as $article) {
         $content = $article->getContent();
+        $content = unserialize($content);
 
-        /*  clearing spec chars and decoding    */
-        $content = str_replace(array("[", "]"), "", $content);
-        $content = explode('","', $content);
-        $contentRU = array();
         foreach ($content as $pararaph) {
-            $toTranslate = str_replace('"', "", $pararaph);
-            if (isset($toTranslate) && strlen($toTranslate) > 0 && strlen(trim($toTranslate)) != 0) {
-                $contentRU[] = $tr->translate(htmlspecialchars_decode($toTranslate)) . PHP_EOL;
+            if (strstr($pararaph, "<img") == false) {
+                if (isset($pararaph) && strlen($pararaph) > 0 && strlen(trim($pararaph)) != 0) {
+                    $contentRU[] = $tr->translate($pararaph);
 
-                sleep(2);
+                    sleep(2);
 
+                }
+            } else{
+                $contentRU[] = $pararaph;
             }
         }
         /*translate*/

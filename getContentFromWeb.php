@@ -28,7 +28,9 @@ function getContentFromWeb()
 {
     /*  2.1. Select all new articles from DB    */
     $articlesORM = VgArticleQuery::create()
-        ->where('VgArticle.title IS NULL')
+//        ->where('VgArticle.title IS NULL')
+            //translated just temporary
+        ->where('VgArticle.translated IS NULL')
         ->limit(10)
         ->find();
     foreach ($articlesORM as $row) {

@@ -14,32 +14,7 @@
     <favorites_list name="crawler" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getContentFromWeb2.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/getContentFromWeb2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="38" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding>
-                <element signature="e#302#322#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getContentFromWeb.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getContentFromWeb.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding>
-                <element signature="e#302#322#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -114,15 +89,8 @@
         <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/propel_ex.php" />
-        <option value="$PROJECT_DIR$/getContentFromWeb.php" />
         <option value="$PROJECT_DIR$/transateContent.php" />
-        <option value="$PROJECT_DIR$/translateContent.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/propel.php" />
-        <option value="$PROJECT_DIR$/propel.php.dist" />
-        <option value="$PROJECT_DIR$/src/propel.php.dist" />
-        <option value="$PROJECT_DIR$/src/propel.php" />
-        <option value="$PROJECT_DIR$/src/generated-conf/config.php" />
         <option value="$PROJECT_DIR$/src/schema.xml" />
         <option value="$PROJECT_DIR$/sandbox_files/simple_get_article.php" />
         <option value="$PROJECT_DIR$/article2.php" />
@@ -130,6 +98,13 @@
         <option value="$PROJECT_DIR$/article.php" />
         <option value="$PROJECT_DIR$/getContentFromWeb2.php" />
         <option value="$PROJECT_DIR$/src/article/Article.php" />
+        <option value="$PROJECT_DIR$/translateContent.php" />
+        <option value="$PROJECT_DIR$/getContentFromWeb.php" />
+        <option value="$PROJECT_DIR$/propel.php" />
+        <option value="$PROJECT_DIR$/propel.php.dist" />
+        <option value="$PROJECT_DIR$/src/propel.php" />
+        <option value="$PROJECT_DIR$/src/propel.php.dist" />
+        <option value="$PROJECT_DIR$/src/generated-conf/config.php" />
       </list>
     </option>
   </component>
@@ -180,7 +155,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="arti&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/article/Article.php&#10;sche&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/schema.xml&#10;composer&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/composer.json&#10;config&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/generated-conf/config.php&#10;dist&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/propel.php.dist&#10;propel&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/propel.php&#10;pro&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/propel.php&#10;prope&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/propel_ex.php&#10;simple_html_dom&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/simple_html_dom.php&#10;propel.ext&#9;null&#9;null&#10;article&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/crawler/src/Article.php&#10;com&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/crawler/composer.json&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value="config&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/generated-conf/config.php&#10;src/pro&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/propel.php.dist&#10;propel.&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/propel.php&#10;prope&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/propel.php&#10;compo&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/composer.json&#10;arti&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/article/Article.php&#10;sche&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/schema.xml&#10;composer&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/composer.json&#10;dist&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/propel.php.dist&#10;propel&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/propel.php&#10;pro&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/propel.php&#10;simple_html_dom&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/lipsed.ru/src/simple_html_dom.php&#10;propel.ext&#9;null&#9;null&#10;article&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/crawler/src/Article.php&#10;com&#9;FILE&#9;file:///Users/pavelkurskiy/DocumentsMY/sites/crawler/composer.json&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -336,18 +311,17 @@
       <workItem from="1576006856615" duration="2805000" />
       <workItem from="1577003203174" duration="4964000" />
       <workItem from="1577017193617" duration="2848000" />
-      <workItem from="1577212881027" duration="106000" />
+      <workItem from="1577212881027" duration="1093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59493000" />
+    <option name="totallyTimeSpent" value="60480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1419" height="771" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1529246" sideWeight="0.49239543" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1529246" sideWeight="0.49239543" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -518,21 +492,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/translateContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="162" column="57" lean-forward="false" selection-start-line="162" selection-start-column="57" selection-end-line="162" selection-end-column="57" />
-          <folding>
-            <element signature="n#translit#0;n#!!top" expanded="false" />
-            <element signature="n#slugify#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sandbox_files/getContent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -543,14 +507,14 @@
           <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
           <folding>
             <element signature="e#182#209#0#PHP" expanded="false" />
-            <marker date="1574336044000" expanded="true" signature="17681:17826" ph="..." />
-            <marker date="1574336044000" expanded="true" signature="18051:19058" ph="..." />
-            <marker date="1574336044000" expanded="true" signature="18140:19031" ph="..." />
-            <marker date="1574336044000" expanded="true" signature="18313:19000" ph="..." />
-            <marker date="1574336044000" expanded="false" signature="18394:18411" ph="..." />
-            <marker date="1574336044000" expanded="true" signature="18412:18575" ph="..." />
-            <marker date="1574336044000" expanded="true" signature="18674:18965" ph="..." />
-            <marker date="1574336044000" expanded="true" signature="18825:18926" ph="..." />
+            <marker date="1577213996771" expanded="true" signature="18131:18276" ph="..." />
+            <marker date="1577213996771" expanded="true" signature="18501:19508" ph="..." />
+            <marker date="1577213996771" expanded="true" signature="18590:19481" ph="..." />
+            <marker date="1577213996771" expanded="true" signature="18763:19450" ph="..." />
+            <marker date="1577213996771" expanded="false" signature="18844:18861" ph="..." />
+            <marker date="1577213996771" expanded="true" signature="18862:19025" ph="..." />
+            <marker date="1577213996771" expanded="true" signature="19124:19415" ph="..." />
+            <marker date="1577213996771" expanded="true" signature="19275:19376" ph="..." />
           </folding>
         </state>
       </provider>
@@ -576,38 +540,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/generated-conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/propel.php.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/propel.php.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generated-migrations/PropelMigration_1573398726.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/propel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -644,14 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/propel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generated-migrations/PropelMigration_1573673248.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
@@ -666,17 +594,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sandbox_files/simple_get_article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -704,17 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/translateContent2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding>
-            <element signature="e#302#329#0#PHP" expanded="false" />
-            <element signature="n#translit#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -733,23 +646,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getContentFromWeb.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="221">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getContentFromWeb2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="e#302#322#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getContentFromWeb2.php">
+    <entry file="file://$PROJECT_DIR$/translateContent2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="38" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state relative-caret-position="492">
+          <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding>
+            <element signature="n#translit#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getContentFromWeb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding>
             <element signature="e#302#322#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translateContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding>
+            <element signature="e#302#322#0#PHP" expanded="true" />
+            <element signature="n#translit#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generated-conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/propel.php.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="23" column="86" lean-forward="true" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/propel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/propel.php.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/propel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
