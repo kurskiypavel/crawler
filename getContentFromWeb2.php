@@ -14,7 +14,7 @@ require_once 'src/generated-conf/config.php';
 
 use article\Article;
 use orm\orm\VgArticleQuery;
-use Stichoza\GoogleTranslate\GoogleTranslate;
+//use Stichoza\GoogleTranslate\GoogleTranslate;
 
 
 //$url = 'https://www.theverge.com/2017/10/17/15737580/star-wars-han-solo-standalone-film-title-ron-howard';
@@ -28,7 +28,7 @@ function getContentFromWeb()
 {
     /*  2.1. Select all new articles from DB    */
     $articlesORM = VgArticleQuery::create()
-        ->where('VgArticle.url = "https://www.theverge.com/2016/11/13/13597824/why-nail-biting-habit-science"')
+        ->where('VgArticle.url = "https://www.theverge.com/2017/10/9/16130500/star-wars-the-last-jedi-new-trailer-rian-johnson-watch"')
         ->limit(1)
         ->find();
     foreach ($articlesORM as $row) {
@@ -42,9 +42,10 @@ function getContentFromWeb()
         $domTitle = "body h1";
         $domSubtitle = ".c-entry-summary.p-dek";
         $domDatetime = ".c-byline__item time";
-        $domContent = "#content .c-entry-content";
+        $domContent = "#content .c-entry-content p";
 
         $article->scrape($domName, $domTitle, $domSubtitle, $domDatetime, $domContent);
+
 
 
         /*  2.3. Update row with new content*/
@@ -55,6 +56,7 @@ function getContentFromWeb()
         $row->setContent($article->content);
         $row->setDatetime($article->datetime);
         $row->setUrl($article->url);
+
 
         $row->save();
 //        error_log($row->getId() . PHP_EOL);

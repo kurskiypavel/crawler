@@ -10,9 +10,9 @@
 
 namespace article;
 
+use Exception;
 use orm\orm\VgArticle;
 use orm\orm\VgArticleRu;
-use Symfony\Component\Config\Definition\Exception\Exception;
 
 class Article
 {
@@ -22,11 +22,29 @@ class Article
     public $content;
     public $datetime;
     public $url;
+    public $exceptions;
 
     function __construct($url)
     {
         $this->url = $url;
+        $this->exceptions = ["We use cookies", "By choosing I Accept", "FILED UNDER", "Filed under", "/t.co/"];
     }
+
+
+    private function validateText($text)
+    {
+        $foundException = false;
+
+        foreach ($this->exceptions as $exception) {
+            if (strstr($text, $exception) != false || $text == "") {
+                $foundException = true;
+            }
+        }
+
+        return $foundException;
+    }
+
+
 
     public function scrape($domName, $domTitle, $domSubtitle, $domDatetime, $domContent)
     {
@@ -47,17 +65,21 @@ class Article
             $this->datetime = "";
         }
 
-        foreach ($html->find($domContent) as $element) {
-            if ($element->plaintext != "") {
-                $this->content[] .= $element->plaintext;
+        foreach ($html->find("p, img") as $element) {
+            if (isset($element->src)) {
+                $this->content[] .= $element;
+            } elseif ($this->validateText($element->plaintext) == false) {
+                $this->content[] = $element->plaintext;
             }
         }
-        $this->content = json_encode($this->content);
+
+        $this->content = serialize($this->content);;
 
         // clean up memory
         $html->clear();
         unset($html);
     }
+
 
     public function store()
     {
