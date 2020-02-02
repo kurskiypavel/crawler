@@ -28,9 +28,9 @@ function getContentFromWeb()
 {
     /*  2.1. Select all new articles from DB    */
     $articlesORM = VgArticleQuery::create()
-//        ->where('VgArticle.title IS NULL')
+        ->where('VgArticle.title IS NULL')
             //translated just temporary
-        ->where('VgArticle.translated IS NULL')
+//        ->where('VgArticle.id > 114')
         ->limit(10)
         ->find();
     foreach ($articlesORM as $row) {
@@ -44,7 +44,7 @@ function getContentFromWeb()
         $domTitle = "body h1";
         $domSubtitle = ".c-entry-summary.p-dek";
         $domDatetime = ".c-byline__item time";
-        $domContent = "#content .c-entry-content p";
+        $domContent = "#content img, #content .c-entry-content p";
 
         $article->scrape($domName, $domTitle, $domSubtitle, $domDatetime, $domContent);
 
@@ -57,7 +57,6 @@ function getContentFromWeb()
         $row->setContent($article->content);
         $row->setDatetime($article->datetime);
         $row->setUrl($article->url);
-
         $row->save();
 //        error_log($row->getId() . PHP_EOL);
         sleep(1);

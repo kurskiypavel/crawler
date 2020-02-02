@@ -141,12 +141,14 @@ function translateContent()
         ->find();
 
     foreach ($articles as $article) {
+        $contentRU = array();
         $content = $article->getContent();
         $content = unserialize($content);
 
         foreach ($content as $pararaph) {
             if (strstr($pararaph, "<img") == false) {
                 if (isset($pararaph) && strlen($pararaph) > 0 && strlen(trim($pararaph)) != 0) {
+
                     $contentRU[] = $tr->translate($pararaph);
 
                     sleep(2);
@@ -156,6 +158,12 @@ function translateContent()
                 $contentRU[] = $pararaph;
             }
         }
+        
+        
+
+        
+        
+        
         /*translate*/
         $titleRU = '';
         $titleToTranslate = $article->getTitle();
@@ -166,7 +174,7 @@ function translateContent()
 
         $subtitleRU = '';
         $subtitleToTranslate = $article->getSubtitle();
-        if (isset($subtitleToTranslate)) {
+        if (isset($subtitleToTranslate) && strlen(trim($subtitleToTranslate)) != 0) {
             $subtitleRU = $tr->translate($subtitleToTranslate);
         }
 

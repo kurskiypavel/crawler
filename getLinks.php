@@ -21,13 +21,11 @@ require_once 'src/generated-conf/config.php';
 use article\Article;
 
 
-$urlSource = "https://www.theverge.com/sitemaps/entries/2017/10";
+$urlSource = "https://www.theverge.com/sitemaps/entries/2017/4";
 $storage = file_get_contents($urlSource);
 $xml=simplexml_load_string($storage) or die("Error: Cannot create object");
 
 foreach ($xml->url as $url){
     $article = new Article($url->loc);
     $article->store();
-    $count++;
 }
-echo $count;

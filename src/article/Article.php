@@ -27,7 +27,7 @@ class Article
     function __construct($url)
     {
         $this->url = $url;
-        $this->exceptions = ["We use cookies", "By choosing I Accept", "FILED UNDER", "Filed under", "/t.co/"];
+        $this->exceptions = ["We use cookies", "By choosing I Accept", "FILED UNDER", "Filed under", "/t.co/", "twitter.com/"];
     }
 
 
@@ -53,7 +53,11 @@ class Article
 
         $this->source = $html->find($domName, 0)->getAllAttributes()['content'];
         $this->title = $html->find($domTitle, 0)->innertext;
+        $this->title = html_entity_decode($this->title);
+
         $this->subtitle = $html->find($domSubtitle, 0)->innertext;
+        $this->subtitle = html_entity_decode($this->subtitle);
+
         try {
             if ($html->find($domDatetime, 0) == null) {
                 throw new Exception();
@@ -65,15 +69,15 @@ class Article
             $this->datetime = "";
         }
 
-        foreach ($html->find("p, img") as $element) {
+        foreach ($html->find($domContent) as $element) {
             if (isset($element->src)) {
                 $this->content[] .= $element;
             } elseif ($this->validateText($element->plaintext) == false) {
-                $this->content[] = $element->plaintext;
+                $this->content[] = html_entity_decode($element->plaintext);
             }
         }
 
-        $this->content = serialize($this->content);;
+        $this->content = serialize($this->content);
 
         // clean up memory
         $html->clear();
