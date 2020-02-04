@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 
 require_once 'vendor/autoload.php';
 require_once 'src/generated-conf/config.php';
-use orm\orm\VgArticleQuery;
+use orm\orm\ArticlesPropelQuery;
 
 //$slug = $_SERVER['REQUEST_URL'];
 $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -20,8 +20,8 @@ $slug = str_replace('/', '', $path);
 //var_dump($slug);
 
 //$slug = "posmotrite-pervyy-treyler-filma-ubegayushchiye-ot-marvels-runaways-ot-hulu";
-$article = VgArticleQuery::create()
-    ->where('VgArticle.slug = ?', $slug)
+$article = ArticlesPropelQuery::create()
+    ->where('ArticlesPropel.slug = ?', $slug)
     ->limit(1)
     ->find();
 foreach ($article as $row) {

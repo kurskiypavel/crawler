@@ -17,12 +17,12 @@ error_reporting(E_ALL);
 
 require_once '../vendor/autoload.php';
 require_once '../src/generated-conf/config.php';
-use orm\orm\VgArticleQuery;
+use orm\orm\ArticlesPropelQuery;
 
 
 if( isset($_POST['id']) ) {
     $id = $_POST['id'];
-    $asd =  VgArticleQuery::create()->findPK($id);
+    $asd =  ArticlesPropelQuery::create()->findPK($id);
 
     echo $asd->exportTo('JSON');
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<database name="default" defaultIdMethod="native" namespace="orm" defaultPhpNamingMethod="underscore">
-  <table name="articles" idMethod="native" phpName="ArticlesPropel" namespace="orm">
+<database name="default" defaultIdMethod="native" defaultPhpNamingMethod="underscore">
+  <table name="vg_article" idMethod="native" phpName="VgArticle">
     <column name="id" phpName="Id" type="INTEGER" sqlType="int(11) unsigned" primaryKey="true" autoIncrement="true" required="true"/>
     <column name="slug" phpName="Slug" type="LONGVARCHAR"/>
     <column name="title" phpName="Title" type="LONGVARCHAR"/>
@@ -8,10 +8,10 @@
     <column name="source" phpName="Source" type="LONGVARCHAR"/>
     <column name="content" phpName="Content" type="LONGVARCHAR"/>
     <column name="rawhtml" phpName="Rawhtml" type="LONGVARCHAR"/>
-    <column name="json_translateRU" phpName="Json_translateRU" type="LONGVARCHAR"/>
+    <column name="json_translateRU" phpName="JsonTranslateru" type="LONGVARCHAR"/>
     <column name="datetime" phpName="Datetime" type="VARCHAR" size="50"/>
     <column name="url" phpName="Url" type="LONGVARCHAR"/>
-    <column name="translated" phpName="Translated" type="BOOLEAN"/>
+    <column name="translated" phpName="Translated" type="BOOLEAN" size="1"/>
     <vendor type="mysql">
       <parameter name="Engine" value="InnoDB"/>
     </vendor>

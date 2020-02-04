@@ -12,7 +12,7 @@ require_once 'vendor/autoload.php';
 require_once 'src/generated-conf/config.php';
 
 use article\Article;
-use orm\orm\VgArticleQuery;
+use orm\orm\ArticlesPropelQuery;
 use Propel\Runtime\ActiveQuery\Criteria;
 
 
@@ -125,9 +125,9 @@ function slugify($text)
 }
 
 
-$articles = VgArticleQuery::create()
-    ->condition('cond1', 'VgArticle.slug IS NULL')
-    ->condition('cond2', 'VgArticle.json_translateRU IS NOT NULL')
+$articles = ArticlesPropelQuery::create()
+    ->condition('cond1', 'ArticlesPropel.slug IS NULL')
+    ->condition('cond2', 'ArticlesPropel.json_translateRU IS NOT NULL')
     ->where(array('cond1', 'cond2'), Criteria::LOGICAL_AND)
     ->find();
 foreach ($articles as $row) {

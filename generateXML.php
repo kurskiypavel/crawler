@@ -18,14 +18,14 @@ require_once 'src/generated-conf/config.php';
 
 
 use article\Article;
-use orm\orm\VgArticleQuery;
+use orm\orm\ArticlesPropelQuery;
 use Propel\Runtime\ActiveQuery\Criteria;
 
 $lastmod = date('c');
 $xml = new SimpleXMLElement('<urlset/>');
 
-$articles = VgArticleQuery::create()
-    ->where('VgArticle.slug IS NOT NULL')
+$articles = ArticlesPropelQuery::create()
+    ->where('ArticlesPropel.slug IS NOT NULL')
     ->find();
 foreach ($articles as $row) {
     $slug = $row->getSlug();

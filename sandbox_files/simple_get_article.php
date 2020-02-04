@@ -16,12 +16,12 @@ error_reporting(E_ALL);
 
 require_once '../vendor/autoload.php';
 require_once '../src/generated-conf/config.php';
-use orm\orm\VgArticleQuery;
+use orm\orm\ArticlesPropelQuery;
 $slug = 'posmotrite-pervyy-treyler-filma-ubegayushchiye-ot-marvels-runaways-ot-hulu';
 
 //$slug = "posmotrite-pervyy-treyler-filma-ubegayushchiye-ot-marvels-runaways-ot-hulu";
-$article = VgArticleQuery::create()
-    ->where('VgArticle.url = "https://www.theverge.com/2016/11/13/13597824/why-nail-biting-habit-science"')
+$article = ArticlesPropelQuery::create()
+    ->where('ArticlesPropel.url = "https://www.theverge.com/2016/11/13/13597824/why-nail-biting-habit-science"')
     ->limit(1)
     ->find();
 

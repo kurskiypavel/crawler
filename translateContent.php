@@ -13,7 +13,7 @@ require_once 'vendor/autoload.php';
 require_once 'src/generated-conf/config.php';
 
 use article\Article;
-use orm\orm\VgArticleQuery;
+use orm\orm\ArticlesPropelQuery;
 use Stichoza\GoogleTranslate\GoogleTranslate;
 
 
@@ -128,15 +128,17 @@ function slugify($text)
     return $text;
 }
 
-/*  4. Translate content for each row from vg_article and save to vg_article_ru    */
+/*  4. Translate content for each row from articles and save to vg_article_ru    */
 
 function translateContent()
 {
     $tr = new GoogleTranslate('ru');
 
     /*  3.1. Select all not translated and send to Google Translate API  */
-    $articles = VgArticleQuery::create()
-        ->where('VgArticle.translated IS NULL')
+    $articles = ArticlesPropelQuery::create()
+//        ->where('ArticlesPropel.translated IS NULL')
+        ->where('ArticlesPropel.id = 17')
+
         ->limit(10)
         ->find();
 

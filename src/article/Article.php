@@ -11,7 +11,7 @@
 namespace article;
 
 use Exception;
-use orm\orm\VgArticle;
+use orm\orm\ArticlesPropel;
 use orm\orm\VgArticleRu;
 
 class Article
@@ -87,7 +87,7 @@ class Article
 
     public function store()
     {
-        $articleORM = new VgArticle();
+        $articleORM = new ArticlesPropel();
         $articleORM->setTitle($this->title);
         $articleORM->setSubtitle($this->subtitle);
 

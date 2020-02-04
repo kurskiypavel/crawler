@@ -6,13 +6,13 @@ error_reporting(E_ALL);
 require_once 'vendor/autoload.php';
 require_once 'src/generated-conf/config.php';
 
-use orm\orm\VgArticleQuery;
+use orm\orm\ArticlesPropelQuery;
 use Propel\Runtime\ActiveQuery\Criteria;
 
 
-$articles = VgArticleQuery::create()
-    ->condition('cond1', 'VgArticle.slug IS NOT NULL')
-    ->condition('cond2', 'VgArticle.json_translateRU IS NOT NULL')
+$articles = ArticlesPropelQuery::create()
+    ->condition('cond1', 'ArticlesPropel.slug IS NOT NULL')
+    ->condition('cond2', 'ArticlesPropel.json_translateRU IS NOT NULL')
     ->where(array('cond1', 'cond2'), Criteria::LOGICAL_AND)
     ->limit(100)
     ->orderByDatetime('desc')

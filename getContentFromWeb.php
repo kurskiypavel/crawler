@@ -13,7 +13,7 @@ require_once 'vendor/autoload.php';
 require_once 'src/generated-conf/config.php';
 
 use article\Article;
-use orm\orm\VgArticleQuery;
+use orm\orm\ArticlesPropelQuery;
 use Stichoza\GoogleTranslate\GoogleTranslate;
 
 
@@ -27,12 +27,13 @@ use Stichoza\GoogleTranslate\GoogleTranslate;
 function getContentFromWeb()
 {
     /*  2.1. Select all new articles from DB    */
-    $articlesORM = VgArticleQuery::create()
-        ->where('VgArticle.title IS NULL')
+    $articlesORM = ArticlesPropelQuery::create()
+//        ->where('ArticlesPropel.title IS NULL')
             //translated just temporary
-//        ->where('VgArticle.id > 114')
+        ->where('ArticlesPropel.id = 17')
         ->limit(10)
         ->find();
+
     foreach ($articlesORM as $row) {
 
         /*  2.2. Get content for each new article from WEB  */

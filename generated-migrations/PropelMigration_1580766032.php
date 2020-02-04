@@ -4,10 +4,10 @@ use Propel\Generator\Manager\MigrationManager;
 
 /**
  * Data object containing the SQL and PHP code to migrate the database
- * up to version 1576008566.
- * Generated on 2019-12-10 20:09:26 by pavelkurskiy
+ * up to version 1580766032.
+ * Generated on 2020-02-03 21:40:32 by pavelkurskiy
  */
-class PropelMigration_1576008566
+class PropelMigration_1580766032
 {
     public $comment = '';
 
@@ -45,9 +45,23 @@ class PropelMigration_1576008566
 # It "suspends judgement" for fkey relationships until are tables are set.
 SET FOREIGN_KEY_CHECKS = 0;
 
-ALTER TABLE `vg_article`
+DROP TABLE IF EXISTS `vg_article`;
 
-  ADD `rawhtml` TEXT AFTER `content`;
+CREATE TABLE `articles`
+(
+    `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+    `slug` TEXT,
+    `title` TEXT,
+    `subtitle` TEXT,
+    `source` TEXT,
+    `content` TEXT,
+    `rawhtml` TEXT,
+    `json_translateRU` TEXT,
+    `datetime` VARCHAR(50),
+    `url` TEXT,
+    `translated` TINYINT(1),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
 
 # This restores the fkey checks, after having unset them earlier
 SET FOREIGN_KEY_CHECKS = 1;
@@ -69,9 +83,23 @@ SET FOREIGN_KEY_CHECKS = 1;
 # It "suspends judgement" for fkey relationships until are tables are set.
 SET FOREIGN_KEY_CHECKS = 0;
 
-ALTER TABLE `vg_article`
+DROP TABLE IF EXISTS `articles`;
 
-  DROP `rawhtml`;
+CREATE TABLE `vg_article`
+(
+    `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+    `slug` TEXT,
+    `title` TEXT,
+    `subtitle` TEXT,
+    `source` TEXT,
+    `content` TEXT,
+    `rawhtml` TEXT,
+    `json_translateRU` TEXT,
+    `datetime` VARCHAR(50),
+    `url` TEXT,
+    `translated` TINYINT(1),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
 
 # This restores the fkey checks, after having unset them earlier
 SET FOREIGN_KEY_CHECKS = 1;

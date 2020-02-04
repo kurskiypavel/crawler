@@ -11,12 +11,12 @@ use Propel\Runtime\Exception\PropelException;
 use Propel\Runtime\Map\RelationMap;
 use Propel\Runtime\Map\TableMap;
 use Propel\Runtime\Map\TableMapTrait;
-use orm\orm\VgArticle;
-use orm\orm\VgArticleQuery;
+use orm\orm\ArticlesPropel;
+use orm\orm\ArticlesPropelQuery;
 
 
 /**
- * This class defines the structure of the 'vg_article' table.
+ * This class defines the structure of the 'articles' table.
  *
  *
  *
@@ -26,7 +26,7 @@ use orm\orm\VgArticleQuery;
  * (i.e. if it's a text column type).
  *
  */
-class VgArticleTableMap extends TableMap
+class ArticlesPropelTableMap extends TableMap
 {
     use InstancePoolTrait;
     use TableMapTrait;
@@ -34,7 +34,7 @@ class VgArticleTableMap extends TableMap
     /**
      * The (dot-path) name of this class
      */
-    const CLASS_NAME = 'orm.orm.Map.VgArticleTableMap';
+    const CLASS_NAME = 'orm.orm.Map.ArticlesPropelTableMap';
 
     /**
      * The default database name for this class
@@ -44,17 +44,17 @@ class VgArticleTableMap extends TableMap
     /**
      * The table name for this class
      */
-    const TABLE_NAME = 'vg_article';
+    const TABLE_NAME = 'articles';
 
     /**
      * The related Propel class for this table
      */
-    const OM_CLASS = '\\orm\\orm\\VgArticle';
+    const OM_CLASS = '\\orm\\orm\\ArticlesPropel';
 
     /**
      * A class that can be returned by this tableMap
      */
-    const CLASS_DEFAULT = 'orm.orm.VgArticle';
+    const CLASS_DEFAULT = 'orm.orm.ArticlesPropel';
 
     /**
      * The total number of columns
@@ -74,57 +74,57 @@ class VgArticleTableMap extends TableMap
     /**
      * the column name for the id field
      */
-    const COL_ID = 'vg_article.id';
+    const COL_ID = 'articles.id';
 
     /**
      * the column name for the slug field
      */
-    const COL_SLUG = 'vg_article.slug';
+    const COL_SLUG = 'articles.slug';
 
     /**
      * the column name for the title field
      */
-    const COL_TITLE = 'vg_article.title';
+    const COL_TITLE = 'articles.title';
 
     /**
      * the column name for the subtitle field
      */
-    const COL_SUBTITLE = 'vg_article.subtitle';
+    const COL_SUBTITLE = 'articles.subtitle';
 
     /**
      * the column name for the source field
      */
-    const COL_SOURCE = 'vg_article.source';
+    const COL_SOURCE = 'articles.source';
 
     /**
      * the column name for the content field
      */
-    const COL_CONTENT = 'vg_article.content';
+    const COL_CONTENT = 'articles.content';
 
     /**
      * the column name for the rawhtml field
      */
-    const COL_RAWHTML = 'vg_article.rawhtml';
+    const COL_RAWHTML = 'articles.rawhtml';
 
     /**
      * the column name for the json_translateRU field
      */
-    const COL_JSON_TRANSLATERU = 'vg_article.json_translateRU';
+    const COL_JSON_TRANSLATERU = 'articles.json_translateRU';
 
     /**
      * the column name for the datetime field
      */
-    const COL_DATETIME = 'vg_article.datetime';
+    const COL_DATETIME = 'articles.datetime';
 
     /**
      * the column name for the url field
      */
-    const COL_URL = 'vg_article.url';
+    const COL_URL = 'articles.url';
 
     /**
      * the column name for the translated field
      */
-    const COL_TRANSLATED = 'vg_article.translated';
+    const COL_TRANSLATED = 'articles.translated';
 
     /**
      * The default string format for model objects of the related table
@@ -140,7 +140,7 @@ class VgArticleTableMap extends TableMap
     protected static $fieldNames = array (
         self::TYPE_PHPNAME       => array('Id', 'Slug', 'Title', 'Subtitle', 'Source', 'Content', 'Rawhtml', 'Json_translateRU', 'Datetime', 'Url', 'Translated', ),
         self::TYPE_CAMELNAME     => array('id', 'slug', 'title', 'subtitle', 'source', 'content', 'rawhtml', 'json_translateRU', 'datetime', 'url', 'translated', ),
-        self::TYPE_COLNAME       => array(VgArticleTableMap::COL_ID, VgArticleTableMap::COL_SLUG, VgArticleTableMap::COL_TITLE, VgArticleTableMap::COL_SUBTITLE, VgArticleTableMap::COL_SOURCE, VgArticleTableMap::COL_CONTENT, VgArticleTableMap::COL_RAWHTML, VgArticleTableMap::COL_JSON_TRANSLATERU, VgArticleTableMap::COL_DATETIME, VgArticleTableMap::COL_URL, VgArticleTableMap::COL_TRANSLATED, ),
+        self::TYPE_COLNAME       => array(ArticlesPropelTableMap::COL_ID, ArticlesPropelTableMap::COL_SLUG, ArticlesPropelTableMap::COL_TITLE, ArticlesPropelTableMap::COL_SUBTITLE, ArticlesPropelTableMap::COL_SOURCE, ArticlesPropelTableMap::COL_CONTENT, ArticlesPropelTableMap::COL_RAWHTML, ArticlesPropelTableMap::COL_JSON_TRANSLATERU, ArticlesPropelTableMap::COL_DATETIME, ArticlesPropelTableMap::COL_URL, ArticlesPropelTableMap::COL_TRANSLATED, ),
         self::TYPE_FIELDNAME     => array('id', 'slug', 'title', 'subtitle', 'source', 'content', 'rawhtml', 'json_translateRU', 'datetime', 'url', 'translated', ),
         self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, )
     );
@@ -154,7 +154,7 @@ class VgArticleTableMap extends TableMap
     protected static $fieldKeys = array (
         self::TYPE_PHPNAME       => array('Id' => 0, 'Slug' => 1, 'Title' => 2, 'Subtitle' => 3, 'Source' => 4, 'Content' => 5, 'Rawhtml' => 6, 'Json_translateRU' => 7, 'Datetime' => 8, 'Url' => 9, 'Translated' => 10, ),
         self::TYPE_CAMELNAME     => array('id' => 0, 'slug' => 1, 'title' => 2, 'subtitle' => 3, 'source' => 4, 'content' => 5, 'rawhtml' => 6, 'json_translateRU' => 7, 'datetime' => 8, 'url' => 9, 'translated' => 10, ),
-        self::TYPE_COLNAME       => array(VgArticleTableMap::COL_ID => 0, VgArticleTableMap::COL_SLUG => 1, VgArticleTableMap::COL_TITLE => 2, VgArticleTableMap::COL_SUBTITLE => 3, VgArticleTableMap::COL_SOURCE => 4, VgArticleTableMap::COL_CONTENT => 5, VgArticleTableMap::COL_RAWHTML => 6, VgArticleTableMap::COL_JSON_TRANSLATERU => 7, VgArticleTableMap::COL_DATETIME => 8, VgArticleTableMap::COL_URL => 9, VgArticleTableMap::COL_TRANSLATED => 10, ),
+        self::TYPE_COLNAME       => array(ArticlesPropelTableMap::COL_ID => 0, ArticlesPropelTableMap::COL_SLUG => 1, ArticlesPropelTableMap::COL_TITLE => 2, ArticlesPropelTableMap::COL_SUBTITLE => 3, ArticlesPropelTableMap::COL_SOURCE => 4, ArticlesPropelTableMap::COL_CONTENT => 5, ArticlesPropelTableMap::COL_RAWHTML => 6, ArticlesPropelTableMap::COL_JSON_TRANSLATERU => 7, ArticlesPropelTableMap::COL_DATETIME => 8, ArticlesPropelTableMap::COL_URL => 9, ArticlesPropelTableMap::COL_TRANSLATED => 10, ),
         self::TYPE_FIELDNAME     => array('id' => 0, 'slug' => 1, 'title' => 2, 'subtitle' => 3, 'source' => 4, 'content' => 5, 'rawhtml' => 6, 'json_translateRU' => 7, 'datetime' => 8, 'url' => 9, 'translated' => 10, ),
         self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, )
     );
@@ -169,10 +169,10 @@ class VgArticleTableMap extends TableMap
     public function initialize()
     {
         // attributes
-        $this->setName('vg_article');
-        $this->setPhpName('VgArticle');
+        $this->setName('articles');
+        $this->setPhpName('ArticlesPropel');
         $this->setIdentifierQuoting(false);
-        $this->setClassName('\\orm\\orm\\VgArticle');
+        $this->setClassName('\\orm\\orm\\ArticlesPropel');
         $this->setPackage('orm.orm');
         $this->setUseIdGenerator(true);
         // columns
@@ -253,7 +253,7 @@ class VgArticleTableMap extends TableMap
      */
     public static function getOMClass($withPrefix = true)
     {
-        return $withPrefix ? VgArticleTableMap::CLASS_DEFAULT : VgArticleTableMap::OM_CLASS;
+        return $withPrefix ? ArticlesPropelTableMap::CLASS_DEFAULT : ArticlesPropelTableMap::OM_CLASS;
     }
 
     /**
@@ -267,22 +267,22 @@ class VgArticleTableMap extends TableMap
      *
      * @throws PropelException Any exceptions caught during processing will be
      *                         rethrown wrapped into a PropelException.
-     * @return array           (VgArticle object, last column rank)
+     * @return array           (ArticlesPropel object, last column rank)
      */
     public static function populateObject($row, $offset = 0, $indexType = TableMap::TYPE_NUM)
     {
-        $key = VgArticleTableMap::getPrimaryKeyHashFromRow($row, $offset, $indexType);
-        if (null !== ($obj = VgArticleTableMap::getInstanceFromPool($key))) {
+        $key = ArticlesPropelTableMap::getPrimaryKeyHashFromRow($row, $offset, $indexType);
+        if (null !== ($obj = ArticlesPropelTableMap::getInstanceFromPool($key))) {
             // We no longer rehydrate the object, since this can cause data loss.
             // See http://www.propelorm.org/ticket/509
             // $obj->hydrate($row, $offset, true); // rehydrate
-            $col = $offset + VgArticleTableMap::NUM_HYDRATE_COLUMNS;
+            $col = $offset + ArticlesPropelTableMap::NUM_HYDRATE_COLUMNS;
         } else {
-            $cls = VgArticleTableMap::OM_CLASS;
-            /** @var VgArticle $obj */
+            $cls = ArticlesPropelTableMap::OM_CLASS;
+            /** @var ArticlesPropel $obj */
             $obj = new $cls();
             $col = $obj->hydrate($row, $offset, false, $indexType);
-            VgArticleTableMap::addInstanceToPool($obj, $key);
+            ArticlesPropelTableMap::addInstanceToPool($obj, $key);
         }
 
         return array($obj, $col);
@@ -305,18 +305,18 @@ class VgArticleTableMap extends TableMap
         $cls = static::getOMClass(false);
         // populate the object(s)
         while ($row = $dataFetcher->fetch()) {
-            $key = VgArticleTableMap::getPrimaryKeyHashFromRow($row, 0, $dataFetcher->getIndexType());
-            if (null !== ($obj = VgArticleTableMap::getInstanceFromPool($key))) {
+            $key = ArticlesPropelTableMap::getPrimaryKeyHashFromRow($row, 0, $dataFetcher->getIndexType());
+            if (null !== ($obj = ArticlesPropelTableMap::getInstanceFromPool($key))) {
                 // We no longer rehydrate the object, since this can cause data loss.
                 // See http://www.propelorm.org/ticket/509
                 // $obj->hydrate($row, 0, true); // rehydrate
                 $results[] = $obj;
             } else {
-                /** @var VgArticle $obj */
+                /** @var ArticlesPropel $obj */
                 $obj = new $cls();
                 $obj->hydrate($row);
                 $results[] = $obj;
-                VgArticleTableMap::addInstanceToPool($obj, $key);
+                ArticlesPropelTableMap::addInstanceToPool($obj, $key);
             } // if key exists
         }
 
@@ -337,17 +337,17 @@ class VgArticleTableMap extends TableMap
     public static function addSelectColumns(Criteria $criteria, $alias = null)
     {
         if (null === $alias) {
-            $criteria->addSelectColumn(VgArticleTableMap::COL_ID);
-            $criteria->addSelectColumn(VgArticleTableMap::COL_SLUG);
-            $criteria->addSelectColumn(VgArticleTableMap::COL_TITLE);
-            $criteria->addSelectColumn(VgArticleTableMap::COL_SUBTITLE);
-            $criteria->addSelectColumn(VgArticleTableMap::COL_SOURCE);
-            $criteria->addSelectColumn(VgArticleTableMap::COL_CONTENT);
-            $criteria->addSelectColumn(VgArticleTableMap::COL_RAWHTML);
-            $criteria->addSelectColumn(VgArticleTableMap::COL_JSON_TRANSLATERU);
-            $criteria->addSelectColumn(VgArticleTableMap::COL_DATETIME);
-            $criteria->addSelectColumn(VgArticleTableMap::COL_URL);
-            $criteria->addSelectColumn(VgArticleTableMap::COL_TRANSLATED);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_ID);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_SLUG);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_TITLE);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_SUBTITLE);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_SOURCE);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_CONTENT);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_RAWHTML);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_JSON_TRANSLATERU);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_DATETIME);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_URL);
+            $criteria->addSelectColumn(ArticlesPropelTableMap::COL_TRANSLATED);
         } else {
             $criteria->addSelectColumn($alias . '.id');
             $criteria->addSelectColumn($alias . '.slug');
@@ -372,7 +372,7 @@ class VgArticleTableMap extends TableMap
      */
     public static function getTableMap()
     {
-        return Propel::getServiceContainer()->getDatabaseMap(VgArticleTableMap::DATABASE_NAME)->getTable(VgArticleTableMap::TABLE_NAME);
+        return Propel::getServiceContainer()->getDatabaseMap(ArticlesPropelTableMap::DATABASE_NAME)->getTable(ArticlesPropelTableMap::TABLE_NAME);
     }
 
     /**
@@ -380,16 +380,16 @@ class VgArticleTableMap extends TableMap
      */
     public static function buildTableMap()
     {
-        $dbMap = Propel::getServiceContainer()->getDatabaseMap(VgArticleTableMap::DATABASE_NAME);
-        if (!$dbMap->hasTable(VgArticleTableMap::TABLE_NAME)) {
-            $dbMap->addTableObject(new VgArticleTableMap());
+        $dbMap = Propel::getServiceContainer()->getDatabaseMap(ArticlesPropelTableMap::DATABASE_NAME);
+        if (!$dbMap->hasTable(ArticlesPropelTableMap::TABLE_NAME)) {
+            $dbMap->addTableObject(new ArticlesPropelTableMap());
         }
     }
 
     /**
-     * Performs a DELETE on the database, given a VgArticle or Criteria object OR a primary key value.
+     * Performs a DELETE on the database, given a ArticlesPropel or Criteria object OR a primary key value.
      *
-     * @param mixed               $values Criteria or VgArticle object or primary key or array of primary keys
+     * @param mixed               $values Criteria or ArticlesPropel object or primary key or array of primary keys
      *              which is used to create the DELETE statement
      * @param  ConnectionInterface $con the connection to use
      * @return int             The number of affected rows (if supported by underlying database driver).  This includes CASCADE-related rows
@@ -400,27 +400,27 @@ class VgArticleTableMap extends TableMap
      public static function doDelete($values, ConnectionInterface $con = null)
      {
         if (null === $con) {
-            $con = Propel::getServiceContainer()->getWriteConnection(VgArticleTableMap::DATABASE_NAME);
+            $con = Propel::getServiceContainer()->getWriteConnection(ArticlesPropelTableMap::DATABASE_NAME);
         }
 
         if ($values instanceof Criteria) {
             // rename for clarity
             $criteria = $values;
-        } elseif ($values instanceof \orm\orm\VgArticle) { // it's a model object
+        } elseif ($values instanceof \orm\orm\ArticlesPropel) { // it's a model object
             // create criteria based on pk values
             $criteria = $values->buildPkeyCriteria();
         } else { // it's a primary key, or an array of pks
-            $criteria = new Criteria(VgArticleTableMap::DATABASE_NAME);
-            $criteria->add(VgArticleTableMap::COL_ID, (array) $values, Criteria::IN);
+            $criteria = new Criteria(ArticlesPropelTableMap::DATABASE_NAME);
+            $criteria->add(ArticlesPropelTableMap::COL_ID, (array) $values, Criteria::IN);
         }
 
-        $query = VgArticleQuery::create()->mergeWith($criteria);
+        $query = ArticlesPropelQuery::create()->mergeWith($criteria);
 
         if ($values instanceof Criteria) {
-            VgArticleTableMap::clearInstancePool();
+            ArticlesPropelTableMap::clearInstancePool();
         } elseif (!is_object($values)) { // it's a primary key, or an array of pks
             foreach ((array) $values as $singleval) {
-                VgArticleTableMap::removeInstanceFromPool($singleval);
+                ArticlesPropelTableMap::removeInstanceFromPool($singleval);
             }
         }
 
@@ -428,20 +428,20 @@ class VgArticleTableMap extends TableMap
     }
 
     /**
-     * Deletes all rows from the vg_article table.
+     * Deletes all rows from the articles table.
      *
      * @param ConnectionInterface $con the connection to use
      * @return int The number of affected rows (if supported by underlying database driver).
      */
     public static function doDeleteAll(ConnectionInterface $con = null)
     {
-        return VgArticleQuery::create()->doDeleteAll($con);
+        return ArticlesPropelQuery::create()->doDeleteAll($con);
     }
 
     /**
-     * Performs an INSERT on the database, given a VgArticle or Criteria object.
+     * Performs an INSERT on the database, given a ArticlesPropel or Criteria object.
      *
-     * @param mixed               $criteria Criteria or VgArticle object containing data that is used to create the INSERT statement.
+     * @param mixed               $criteria Criteria or ArticlesPropel object containing data that is used to create the INSERT statement.
      * @param ConnectionInterface $con the ConnectionInterface connection to use
      * @return mixed           The new primary key.
      * @throws PropelException Any exceptions caught during processing will be
@@ -450,22 +450,22 @@ class VgArticleTableMap extends TableMap
     public static function doInsert($criteria, ConnectionInterface $con = null)
     {
         if (null === $con) {
-            $con = Propel::getServiceContainer()->getWriteConnection(VgArticleTableMap::DATABASE_NAME);
+            $con = Propel::getServiceContainer()->getWriteConnection(ArticlesPropelTableMap::DATABASE_NAME);
         }
 
         if ($criteria instanceof Criteria) {
             $criteria = clone $criteria; // rename for clarity
         } else {
-            $criteria = $criteria->buildCriteria(); // build Criteria from VgArticle object
+            $criteria = $criteria->buildCriteria(); // build Criteria from ArticlesPropel object
         }
 
-        if ($criteria->containsKey(VgArticleTableMap::COL_ID) && $criteria->keyContainsValue(VgArticleTableMap::COL_ID) ) {
-            throw new PropelException('Cannot insert a value for auto-increment primary key ('.VgArticleTableMap::COL_ID.')');
+        if ($criteria->containsKey(ArticlesPropelTableMap::COL_ID) && $criteria->keyContainsValue(ArticlesPropelTableMap::COL_ID) ) {
+            throw new PropelException('Cannot insert a value for auto-increment primary key ('.ArticlesPropelTableMap::COL_ID.')');
         }
 
 
         // Set the correct dbName
-        $query = VgArticleQuery::create()->mergeWith($criteria);
+        $query = ArticlesPropelQuery::create()->mergeWith($criteria);
 
         // use transaction because $criteria could contain info
         // for more than one table (I guess, conceivably)
@@ -474,7 +474,7 @@ class VgArticleTableMap extends TableMap
         });
     }
 
-} // VgArticleTableMap
+} // ArticlesPropelTableMap
 // This is the static code needed to register the TableMap for this table with the main Propel class.
 //
-VgArticleTableMap::buildTableMap();
+ArticlesPropelTableMap::buildTableMap();

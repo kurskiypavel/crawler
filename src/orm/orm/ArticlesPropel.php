@@ -2,10 +2,10 @@
 
 namespace orm\orm;
 
-use orm\orm\Base\VgArticleRuQuery as BaseVgArticleRuQuery;
+use orm\orm\Base\ArticlesPropel as BaseArticlesPropel;
 
 /**
- * Skeleton subclass for performing query and update operations on the 'vg_article_ru' table.
+ * Skeleton subclass for representing a row from the 'articles' table.
  *
  *
  *
@@ -14,7 +14,7 @@ use orm\orm\Base\VgArticleRuQuery as BaseVgArticleRuQuery;
  * long as it does not already exist in the output directory.
  *
  */
-class VgArticleRuQuery extends BaseVgArticleRuQuery
+class ArticlesPropel extends BaseArticlesPropel
 {
 
 }

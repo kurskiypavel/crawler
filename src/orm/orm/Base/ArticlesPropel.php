@@ -15,22 +15,22 @@ use Propel\Runtime\Exception\LogicException;
 use Propel\Runtime\Exception\PropelException;
 use Propel\Runtime\Map\TableMap;
 use Propel\Runtime\Parser\AbstractParser;
-use orm\orm\VgArticleRuQuery as ChildVgArticleRuQuery;
-use orm\orm\Map\VgArticleRuTableMap;
+use orm\orm\ArticlesPropelQuery as ChildArticlesPropelQuery;
+use orm\orm\Map\ArticlesPropelTableMap;
 
 /**
- * Base class that represents a row from the 'vg_article_ru' table.
+ * Base class that represents a row from the 'articles' table.
  *
  *
  *
  * @package    propel.generator.orm.orm.Base
  */
-abstract class VgArticleRu implements ActiveRecordInterface
+abstract class ArticlesPropel implements ActiveRecordInterface
 {
     /**
      * TableMap class name
      */
-    const TABLE_MAP = '\\orm\\orm\\Map\\VgArticleRuTableMap';
+    const TABLE_MAP = '\\orm\\orm\\Map\\ArticlesPropelTableMap';
 
 
     /**
@@ -67,6 +67,13 @@ abstract class VgArticleRu implements ActiveRecordInterface
     protected $id;
 
     /**
+     * The value for the slug field.
+     *
+     * @var        string
+     */
+    protected $slug;
+
+    /**
      * The value for the title field.
      *
      * @var        string
@@ -93,6 +100,20 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * @var        string
      */
     protected $content;
+
+    /**
+     * The value for the rawhtml field.
+     *
+     * @var        string
+     */
+    protected $rawhtml;
+
+    /**
+     * The value for the json_translateru field.
+     *
+     * @var        string
+     */
+    protected $json_translateru;
 
     /**
      * The value for the datetime field.
@@ -124,7 +145,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
     protected $alreadyInSave = false;
 
     /**
-     * Initializes internal state of orm\orm\Base\VgArticleRu object.
+     * Initializes internal state of orm\orm\Base\ArticlesPropel object.
      */
     public function __construct()
     {
@@ -219,9 +240,9 @@ abstract class VgArticleRu implements ActiveRecordInterface
     }
 
     /**
-     * Compares this with another <code>VgArticleRu</code> instance.  If
-     * <code>obj</code> is an instance of <code>VgArticleRu</code>, delegates to
-     * <code>equals(VgArticleRu)</code>.  Otherwise, returns <code>false</code>.
+     * Compares this with another <code>ArticlesPropel</code> instance.  If
+     * <code>obj</code> is an instance of <code>ArticlesPropel</code>, delegates to
+     * <code>equals(ArticlesPropel)</code>.  Otherwise, returns <code>false</code>.
      *
      * @param  mixed   $obj The object to compare to.
      * @return boolean Whether equal to the object specified.
@@ -287,7 +308,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * @param string $name  The virtual column name
      * @param mixed  $value The value to give to the virtual column
      *
-     * @return $this|VgArticleRu The current object, for fluid interface
+     * @return $this|ArticlesPropel The current object, for fluid interface
      */
     public function setVirtualColumn($name, $value)
     {
@@ -359,6 +380,16 @@ abstract class VgArticleRu implements ActiveRecordInterface
     }
 
     /**
+     * Get the [slug] column value.
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
      * Get the [title] column value.
      *
      * @return string
@@ -396,6 +427,26 @@ abstract class VgArticleRu implements ActiveRecordInterface
     public function getContent()
     {
         return $this->content;
+    }
+
+    /**
+     * Get the [rawhtml] column value.
+     *
+     * @return string
+     */
+    public function getRawhtml()
+    {
+        return $this->rawhtml;
+    }
+
+    /**
+     * Get the [json_translateru] column value.
+     *
+     * @return string
+     */
+    public function getJson_translateRU()
+    {
+        return $this->json_translateru;
     }
 
     /**
@@ -442,7 +493,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * Set the value of [id] column.
      *
      * @param int $v new value
-     * @return $this|\orm\orm\VgArticleRu The current object (for fluent API support)
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
      */
     public function setId($v)
     {
@@ -452,17 +503,37 @@ abstract class VgArticleRu implements ActiveRecordInterface
 
         if ($this->id !== $v) {
             $this->id = $v;
-            $this->modifiedColumns[VgArticleRuTableMap::COL_ID] = true;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_ID] = true;
         }
 
         return $this;
     } // setId()
 
     /**
+     * Set the value of [slug] column.
+     *
+     * @param string $v new value
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
+     */
+    public function setSlug($v)
+    {
+        if ($v !== null) {
+            $v = (string) $v;
+        }
+
+        if ($this->slug !== $v) {
+            $this->slug = $v;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_SLUG] = true;
+        }
+
+        return $this;
+    } // setSlug()
+
+    /**
      * Set the value of [title] column.
      *
      * @param string $v new value
-     * @return $this|\orm\orm\VgArticleRu The current object (for fluent API support)
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
      */
     public function setTitle($v)
     {
@@ -472,7 +543,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
 
         if ($this->title !== $v) {
             $this->title = $v;
-            $this->modifiedColumns[VgArticleRuTableMap::COL_TITLE] = true;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_TITLE] = true;
         }
 
         return $this;
@@ -482,7 +553,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * Set the value of [subtitle] column.
      *
      * @param string $v new value
-     * @return $this|\orm\orm\VgArticleRu The current object (for fluent API support)
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
      */
     public function setSubtitle($v)
     {
@@ -492,7 +563,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
 
         if ($this->subtitle !== $v) {
             $this->subtitle = $v;
-            $this->modifiedColumns[VgArticleRuTableMap::COL_SUBTITLE] = true;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_SUBTITLE] = true;
         }
 
         return $this;
@@ -502,7 +573,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * Set the value of [source] column.
      *
      * @param string $v new value
-     * @return $this|\orm\orm\VgArticleRu The current object (for fluent API support)
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
      */
     public function setSource($v)
     {
@@ -512,7 +583,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
 
         if ($this->source !== $v) {
             $this->source = $v;
-            $this->modifiedColumns[VgArticleRuTableMap::COL_SOURCE] = true;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_SOURCE] = true;
         }
 
         return $this;
@@ -522,7 +593,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * Set the value of [content] column.
      *
      * @param string $v new value
-     * @return $this|\orm\orm\VgArticleRu The current object (for fluent API support)
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
      */
     public function setContent($v)
     {
@@ -532,17 +603,57 @@ abstract class VgArticleRu implements ActiveRecordInterface
 
         if ($this->content !== $v) {
             $this->content = $v;
-            $this->modifiedColumns[VgArticleRuTableMap::COL_CONTENT] = true;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_CONTENT] = true;
         }
 
         return $this;
     } // setContent()
 
     /**
+     * Set the value of [rawhtml] column.
+     *
+     * @param string $v new value
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
+     */
+    public function setRawhtml($v)
+    {
+        if ($v !== null) {
+            $v = (string) $v;
+        }
+
+        if ($this->rawhtml !== $v) {
+            $this->rawhtml = $v;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_RAWHTML] = true;
+        }
+
+        return $this;
+    } // setRawhtml()
+
+    /**
+     * Set the value of [json_translateru] column.
+     *
+     * @param string $v new value
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
+     */
+    public function setJson_translateRU($v)
+    {
+        if ($v !== null) {
+            $v = (string) $v;
+        }
+
+        if ($this->json_translateru !== $v) {
+            $this->json_translateru = $v;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_JSON_TRANSLATERU] = true;
+        }
+
+        return $this;
+    } // setJson_translateRU()
+
+    /**
      * Set the value of [datetime] column.
      *
      * @param string $v new value
-     * @return $this|\orm\orm\VgArticleRu The current object (for fluent API support)
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
      */
     public function setDatetime($v)
     {
@@ -552,7 +663,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
 
         if ($this->datetime !== $v) {
             $this->datetime = $v;
-            $this->modifiedColumns[VgArticleRuTableMap::COL_DATETIME] = true;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_DATETIME] = true;
         }
 
         return $this;
@@ -562,7 +673,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * Set the value of [url] column.
      *
      * @param string $v new value
-     * @return $this|\orm\orm\VgArticleRu The current object (for fluent API support)
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
      */
     public function setUrl($v)
     {
@@ -572,7 +683,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
 
         if ($this->url !== $v) {
             $this->url = $v;
-            $this->modifiedColumns[VgArticleRuTableMap::COL_URL] = true;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_URL] = true;
         }
 
         return $this;
@@ -586,7 +697,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * Check on string values is case insensitive (so 'FaLsE' is seen as 'false').
      *
      * @param  boolean|integer|string $v The new value
-     * @return $this|\orm\orm\VgArticleRu The current object (for fluent API support)
+     * @return $this|\orm\orm\ArticlesPropel The current object (for fluent API support)
      */
     public function setTranslated($v)
     {
@@ -600,7 +711,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
 
         if ($this->translated !== $v) {
             $this->translated = $v;
-            $this->modifiedColumns[VgArticleRuTableMap::COL_TRANSLATED] = true;
+            $this->modifiedColumns[ArticlesPropelTableMap::COL_TRANSLATED] = true;
         }
 
         return $this;
@@ -642,28 +753,37 @@ abstract class VgArticleRu implements ActiveRecordInterface
     {
         try {
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 0 + $startcol : VgArticleRuTableMap::translateFieldName('Id', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 0 + $startcol : ArticlesPropelTableMap::translateFieldName('Id', TableMap::TYPE_PHPNAME, $indexType)];
             $this->id = (null !== $col) ? (int) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 1 + $startcol : VgArticleRuTableMap::translateFieldName('Title', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 1 + $startcol : ArticlesPropelTableMap::translateFieldName('Slug', TableMap::TYPE_PHPNAME, $indexType)];
+            $this->slug = (null !== $col) ? (string) $col : null;
+
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 2 + $startcol : ArticlesPropelTableMap::translateFieldName('Title', TableMap::TYPE_PHPNAME, $indexType)];
             $this->title = (null !== $col) ? (string) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 2 + $startcol : VgArticleRuTableMap::translateFieldName('Subtitle', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 3 + $startcol : ArticlesPropelTableMap::translateFieldName('Subtitle', TableMap::TYPE_PHPNAME, $indexType)];
             $this->subtitle = (null !== $col) ? (string) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 3 + $startcol : VgArticleRuTableMap::translateFieldName('Source', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 4 + $startcol : ArticlesPropelTableMap::translateFieldName('Source', TableMap::TYPE_PHPNAME, $indexType)];
             $this->source = (null !== $col) ? (string) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 4 + $startcol : VgArticleRuTableMap::translateFieldName('Content', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 5 + $startcol : ArticlesPropelTableMap::translateFieldName('Content', TableMap::TYPE_PHPNAME, $indexType)];
             $this->content = (null !== $col) ? (string) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 5 + $startcol : VgArticleRuTableMap::translateFieldName('Datetime', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 6 + $startcol : ArticlesPropelTableMap::translateFieldName('Rawhtml', TableMap::TYPE_PHPNAME, $indexType)];
+            $this->rawhtml = (null !== $col) ? (string) $col : null;
+
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 7 + $startcol : ArticlesPropelTableMap::translateFieldName('Json_translateRU', TableMap::TYPE_PHPNAME, $indexType)];
+            $this->json_translateru = (null !== $col) ? (string) $col : null;
+
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 8 + $startcol : ArticlesPropelTableMap::translateFieldName('Datetime', TableMap::TYPE_PHPNAME, $indexType)];
             $this->datetime = (null !== $col) ? (string) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 6 + $startcol : VgArticleRuTableMap::translateFieldName('Url', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 9 + $startcol : ArticlesPropelTableMap::translateFieldName('Url', TableMap::TYPE_PHPNAME, $indexType)];
             $this->url = (null !== $col) ? (string) $col : null;
 
-            $col = $row[TableMap::TYPE_NUM == $indexType ? 7 + $startcol : VgArticleRuTableMap::translateFieldName('Translated', TableMap::TYPE_PHPNAME, $indexType)];
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 10 + $startcol : ArticlesPropelTableMap::translateFieldName('Translated', TableMap::TYPE_PHPNAME, $indexType)];
             $this->translated = (null !== $col) ? (boolean) $col : null;
             $this->resetModified();
 
@@ -673,10 +793,10 @@ abstract class VgArticleRu implements ActiveRecordInterface
                 $this->ensureConsistency();
             }
 
-            return $startcol + 8; // 8 = VgArticleRuTableMap::NUM_HYDRATE_COLUMNS.
+            return $startcol + 11; // 11 = ArticlesPropelTableMap::NUM_HYDRATE_COLUMNS.
 
         } catch (Exception $e) {
-            throw new PropelException(sprintf('Error populating %s object', '\\orm\\orm\\VgArticleRu'), 0, $e);
+            throw new PropelException(sprintf('Error populating %s object', '\\orm\\orm\\ArticlesPropel'), 0, $e);
         }
     }
 
@@ -718,13 +838,13 @@ abstract class VgArticleRu implements ActiveRecordInterface
         }
 
         if ($con === null) {
-            $con = Propel::getServiceContainer()->getReadConnection(VgArticleRuTableMap::DATABASE_NAME);
+            $con = Propel::getServiceContainer()->getReadConnection(ArticlesPropelTableMap::DATABASE_NAME);
         }
 
         // We don't need to alter the object instance pool; we're just modifying this instance
         // already in the pool.
 
-        $dataFetcher = ChildVgArticleRuQuery::create(null, $this->buildPkeyCriteria())->setFormatter(ModelCriteria::FORMAT_STATEMENT)->find($con);
+        $dataFetcher = ChildArticlesPropelQuery::create(null, $this->buildPkeyCriteria())->setFormatter(ModelCriteria::FORMAT_STATEMENT)->find($con);
         $row = $dataFetcher->fetch();
         $dataFetcher->close();
         if (!$row) {
@@ -743,8 +863,8 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * @param      ConnectionInterface $con
      * @return void
      * @throws PropelException
-     * @see VgArticleRu::setDeleted()
-     * @see VgArticleRu::isDeleted()
+     * @see ArticlesPropel::setDeleted()
+     * @see ArticlesPropel::isDeleted()
      */
     public function delete(ConnectionInterface $con = null)
     {
@@ -753,11 +873,11 @@ abstract class VgArticleRu implements ActiveRecordInterface
         }
 
         if ($con === null) {
-            $con = Propel::getServiceContainer()->getWriteConnection(VgArticleRuTableMap::DATABASE_NAME);
+            $con = Propel::getServiceContainer()->getWriteConnection(ArticlesPropelTableMap::DATABASE_NAME);
         }
 
         $con->transaction(function () use ($con) {
-            $deleteQuery = ChildVgArticleRuQuery::create()
+            $deleteQuery = ChildArticlesPropelQuery::create()
                 ->filterByPrimaryKey($this->getPrimaryKey());
             $ret = $this->preDelete($con);
             if ($ret) {
@@ -792,7 +912,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
         }
 
         if ($con === null) {
-            $con = Propel::getServiceContainer()->getWriteConnection(VgArticleRuTableMap::DATABASE_NAME);
+            $con = Propel::getServiceContainer()->getWriteConnection(ArticlesPropelTableMap::DATABASE_NAME);
         }
 
         return $con->transaction(function () use ($con) {
@@ -811,7 +931,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
                     $this->postUpdate($con);
                 }
                 $this->postSave($con);
-                VgArticleRuTableMap::addInstanceToPool($this);
+                ArticlesPropelTableMap::addInstanceToPool($this);
             } else {
                 $affectedRows = 0;
             }
@@ -868,39 +988,48 @@ abstract class VgArticleRu implements ActiveRecordInterface
         $modifiedColumns = array();
         $index = 0;
 
-        $this->modifiedColumns[VgArticleRuTableMap::COL_ID] = true;
+        $this->modifiedColumns[ArticlesPropelTableMap::COL_ID] = true;
         if (null !== $this->id) {
-            throw new PropelException('Cannot insert a value for auto-increment primary key (' . VgArticleRuTableMap::COL_ID . ')');
+            throw new PropelException('Cannot insert a value for auto-increment primary key (' . ArticlesPropelTableMap::COL_ID . ')');
         }
 
          // check the columns in natural order for more readable SQL queries
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_ID)) {
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_ID)) {
             $modifiedColumns[':p' . $index++]  = 'id';
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_TITLE)) {
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_SLUG)) {
+            $modifiedColumns[':p' . $index++]  = 'slug';
+        }
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_TITLE)) {
             $modifiedColumns[':p' . $index++]  = 'title';
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_SUBTITLE)) {
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_SUBTITLE)) {
             $modifiedColumns[':p' . $index++]  = 'subtitle';
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_SOURCE)) {
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_SOURCE)) {
             $modifiedColumns[':p' . $index++]  = 'source';
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_CONTENT)) {
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_CONTENT)) {
             $modifiedColumns[':p' . $index++]  = 'content';
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_DATETIME)) {
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_RAWHTML)) {
+            $modifiedColumns[':p' . $index++]  = 'rawhtml';
+        }
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_JSON_TRANSLATERU)) {
+            $modifiedColumns[':p' . $index++]  = 'json_translateRU';
+        }
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_DATETIME)) {
             $modifiedColumns[':p' . $index++]  = 'datetime';
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_URL)) {
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_URL)) {
             $modifiedColumns[':p' . $index++]  = 'url';
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_TRANSLATED)) {
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_TRANSLATED)) {
             $modifiedColumns[':p' . $index++]  = 'translated';
         }
 
         $sql = sprintf(
-            'INSERT INTO vg_article_ru (%s) VALUES (%s)',
+            'INSERT INTO articles (%s) VALUES (%s)',
             implode(', ', $modifiedColumns),
             implode(', ', array_keys($modifiedColumns))
         );
@@ -911,6 +1040,9 @@ abstract class VgArticleRu implements ActiveRecordInterface
                 switch ($columnName) {
                     case 'id':
                         $stmt->bindValue($identifier, $this->id, PDO::PARAM_INT);
+                        break;
+                    case 'slug':
+                        $stmt->bindValue($identifier, $this->slug, PDO::PARAM_STR);
                         break;
                     case 'title':
                         $stmt->bindValue($identifier, $this->title, PDO::PARAM_STR);
@@ -923,6 +1055,12 @@ abstract class VgArticleRu implements ActiveRecordInterface
                         break;
                     case 'content':
                         $stmt->bindValue($identifier, $this->content, PDO::PARAM_STR);
+                        break;
+                    case 'rawhtml':
+                        $stmt->bindValue($identifier, $this->rawhtml, PDO::PARAM_STR);
+                        break;
+                    case 'json_translateRU':
+                        $stmt->bindValue($identifier, $this->json_translateru, PDO::PARAM_STR);
                         break;
                     case 'datetime':
                         $stmt->bindValue($identifier, $this->datetime, PDO::PARAM_STR);
@@ -979,7 +1117,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      */
     public function getByName($name, $type = TableMap::TYPE_PHPNAME)
     {
-        $pos = VgArticleRuTableMap::translateFieldName($name, $type, TableMap::TYPE_NUM);
+        $pos = ArticlesPropelTableMap::translateFieldName($name, $type, TableMap::TYPE_NUM);
         $field = $this->getByPosition($pos);
 
         return $field;
@@ -999,24 +1137,33 @@ abstract class VgArticleRu implements ActiveRecordInterface
                 return $this->getId();
                 break;
             case 1:
-                return $this->getTitle();
+                return $this->getSlug();
                 break;
             case 2:
-                return $this->getSubtitle();
+                return $this->getTitle();
                 break;
             case 3:
-                return $this->getSource();
+                return $this->getSubtitle();
                 break;
             case 4:
-                return $this->getContent();
+                return $this->getSource();
                 break;
             case 5:
-                return $this->getDatetime();
+                return $this->getContent();
                 break;
             case 6:
-                return $this->getUrl();
+                return $this->getRawhtml();
                 break;
             case 7:
+                return $this->getJson_translateRU();
+                break;
+            case 8:
+                return $this->getDatetime();
+                break;
+            case 9:
+                return $this->getUrl();
+                break;
+            case 10:
                 return $this->getTranslated();
                 break;
             default:
@@ -1042,20 +1189,23 @@ abstract class VgArticleRu implements ActiveRecordInterface
     public function toArray($keyType = TableMap::TYPE_PHPNAME, $includeLazyLoadColumns = true, $alreadyDumpedObjects = array())
     {
 
-        if (isset($alreadyDumpedObjects['VgArticleRu'][$this->hashCode()])) {
+        if (isset($alreadyDumpedObjects['ArticlesPropel'][$this->hashCode()])) {
             return '*RECURSION*';
         }
-        $alreadyDumpedObjects['VgArticleRu'][$this->hashCode()] = true;
-        $keys = VgArticleRuTableMap::getFieldNames($keyType);
+        $alreadyDumpedObjects['ArticlesPropel'][$this->hashCode()] = true;
+        $keys = ArticlesPropelTableMap::getFieldNames($keyType);
         $result = array(
             $keys[0] => $this->getId(),
-            $keys[1] => $this->getTitle(),
-            $keys[2] => $this->getSubtitle(),
-            $keys[3] => $this->getSource(),
-            $keys[4] => $this->getContent(),
-            $keys[5] => $this->getDatetime(),
-            $keys[6] => $this->getUrl(),
-            $keys[7] => $this->getTranslated(),
+            $keys[1] => $this->getSlug(),
+            $keys[2] => $this->getTitle(),
+            $keys[3] => $this->getSubtitle(),
+            $keys[4] => $this->getSource(),
+            $keys[5] => $this->getContent(),
+            $keys[6] => $this->getRawhtml(),
+            $keys[7] => $this->getJson_translateRU(),
+            $keys[8] => $this->getDatetime(),
+            $keys[9] => $this->getUrl(),
+            $keys[10] => $this->getTranslated(),
         );
         $virtualColumns = $this->virtualColumns;
         foreach ($virtualColumns as $key => $virtualColumn) {
@@ -1075,11 +1225,11 @@ abstract class VgArticleRu implements ActiveRecordInterface
      *                one of the class type constants TableMap::TYPE_PHPNAME, TableMap::TYPE_CAMELNAME
      *                TableMap::TYPE_COLNAME, TableMap::TYPE_FIELDNAME, TableMap::TYPE_NUM.
      *                Defaults to TableMap::TYPE_PHPNAME.
-     * @return $this|\orm\orm\VgArticleRu
+     * @return $this|\orm\orm\ArticlesPropel
      */
     public function setByName($name, $value, $type = TableMap::TYPE_PHPNAME)
     {
-        $pos = VgArticleRuTableMap::translateFieldName($name, $type, TableMap::TYPE_NUM);
+        $pos = ArticlesPropelTableMap::translateFieldName($name, $type, TableMap::TYPE_NUM);
 
         return $this->setByPosition($pos, $value);
     }
@@ -1090,7 +1240,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      *
      * @param  int $pos position in xml schema
      * @param  mixed $value field value
-     * @return $this|\orm\orm\VgArticleRu
+     * @return $this|\orm\orm\ArticlesPropel
      */
     public function setByPosition($pos, $value)
     {
@@ -1099,24 +1249,33 @@ abstract class VgArticleRu implements ActiveRecordInterface
                 $this->setId($value);
                 break;
             case 1:
-                $this->setTitle($value);
+                $this->setSlug($value);
                 break;
             case 2:
-                $this->setSubtitle($value);
+                $this->setTitle($value);
                 break;
             case 3:
-                $this->setSource($value);
+                $this->setSubtitle($value);
                 break;
             case 4:
-                $this->setContent($value);
+                $this->setSource($value);
                 break;
             case 5:
-                $this->setDatetime($value);
+                $this->setContent($value);
                 break;
             case 6:
-                $this->setUrl($value);
+                $this->setRawhtml($value);
                 break;
             case 7:
+                $this->setJson_translateRU($value);
+                break;
+            case 8:
+                $this->setDatetime($value);
+                break;
+            case 9:
+                $this->setUrl($value);
+                break;
+            case 10:
                 $this->setTranslated($value);
                 break;
         } // switch()
@@ -1143,31 +1302,40 @@ abstract class VgArticleRu implements ActiveRecordInterface
      */
     public function fromArray($arr, $keyType = TableMap::TYPE_PHPNAME)
     {
-        $keys = VgArticleRuTableMap::getFieldNames($keyType);
+        $keys = ArticlesPropelTableMap::getFieldNames($keyType);
 
         if (array_key_exists($keys[0], $arr)) {
             $this->setId($arr[$keys[0]]);
         }
         if (array_key_exists($keys[1], $arr)) {
-            $this->setTitle($arr[$keys[1]]);
+            $this->setSlug($arr[$keys[1]]);
         }
         if (array_key_exists($keys[2], $arr)) {
-            $this->setSubtitle($arr[$keys[2]]);
+            $this->setTitle($arr[$keys[2]]);
         }
         if (array_key_exists($keys[3], $arr)) {
-            $this->setSource($arr[$keys[3]]);
+            $this->setSubtitle($arr[$keys[3]]);
         }
         if (array_key_exists($keys[4], $arr)) {
-            $this->setContent($arr[$keys[4]]);
+            $this->setSource($arr[$keys[4]]);
         }
         if (array_key_exists($keys[5], $arr)) {
-            $this->setDatetime($arr[$keys[5]]);
+            $this->setContent($arr[$keys[5]]);
         }
         if (array_key_exists($keys[6], $arr)) {
-            $this->setUrl($arr[$keys[6]]);
+            $this->setRawhtml($arr[$keys[6]]);
         }
         if (array_key_exists($keys[7], $arr)) {
-            $this->setTranslated($arr[$keys[7]]);
+            $this->setJson_translateRU($arr[$keys[7]]);
+        }
+        if (array_key_exists($keys[8], $arr)) {
+            $this->setDatetime($arr[$keys[8]]);
+        }
+        if (array_key_exists($keys[9], $arr)) {
+            $this->setUrl($arr[$keys[9]]);
+        }
+        if (array_key_exists($keys[10], $arr)) {
+            $this->setTranslated($arr[$keys[10]]);
         }
     }
 
@@ -1188,7 +1356,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * @param string $data The source data to import from
      * @param string $keyType The type of keys the array uses.
      *
-     * @return $this|\orm\orm\VgArticleRu The current object, for fluid interface
+     * @return $this|\orm\orm\ArticlesPropel The current object, for fluid interface
      */
     public function importFrom($parser, $data, $keyType = TableMap::TYPE_PHPNAME)
     {
@@ -1208,31 +1376,40 @@ abstract class VgArticleRu implements ActiveRecordInterface
      */
     public function buildCriteria()
     {
-        $criteria = new Criteria(VgArticleRuTableMap::DATABASE_NAME);
+        $criteria = new Criteria(ArticlesPropelTableMap::DATABASE_NAME);
 
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_ID)) {
-            $criteria->add(VgArticleRuTableMap::COL_ID, $this->id);
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_ID)) {
+            $criteria->add(ArticlesPropelTableMap::COL_ID, $this->id);
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_TITLE)) {
-            $criteria->add(VgArticleRuTableMap::COL_TITLE, $this->title);
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_SLUG)) {
+            $criteria->add(ArticlesPropelTableMap::COL_SLUG, $this->slug);
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_SUBTITLE)) {
-            $criteria->add(VgArticleRuTableMap::COL_SUBTITLE, $this->subtitle);
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_TITLE)) {
+            $criteria->add(ArticlesPropelTableMap::COL_TITLE, $this->title);
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_SOURCE)) {
-            $criteria->add(VgArticleRuTableMap::COL_SOURCE, $this->source);
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_SUBTITLE)) {
+            $criteria->add(ArticlesPropelTableMap::COL_SUBTITLE, $this->subtitle);
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_CONTENT)) {
-            $criteria->add(VgArticleRuTableMap::COL_CONTENT, $this->content);
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_SOURCE)) {
+            $criteria->add(ArticlesPropelTableMap::COL_SOURCE, $this->source);
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_DATETIME)) {
-            $criteria->add(VgArticleRuTableMap::COL_DATETIME, $this->datetime);
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_CONTENT)) {
+            $criteria->add(ArticlesPropelTableMap::COL_CONTENT, $this->content);
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_URL)) {
-            $criteria->add(VgArticleRuTableMap::COL_URL, $this->url);
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_RAWHTML)) {
+            $criteria->add(ArticlesPropelTableMap::COL_RAWHTML, $this->rawhtml);
         }
-        if ($this->isColumnModified(VgArticleRuTableMap::COL_TRANSLATED)) {
-            $criteria->add(VgArticleRuTableMap::COL_TRANSLATED, $this->translated);
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_JSON_TRANSLATERU)) {
+            $criteria->add(ArticlesPropelTableMap::COL_JSON_TRANSLATERU, $this->json_translateru);
+        }
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_DATETIME)) {
+            $criteria->add(ArticlesPropelTableMap::COL_DATETIME, $this->datetime);
+        }
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_URL)) {
+            $criteria->add(ArticlesPropelTableMap::COL_URL, $this->url);
+        }
+        if ($this->isColumnModified(ArticlesPropelTableMap::COL_TRANSLATED)) {
+            $criteria->add(ArticlesPropelTableMap::COL_TRANSLATED, $this->translated);
         }
 
         return $criteria;
@@ -1250,8 +1427,8 @@ abstract class VgArticleRu implements ActiveRecordInterface
      */
     public function buildPkeyCriteria()
     {
-        $criteria = ChildVgArticleRuQuery::create();
-        $criteria->add(VgArticleRuTableMap::COL_ID, $this->id);
+        $criteria = ChildArticlesPropelQuery::create();
+        $criteria->add(ArticlesPropelTableMap::COL_ID, $this->id);
 
         return $criteria;
     }
@@ -1313,17 +1490,20 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * If desired, this method can also make copies of all associated (fkey referrers)
      * objects.
      *
-     * @param      object $copyObj An object of \orm\orm\VgArticleRu (or compatible) type.
+     * @param      object $copyObj An object of \orm\orm\ArticlesPropel (or compatible) type.
      * @param      boolean $deepCopy Whether to also copy all rows that refer (by fkey) to the current row.
      * @param      boolean $makeNew Whether to reset autoincrement PKs and make the object new.
      * @throws PropelException
      */
     public function copyInto($copyObj, $deepCopy = false, $makeNew = true)
     {
+        $copyObj->setSlug($this->getSlug());
         $copyObj->setTitle($this->getTitle());
         $copyObj->setSubtitle($this->getSubtitle());
         $copyObj->setSource($this->getSource());
         $copyObj->setContent($this->getContent());
+        $copyObj->setRawhtml($this->getRawhtml());
+        $copyObj->setJson_translateRU($this->getJson_translateRU());
         $copyObj->setDatetime($this->getDatetime());
         $copyObj->setUrl($this->getUrl());
         $copyObj->setTranslated($this->getTranslated());
@@ -1342,7 +1522,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      * objects.
      *
      * @param  boolean $deepCopy Whether to also copy all rows that refer (by fkey) to the current row.
-     * @return \orm\orm\VgArticleRu Clone of current object.
+     * @return \orm\orm\ArticlesPropel Clone of current object.
      * @throws PropelException
      */
     public function copy($deepCopy = false)
@@ -1363,10 +1543,13 @@ abstract class VgArticleRu implements ActiveRecordInterface
     public function clear()
     {
         $this->id = null;
+        $this->slug = null;
         $this->title = null;
         $this->subtitle = null;
         $this->source = null;
         $this->content = null;
+        $this->rawhtml = null;
+        $this->json_translateru = null;
         $this->datetime = null;
         $this->url = null;
         $this->translated = null;
@@ -1399,7 +1582,7 @@ abstract class VgArticleRu implements ActiveRecordInterface
      */
     public function __toString()
     {
-        return (string) $this->exportTo(VgArticleRuTableMap::DEFAULT_STRING_FORMAT);
+        return (string) $this->exportTo(ArticlesPropelTableMap::DEFAULT_STRING_FORMAT);
     }
 
     /**

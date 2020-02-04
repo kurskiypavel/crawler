@@ -3,683 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="ef037860-1ade-47eb-9396-da2ed7b7dd80" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generateSlug.php" beforeDir="false" afterPath="$PROJECT_DIR$/generateSlug.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generateXML.php" beforeDir="false" afterPath="$PROJECT_DIR$/generateXML.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated-migrations/PropelMigration_1573398726.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated-migrations/PropelMigration_1573411608.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated-migrations/PropelMigration_1573673248.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated-migrations/PropelMigration_1576008566.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getContentFromWeb.php" beforeDir="false" afterPath="$PROJECT_DIR$/getContentFromWeb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getContentFromWeb2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/propel.php" beforeDir="false" afterPath="$PROJECT_DIR$/propel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/propel_ex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox_files/getContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox_files/getContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox_files/simple_get_article.php" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox_files/simple_get_article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/article/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/article/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated-conf/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated-conf/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated-sql/default.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated-sql/default.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/Base/VgArticle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/Base/VgArticleQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/Base/VgArticleRu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/Base/VgArticleRuQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/Map/AuthorTableMap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/Map/VgArticleRuTableMap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/Map/VgArticleTableMap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/VgArticle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/VgArticleQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/VgArticleRu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orm/orm/VgArticleRuQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/propel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/propel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/schema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/CustomFormats/MomentJs.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/CustomFormats/MomentJs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/FormatsInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/FormatsInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/ar_TN.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/ar_TN.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/ca_ES.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/ca_ES.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/cs_CZ.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/cs_CZ.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/da_DK.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/da_DK.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/de_DE.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/de_DE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/en_GB.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/en_GB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/en_US.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/en_US.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/es_ES.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/es_ES.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/fi_FI.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/fi_FI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/fr_FR.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/fr_FR.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/hu_HU.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/hu_HU.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/id_ID.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/id_ID.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/it_IT.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/it_IT.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/ja_JP.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/ja_JP.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/lv_LV.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/lv_LV.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/nl_NL.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/nl_NL.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/oc_LNC.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/oc_LNC.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/pl_PL.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/pl_PL.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/pt_BR.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/pt_BR.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/pt_PT.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/pt_PT.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/ro_RO.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/ro_RO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/ru_RU.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/ru_RU.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/sv_SE.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/sv_SE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/th_TH.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/th_TH.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/tr_TR.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/tr_TR.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/uk_UA.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/uk_UA.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/vi_VN.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/vi_VN.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/zh_CN.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/zh_CN.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/zh_TW.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Locales/zh_TW.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Moment.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/Moment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/MomentException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/MomentException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/MomentFromVo.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/MomentFromVo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/MomentHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/MomentHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/MomentLocale.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/MomentLocale.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/src/MomentPeriodVo.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/src/MomentPeriodVo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/format.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/format.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentFrenchLocaleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentFrenchLocaleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentGermanLocaleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentGermanLocaleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentLatvianLocaleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentLatvianLocaleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentPolishLocaleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentPolishLocaleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentRussianLocaleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentRussianLocaleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentSimilarLocaleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentSimilarLocaleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentTurkishLocaleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentTurkishLocaleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentUkrainianLocaleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fightbulc/moment/tests/unit/Moment/MomentUkrainianLocaleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/phpstan.neon.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/ClientInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/ClientInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Pool.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Pool.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Definition/Builder/NodeBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/config/Definition/Builder/NodeBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/config/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/config/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Resource/ClassExistenceResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/config/Resource/ClassExistenceResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Resource/GlobResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/config/Resource/GlobResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/ConfigCacheFactoryTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/ConfigCacheTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/ArrayNodeTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/BaseNodeTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/BooleanNodeTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/Builder/ArrayNodeDefinitionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/Builder/BooleanNodeDefinitionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/Builder/EnumNodeDefinitionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/Builder/ExprBuilderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/Builder/NodeBuilderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/Builder/NodeDefinitionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/Builder/NumericNodeDefinitionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/Builder/TreeBuilderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/Dumper/XmlReferenceDumperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/Dumper/YamlReferenceDumperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/EnumNodeTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/FinalizationTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/FloatNodeTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/IntegerNodeTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/MergeTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/NormalizationTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/PrototypedArrayNodeTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Definition/ScalarNodeTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Exception/LoaderLoadExceptionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/FileLocatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Again/foo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/BadParent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/BarNode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Builder/BarNodeDefinition.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Builder/NodeBuilder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Builder/VariableNodeDefinition.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Configuration/ExampleConfiguration.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Exclude/AnExcludedFile.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Exclude/ExcludeToo/AnotheExcludedFile.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Resource/.hiddenFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Resource/ConditionalClass.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Util/document_type.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Util/invalid.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Util/invalid_schema.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Util/schema.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/Util/valid.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Fixtures/foo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Loader/DelegatingLoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Loader/FileLoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Loader/LoaderResolverTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Loader/LoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Resource/ClassExistenceResourceTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Resource/ComposerResourceTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Resource/DirectoryResourceTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Resource/FileExistenceResourceTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Resource/FileResourceTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Resource/GlobResourceTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Resource/ReflectionClassResourceTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Resource/ResourceStub.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/ResourceCheckerConfigCacheTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Tests/Util/XmlUtilsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/FormatterHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/FormatterHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/QuestionHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/QuestionHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/SymfonyQuestionHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/SymfonyQuestionHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Command/CommandTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Command/HelpCommandTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Command/ListCommandTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Command/LockableTraitTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/CommandLoader/ContainerCommandLoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/CommandLoader/FactoryCommandLoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/DependencyInjection/AddConsoleCommandPassTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/AbstractDescriptorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/JsonDescriptorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/MarkdownDescriptorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/ObjectsProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/TextDescriptorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/XmlDescriptorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/EventListener/ErrorListenerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/BarBucCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorApplication1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorApplication2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorApplicationMbString.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommand1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommand2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommand3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommand4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DescriptorCommandMbString.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/DummyOutput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo1Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo2Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo3Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo4Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo5Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Foo6Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooHiddenCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooLock2Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooLockCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooOptCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooSameCaseLowercaseCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooSameCaseUppercaseCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooSubnamespaced1Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooSubnamespaced2Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FooWithoutAliasCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/FoobarCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_0.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_10.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_11.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_12.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_13.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_14.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_15.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_16.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_17.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_4_with_iterators.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_5.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_6.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_7.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_8.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_9.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/interactive_command_1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/interactive_output_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_4_with_iterators.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestAmbiguousCommandRegistering.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestAmbiguousCommandRegistering2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_filtered_namespace.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_gethelp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_mbstring.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_mbstring.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception3decorated.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1decorated.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_escapeslines.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_linebreaks.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_run4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_mbstring.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/command_mbstring.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_definition_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterStyleStackTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterStyleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/AbstractQuestionHelperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/DumperNativeFallbackTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/DumperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/FormatterHelperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/HelperSetTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/HelperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProcessHelperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProgressBarTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProgressIndicatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/QuestionHelperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/SymfonyQuestionHelperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/TableStyleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/TableTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/ArgvInputTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/ArrayInputTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputArgumentTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputDefinitionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputOptionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/StringInputTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Logger/ConsoleLoggerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/ConsoleOutputTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/ConsoleSectionOutputTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/NullOutputTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/OutputTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/StreamOutputTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Question/ChoiceQuestionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Question/ConfirmationQuestionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Question/QuestionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Style/SymfonyStyleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/TerminalTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Tester/ApplicationTesterTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Tester/CommandTesterTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Filesystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/filesystem/Filesystem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/filesystem/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/filesystem/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/ExceptionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/FilesystemTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/FilesystemTestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/Fixtures/MockStream/MockStream.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/ClassThatInheritFinder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Comparator/ComparatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Comparator/DateComparatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Comparator/NumberComparatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/FinderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/.dot/a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/.dot/b/c.neon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/.dot/b/d.neon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/A/B/C/abc.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/A/B/ab.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/A/a.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/copy/A/B/C/abc.dat.copy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/copy/A/B/ab.dat.copy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/copy/A/a.dat.copy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/dolor.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/ipsum.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/lorem.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/one/.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/one/a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/one/b/c.neon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/one/b/d.neon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/r+e.gex[c]a(r)s/dir/bar.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/with space/foo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/GitignoreTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/GlobTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/CustomFilterIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/DateRangeFilterIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/DepthRangeFilterIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/ExcludeDirectoryFilterIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FileTypeFilterIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FilecontentFilterIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FilenameFilterIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/Iterator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/IteratorTestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/MockFileListIterator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/MockSplFileInfo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/MultiplePcreFilterIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/PathFilterIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/RealIteratorTestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/RecursiveDirectoryIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/SizeRangeFilterIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/SortableIteratorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/service-contracts/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/service-contracts/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation-contracts/LocaleAwareInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation-contracts/LocaleAwareInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation-contracts/TranslatorInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation-contracts/TranslatorInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation-contracts/TranslatorTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation-contracts/TranslatorTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation-contracts/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation-contracts/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/ConstraintValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/ConstraintValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/AbstractComparisonValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/AbstractComparisonValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/AllValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/AllValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/BicValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/BicValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/BlankValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/BlankValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CallbackValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CallbackValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CardSchemeValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CardSchemeValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/ChoiceValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/ChoiceValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CollectionValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CollectionValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CountValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CountValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CountryValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CountryValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CurrencyValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/CurrencyValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/DateTimeValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/DateTimeValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/DateValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/DateValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/EmailValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/EmailValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/ExpressionValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/ExpressionValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/FileValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/FileValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/GreaterThanOrEqualValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/GreaterThanOrEqualValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/GreaterThanValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/GreaterThanValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IbanValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IbanValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/ImageValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/ImageValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IpValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IpValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IsFalseValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IsFalseValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IsNullValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IsNullValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IsTrueValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IsTrueValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IsbnValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IsbnValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IssnValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/IssnValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LanguageValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LanguageValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LengthValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LengthValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LessThanOrEqualValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LessThanOrEqualValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LessThanValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LessThanValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LocaleValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LocaleValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LuhnValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/LuhnValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/NotBlankValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/NotBlankValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/NotNullValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/NotNullValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/RangeValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/RangeValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/RegexValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/RegexValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/TimeValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/TimeValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/TypeValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/TypeValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/UrlValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/UrlValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/UuidValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/UuidValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/ValidValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Constraints/ValidValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/DependencyInjection/AddAutoMappingConfigurationPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/DependencyInjection/AddAutoMappingConfigurationPass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Mapping/GenericMetadata.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Mapping/GenericMetadata.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Mapping/Loader/AutoMappingTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Mapping/Loader/AutoMappingTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Mapping/Loader/PropertyInfoLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Mapping/Loader/PropertyInfoLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Mapping/PropertyMetadata.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Mapping/PropertyMetadata.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Resources/translations/validators.ar.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Resources/translations/validators.ar.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Resources/translations/validators.sr_Latn.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Resources/translations/validators.sr_Latn.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Resources/translations/validators.zh_TW.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/validator/Resources/translations/validators.zh_TW.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/ConstraintTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/ConstraintValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/ConstraintViolationListTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/ConstraintViolationTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/AbstractComparisonValidatorTestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/AllTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/AllValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/BicValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/BlankValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CallbackValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CardSchemeValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/ChoiceValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CollectionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CollectionValidatorArrayObjectTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CollectionValidatorArrayTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CollectionValidatorCustomArrayObjectTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CollectionValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CompositeTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CountValidatorArrayTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CountValidatorCountableTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CountValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CountryValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/CurrencyValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/DateTimeValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/DateValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/DivisibleByValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/EmailTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/EmailValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/EqualToValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/ExpressionValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/FileTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/FileValidatorObjectTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/FileValidatorPathTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/FileValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/Fixtures/ChildA.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/Fixtures/ChildB.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/Fixtures/foo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/Fixtures/test.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/Fixtures/test_4by3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/Fixtures/test_corrupted.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/Fixtures/test_landscape.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/Fixtures/test_portrait.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/GreaterThanOrEqualValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/GreaterThanOrEqualValidatorWithPositiveOrZeroConstraintTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/GreaterThanValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/GreaterThanValidatorWithPositiveConstraintTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/GroupSequenceTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/IbanValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/IdenticalToValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/ImageValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/IpTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/IpValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/IsFalseValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/IsNullValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/IsTrueValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/IsbnValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/IssnValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/JsonValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/LanguageValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/LengthTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/LengthValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/LessThanOrEqualValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/LessThanOrEqualValidatorWithNegativeOrZeroConstraintTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/LessThanValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/LessThanValidatorWithNegativeConstraintTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/LocaleValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/LuhnValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/NotBlankTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/NotBlankValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/NotCompromisedPasswordTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/NotCompromisedPasswordValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/NotEqualToValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/NotIdenticalToValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/NotNullValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/RangeValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/RegexTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/RegexValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/TimeValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/TimezoneTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/TimezoneValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/TypeValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/UniqueValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/UrlTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/UrlValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/UuidTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/UuidValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/ValidTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Constraints/ValidValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/ContainerConstraintValidatorFactoryTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/DataCollector/ValidatorDataCollectorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/DependencyInjection/AddAutoMappingConfigurationPassTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/DependencyInjection/AddConstraintValidatorsPassTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/DependencyInjection/AddValidatorInitializersPassTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/CallbackClass.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/ClassConstraint.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/ConstraintA.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/ConstraintB.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/ConstraintC.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/ConstraintWithValue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/ConstraintWithValueAsDefault.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/Countable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/CustomArrayObject.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/Entity.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/EntityInterfaceA.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/EntityInterfaceB.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/EntityParent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/EntityParentInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/EntityStaticCar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/EntityStaticCarTurbo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/EntityStaticVehicle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/FailingConstraint.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/FailingConstraintValidator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/FakeMetadataFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/FilesLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/GroupSequenceProviderChildEntity.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/GroupSequenceProviderEntity.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/InvalidConstraint.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/PropertyConstraint.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/PropertyInfoLoaderEntity.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/Reference.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Fixtures/ToString.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Cache/AbstractCacheTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Cache/DoctrineCacheTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Cache/Psr6CacheTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/ClassMetadataTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Factory/BlackHoleMetadataFactoryTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Factory/LazyLoadingMetadataFactoryTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/GetterMetadataTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/AbstractStaticMethodLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/AnnotationLoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/FilesLoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/LoaderChainTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/PropertyInfoLoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/StaticMethodLoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/XmlFileLoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/YamlFileLoaderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/bad-format.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/constraint-mapping-non-strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/constraint-mapping.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/constraint-mapping.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/empty-mapping.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/mapping-with-constants.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/nonvalid-mapping.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/Loader/withdoctype.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/MemberMetadataTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Mapping/PropertyMetadataTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Resources/TranslationFilesTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Util/PropertyPathTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Validator/AbstractTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Validator/AbstractValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Validator/RecursiveValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/Validator/TraceableValidatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/Tests/ValidatorBuilderTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/validator/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Dumper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Dumper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Inline.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Inline.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Command/LintCommandTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/DumperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/YtsAnchorAlias.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/YtsBasicTests.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/YtsBlockMapping.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/YtsDocumentSeparator.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/YtsErrorTests.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/YtsFlowCollections.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/YtsFoldedScalars.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/YtsNullsAndEmpties.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/YtsSpecificationExamples.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/YtsTypeTransfers.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/arrow.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/booleanMappingKeys.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/embededPhp.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/escapedCharacters.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/index.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/multiple_lines_as_literal_block.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/multiple_lines_as_literal_block_leading_space_in_first_line.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/nonStringKeys.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/not_readable.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/nullMappingKey.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/numericMappingKeys.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/sfComments.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/sfCompact.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/sfMergeKey.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/sfObjects.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/sfQuotes.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/sfTests.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/unindentedCollections.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/InlineTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/ParseExceptionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/ParserTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/YamlTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/yaml/phpunit.xml.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/translateContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/translateContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translateContent2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -748,8 +105,11 @@
       <recent name="$PROJECT_DIR$/class" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.main.php">
+  <component name="RunManager" selected="PHP Script.translateContent.php">
     <configuration name="ex 3.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/ex 3.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="getContentFromWeb.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/getContentFromWeb.php">
       <method v="2" />
     </configuration>
     <configuration name="getContent.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/getContent.php">
@@ -758,10 +118,7 @@
     <configuration name="main.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/main.php">
       <method v="2" />
     </configuration>
-    <configuration name="parseXML.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sandbox_files/parseXML.php">
-      <method v="2" />
-    </configuration>
-    <configuration name="propel_ex.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/propel_ex.php">
+    <configuration name="translateContent.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/translateContent.php">
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
@@ -774,19 +131,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHP Script.propel_ex.php" />
       <item itemvalue="PHP Script.main.php" />
-      <item itemvalue="PHP Script.parseXML.php" />
       <item itemvalue="PHP Script.ex 3.php" />
       <item itemvalue="PHP Script.getContent.php" />
+      <item itemvalue="PHP Script.getContentFromWeb.php" />
+      <item itemvalue="PHP Script.translateContent.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.translateContent.php" />
+        <item itemvalue="PHP Script.getContentFromWeb.php" />
         <item itemvalue="PHP Script.main.php" />
         <item itemvalue="PHP Script.ex 3.php" />
         <item itemvalue="PHP Script.getContent.php" />
-        <item itemvalue="PHP Script.parseXML.php" />
-        <item itemvalue="PHP Script.propel_ex.php" />
       </list>
     </recent_temporary>
   </component>
@@ -812,6 +169,8 @@
       <workItem from="1573671939422" duration="4380000" />
       <workItem from="1580664518405" duration="367000" />
       <workItem from="1580760881354" duration="654000" />
+      <workItem from="1580844781291" duration="2100000" />
+      <workItem from="1580849374903" duration="643000" />
     </task>
     <servers />
   </component>
@@ -819,16 +178,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2012" y="234" width="786" height="602" key="find.popup" timestamp="1580761289957">
-      <screen x="1440" y="23" width="1920" height="1057" />
+    <state width="1358" height="208" key="GridCell.Tab.0.bottom" timestamp="1580848213355">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
+    <state width="1358" height="208" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1580848213355" />
+    <state width="1358" height="208" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580766484904" />
+    <state width="1358" height="208" key="GridCell.Tab.0.center" timestamp="1580848213353">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1358" height="208" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1580848213353" />
+    <state width="1358" height="208" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580766484903" />
+    <state width="1358" height="208" key="GridCell.Tab.0.left" timestamp="1580848213353">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1358" height="208" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1580848213353" />
+    <state width="1358" height="208" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580766484903" />
+    <state width="1358" height="208" key="GridCell.Tab.0.right" timestamp="1580848213354">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1358" height="208" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1580848213354" />
+    <state width="1358" height="208" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580766484904" />
+    <state x="429" y="189" width="712" height="534" key="find.popup" timestamp="1580845354667">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="429" y="189" width="712" height="534" key="find.popup/0.23.1440.830@0.23.1440.830" timestamp="1580845354667" />
     <state x="429" y="189" width="589" height="472" key="find.popup/1440.23.1920.1057/0.23.1440.830@0.23.1440.830" timestamp="1580664776022" />
-    <state x="2012" y="234" width="786" height="602" key="find.popup/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580761289957" />
-    <state x="1959" y="219" width="894" height="861" key="search.everywhere.popup" timestamp="1580761352158">
+    <state x="2012" y="234" width="786" height="602" key="find.popup/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580765341011" />
+    <state x="1959" y="219" width="894" height="861" key="search.everywhere.popup" timestamp="1580766237826">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="389" y="177" width="670" height="676" key="search.everywhere.popup/1440.23.1920.1057/0.23.1440.830@0.23.1440.830" timestamp="1580664578135" />
-    <state x="1959" y="219" width="894" height="861" key="search.everywhere.popup/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580761352158" />
+    <state x="1959" y="219" width="894" height="861" key="search.everywhere.popup/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580766237826" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
