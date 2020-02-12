@@ -28,9 +28,7 @@ function getContentFromWeb()
 {
     /*  2.1. Select all new articles from DB    */
     $articlesORM = ArticlesPropelQuery::create()
-//        ->where('ArticlesPropel.title IS NULL')
-            //translated just temporary
-        ->where('ArticlesPropel.id = 17')
+        ->where('ArticlesPropel.title IS NULL')
         ->limit(10)
         ->find();
 

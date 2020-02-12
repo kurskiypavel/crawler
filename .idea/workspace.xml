@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ef037860-1ade-47eb-9396-da2ed7b7dd80" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/propel.php" beforeDir="false" afterPath="$PROJECT_DIR$/propel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/propel.php.dist" beforeDir="false" afterPath="$PROJECT_DIR$/propel.php.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated-conf/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated-conf/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/propel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/propel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/propel.php.dist" beforeDir="false" afterPath="$PROJECT_DIR$/src/propel.php.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generateXML.php" beforeDir="false" afterPath="$PROJECT_DIR$/generateXML.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getContentFromWeb.php" beforeDir="false" afterPath="$PROJECT_DIR$/getContentFromWeb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translateContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/translateContent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +143,7 @@
       <workItem from="1581184004440" duration="79000" />
       <workItem from="1581196083805" duration="2471000" />
       <workItem from="1581365054028" duration="4800000" />
-      <workItem from="1581538333418" duration="1018000" />
+      <workItem from="1581538333418" duration="1930000" />
     </task>
     <servers />
   </component>

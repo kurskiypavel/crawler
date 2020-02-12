@@ -136,9 +136,7 @@ function translateContent()
 
     /*  3.1. Select all not translated and send to Google Translate API  */
     $articles = ArticlesPropelQuery::create()
-//        ->where('ArticlesPropel.translated IS NULL')
-        ->where('ArticlesPropel.id = 17')
-
+        ->where('ArticlesPropel.translated IS NULL')
         ->limit(10)
         ->find();
 
