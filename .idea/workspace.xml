@@ -3,40 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ef037860-1ade-47eb-9396-da2ed7b7dd80" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generateSlug.php" beforeDir="false" afterPath="$PROJECT_DIR$/generateSlug.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generateXML.php" beforeDir="false" afterPath="$PROJECT_DIR$/generateXML.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated-migrations/PropelMigration_1573398726.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated-migrations/PropelMigration_1573411608.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated-migrations/PropelMigration_1573673248.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated-migrations/PropelMigration_1576008566.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/getContentFromWeb.php" beforeDir="false" afterPath="$PROJECT_DIR$/getContentFromWeb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getContentFromWeb2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/propel.php" beforeDir="false" afterPath="$PROJECT_DIR$/propel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/propel_ex.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox_files/getContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox_files/getContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox_files/simple_get_article.php" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox_files/simple_get_article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/article/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/article/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/propel.php.dist" beforeDir="false" afterPath="$PROJECT_DIR$/propel.php.dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generated-conf/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated-conf/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated-sql/default.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated-sql/default.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/Base/VgArticle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/Base/VgArticleQuery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/Base/VgArticleRu.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/Base/VgArticleRuQuery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/Map/AuthorTableMap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/Map/VgArticleRuTableMap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/Map/VgArticleTableMap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/VgArticle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/VgArticleQuery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/VgArticleRu.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orm/orm/VgArticleRuQuery.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/propel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/propel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translateContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/translateContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translateContent2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/propel.php.dist" beforeDir="false" afterPath="$PROJECT_DIR$/src/propel.php.dist" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +141,11 @@
       <workItem from="1580664518405" duration="367000" />
       <workItem from="1580760881354" duration="654000" />
       <workItem from="1580844781291" duration="2100000" />
-      <workItem from="1580849374903" duration="643000" />
+      <workItem from="1580849374903" duration="730000" />
+      <workItem from="1581184004440" duration="79000" />
+      <workItem from="1581196083805" duration="2471000" />
+      <workItem from="1581365054028" duration="4800000" />
+      <workItem from="1581538333418" duration="1018000" />
     </task>
     <servers />
   </component>
@@ -198,15 +173,16 @@
     </state>
     <state width="1358" height="208" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1580848213354" />
     <state width="1358" height="208" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580766484904" />
-    <state x="429" y="189" width="712" height="534" key="find.popup" timestamp="1580845354667">
+    <state x="429" y="189" width="712" height="534" key="find.popup" timestamp="1581540685107">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
-    <state x="429" y="189" width="712" height="534" key="find.popup/0.23.1440.830@0.23.1440.830" timestamp="1580845354667" />
+    <state x="429" y="189" width="712" height="534" key="find.popup/0.23.1440.830@0.23.1440.830" timestamp="1581540685107" />
     <state x="429" y="189" width="589" height="472" key="find.popup/1440.23.1920.1057/0.23.1440.830@0.23.1440.830" timestamp="1580664776022" />
     <state x="2012" y="234" width="786" height="602" key="find.popup/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580765341011" />
-    <state x="1959" y="219" width="894" height="861" key="search.everywhere.popup" timestamp="1580766237826">
-      <screen x="1440" y="23" width="1920" height="1057" />
+    <state x="389" y="177" width="671" height="677" key="search.everywhere.popup" timestamp="1581197631272">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
+    <state x="389" y="177" width="671" height="677" key="search.everywhere.popup/0.23.1440.830@0.23.1440.830" timestamp="1581197631272" />
     <state x="389" y="177" width="670" height="676" key="search.everywhere.popup/1440.23.1920.1057/0.23.1440.830@0.23.1440.830" timestamp="1580664578135" />
     <state x="1959" y="219" width="894" height="861" key="search.everywhere.popup/1440.23.1920.1057/0.23.1440.830@1440.23.1920.1057" timestamp="1580766237826" />
   </component>
